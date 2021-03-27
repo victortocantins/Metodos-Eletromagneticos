@@ -16,6 +16,7 @@ sphinx_gallery
 memory_profiler
 sphinx_rtd_theme >= 0.5.0
 sphinx_automodapi
+sphinxcontrib.bibtex
 
 # FOR TESTING
 pytest
