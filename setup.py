@@ -4,8 +4,8 @@ import re
 from setuptools import setup
 
 # Get README and remove badges.
-#readme = open('README.rst').read()
-#readme = re.sub('----.*marker', '----', readme, flags=re.DOTALL)
+readme = open('README.rst').read()
+readme = re.sub('----.*marker', '----', readme, flags=re.DOTALL)
 
 description = 'Notas de aulas de Métodos Eletromagnéticos'
 
