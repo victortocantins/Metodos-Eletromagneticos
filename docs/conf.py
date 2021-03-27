@@ -43,7 +43,7 @@ extensions = [
     'sphinx.ext.intersphinx',
     'numpydoc',
     'sphinxcontrib.bibtex', 
-    'sphinx_gallery.gen_gallery',
+#    'sphinx_gallery.gen_gallery',
     'sphinx_automodapi.automodapi',
 ]
 
