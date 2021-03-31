@@ -6,9 +6,12 @@ Fundamentos do Eletromagnetismo
 **Conteúdo:**
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
 
     conv_Matematica
     lei_coulomb
-    lei_gauss
-
+    gauss_electric
+    coulomb
+    gauss_magnetic
+    faraday
+    ampere_maxwell
