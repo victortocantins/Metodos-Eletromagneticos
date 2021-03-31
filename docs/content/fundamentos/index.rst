@@ -8,5 +8,7 @@ Fundamentos do Eletromagnetismo
 .. toctree::
     :maxdepth: 2
 
-    leis_EM
+    conv_Matematica
+    lei_coulomb
+    lei_gauss
 
