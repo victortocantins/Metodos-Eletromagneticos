@@ -18,6 +18,7 @@ Métodos Eletromagnéticos
    ./content/introducao/index
    ./content/propriedades_fisicas/index
    ./content/fundamentos/index
+   ./content/eq_maxwell/index
    ./content/referencias
    
    

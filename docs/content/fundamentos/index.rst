@@ -15,3 +15,6 @@ Fundamentos do Eletromagnetismo
     gauss_magnetic
     faraday
     ampere_maxwell
+    conservation_of_charge
+    biot_savart
+    lenz

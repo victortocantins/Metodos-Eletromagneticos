@@ -53,7 +53,7 @@ Sob a influência de um campo elétrico, cargas livres (como íons) fluem atrav�
    :figwidth: 60%
    :name: fig_polarization_example
 
-O grau de acumulação de carga (capacitância) sob a influência de um campo elétrico externo é descrito como **cargabilidade**. A capacidade de carga é frequentemente considerada uma propriedade física separada da condutividade, embora as duas estejam relacionadas. Para materiais com essa caracerística, a relação constitutiva (lei de Ohm) torna-se dependente da frequência:
+O grau de acumulação de carga (capacitância) sob a influência de um campo elétrico externo é descrito como **cargabilidade**. A capacidade de carga é frequentemente considerada uma propriedade física separada da condutividade, embora as duas estejam relacionadas. Para materiais com essa característica, a relação constitutiva (lei de Ohm) torna-se dependente da frequência:
 
 
 .. math::
@@ -69,7 +69,7 @@ onde :math:`\sigma_{\infty}` é o limite de frequência infinito, :math:`0 \leq 
 .. math::
   \rho (\omega) = \rho_0 \Bigg [ 1 - \eta \Bigg ( 1 - \frac{1}{1 + (i\omega \tau)^C} \Bigg ) \Bigg ]
 
-onde :math:`\rho_0` defines a frequência 0, or resistividade DC. Condutividade e resistividade elétrica como uma função da frequênciasão ilustradas abaixo.
+onde :math:`\rho_0` defines a frequência 0, ou resistividade DC. Condutividade e resistividade elétrica como uma função da frequência são ilustradas abaixo.
 
 .. figure:: ./images/Cole_Cole_example.png
    :align: center
@@ -91,7 +91,7 @@ Os dados coletados durante os levantamentos magnetotelúricos (MT) e (ZTEM) tamb
 
 **Cargabilidade**
 
-Em comparação com a maioria dos outros tipos de rocha, as rochas contendo sulfeto são altamente carregáveis; uma exceção são as rochas com alto teor de argila. Em abundância suficiente, as rochas contendo sulfeto podem ter um valor econômico significativo. Ao contrário de pesquisas em resistividades, levantamentos IP podem ser usadas para distinguir corpos com cargabilidade e sem cargabilidade, mesmo se ambos forem similarmente condutores. Sistemas TDEM também podem ser usados para reconhecer a presença de corpos com caragabilidades, já que eles produzem respostas distintas no domínio do tempo. Como resultado, a capacidade de carga tornou-se uma propriedade física única de diagnóstico usada para localizar depósitos de minério contendo sulfeto.
+Em comparação com a maioria dos outros tipos de rocha, as rochas contendo sulfeto são altamente carregáveis; uma exceção são as rochas com alto teor de argila. Em abundância suficiente, as rochas contendo sulfeto podem ter um valor econômico significativo. Ao contrário de pesquisas em resistividades, levantamentos IP podem ser usadas para distinguir corpos com cargabilidade e sem cargabilidade, mesmo se ambos forem similarmente condutores. Sistemas TDEM também podem ser usados para reconhecer a presença de corpos com cargabilidades, já que eles produzem respostas distintas no domínio do tempo. Como resultado, a capacidade de carga tornou-se uma propriedade física única de diagnóstico usada para localizar depósitos de minério contendo sulfeto.
 
 Conteúdo
 --------

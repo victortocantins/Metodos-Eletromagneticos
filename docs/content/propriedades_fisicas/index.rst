@@ -1,4 +1,4 @@
-.. _fisica_propriedades_index:
+.. _physical_properties_index:
 
 Propriedades Físicas
 ====================
@@ -12,7 +12,7 @@ Propriedades Físicas
     começará com exemplos de onde a propriedade física particular tem
     sido diagnosticada.
     
-Uma propriedade física quantifica como uma rocha responde a um determinada fenômeno físico, como ondas sonoras por exemplo. Em geofísica eletromagnética, as propriedades físicas relevantes são:
+Uma propriedade física quantifica como uma rocha responde a um determinado fenômeno físico, como ondas sonoras por exemplo. Em geofísica eletromagnética, as propriedades físicas relevantes são:
 
 - :ref:`electrical_conductivity_index`: :math:`\sigma` (ou sua recíproca, resistividade, :math:`\rho`)
 - :ref:`magnetic_permeability_index`, :math:`\mu`

@@ -3,7 +3,7 @@
 Unidades
 ========
 
-Existem várias quantidades importantes associadas às propriedades elétricas das rochas. Estas, junto com as unidades mais comumente usadas, são tabuladas abaixo. Observe que, uma vez que a resistividade elétrica é o recíproco da condutividade:
+Existem várias quantidades importantes associadas às propriedades elétricas das rochas. Estas, junto com as unidades mais comumente usadas, são tabuladas abaixo. Observe que, uma vez que a resistividade elétrica é o recíproca da condutividade:
 
 .. math::
   \rho = \frac{1}{\sigma}

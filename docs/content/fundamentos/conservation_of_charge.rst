@@ -1,119 +1,111 @@
 .. _conservation_of_charge:
 
-Conservation of Charge
-======================
+Lei da Conservação da Carga
+===========================
 
-The conservation of charge states that electrical charges cannot be created or
-destroyed. It is not an independent equation since it can be derived from
-other Maxwell equations but it is a useful starting point for solving some
-problems. It can be written in integral and differential forms.
-
-
-Integral form
--------------
+A conservação de carga afirma que as cargas elétricas não podem ser criadas ou
+destruídas. Não é uma equação independente, uma vez que pode ser derivada de
+outras equações de Maxwell, mas é um ponto de partida útil para resolver alguns
+problemas. Ela pode ser escrita nas formas integral e diferencial.
 
 
-The integral formulation of conservation of charge is
+Forma Integral
+--------------
 
+A formulação integral de conservação da carga é
 
 .. math::
     \int_A \mathbf{j} \cdot da =  - \dfrac{d}{dt} \int_V \rho dv = - \dfrac{dQ}{dt} 
     :label: charge_conservation_integral
 
-where:
+onde:
 
-- :math:`\mathbf{j}` is the current density
-- :math:`\rho` is the volumetric charge density
-- :math:`Q` is the total charge inside the volume
-- :math:`A` is the surface area of the volume 
-- :math:`V` is the volume
+- :math:`\mathbf{j}` é a densidade de corrente
+- :math:`\rho` é a densidade de carga volumetrica
+- :math:`Q` é a carga total dentro do volume
+- :math:`A` é a área da superfície do volume 
+- :math:`V` é o volume
 
 
 DWO: Check applicability for total or free charges.
 
 
-Differential form:
+Forma Diferencial:
 ------------------
 
-With the use of the divergence theorem equation
-:eq:`charge_conservation_integral` can be written in  differential form:
+Com o uso da equação do teorema da divergência ou (:ref:`Gauss_teorema`), a 
+:eq:`charge_conservation_integral` pode ser escrita na forma diferencial:
 
 .. math::
     \nabla \cdot \mathbf{j} = -\dfrac{\partial \rho}{\partial t}
     :label: charge_conservation_differential
 
-
-Conservation of charge formula from Ampere-Maxwell's Law
+Fórmula da Conservação da Carga da Lei de Ampère-Maxwell
 --------------------------------------------------------
 
-The conservation of charge equation is not an independent equation that needs
-to be included with Maxwell's equations. It can be derived from the Ampere-
-Maxwell law and Gauss's law for electric charges.
+A conservação da equação da carga não é uma equação independente que precisa
+para ser incluída juntamnete as equações de Maxwell. Pode ser derivada da Lei de Ampère-Maxwell e 
+Lei de Gauss para cargas elétricas.
 
 .. math::
-    \nabla \times \mathbf{h} = j +  \dfrac {\partial \mathbf  d}{\partial t}
+    \nabla \times \mathbf{h} = \mathbf{j} +  \dfrac {\partial \mathbf{d}}{\partial t}
    
 
-Taking the divergence and using :math:`\nabla \cdot \mathbf{d} = \rho_f` and
-a vector identity yields
+Tomando a divergência e usando :math:`\nabla \cdot \mathbf{d} = \rho_f` e  a identidade vetorial :math:`\nabla.\nabla\times\mathbf{f}=0` temos
 
 .. math::
-    \nabla \times \mathbf{h} = j +  \dfrac {\partial \mathbf  d}{\partial t}
+    0 = \nabla\cdot\nabla \times \mathbf{h} = \nabla\cdot\mathbf{j} +  \dfrac {\partial}{\partial t} \nabla\cdot\mathbf{d} \quad \text{implica} \quad
 	\nabla \cdot \mathbf{j} = - \dfrac{\partial \rho_f}{\partial t}
 
-Note that in Maxwell's equations :math:`\mathbf{j}` refers to the free charge density.
+Note que as equações de Maxwell :math:`\mathbf{j}` refere-se a densidade de cargas livres
 
 
-Uses of Conservation of Charge
-------------------------------
+Uso da conservação das cargas
+-----------------------------
 
-Starting equations for DC resistivity
-*************************************
+Equações iniciais para resistividade DC
+***************************************
 
-If there is a source term, say a current :math:`I` that is injected at a
-location :math:`\mathbf{r_s}` then the law for conservation of charge  becomes
+Se houver um termo fonte, digamos uma corrente :math:`I` que é injetada em uma
+locação :math:`\mathbf{r_s}` então a lei para a conservação de carga torna-se
 
 .. math::
 	\nabla \cdot \mathbf{j} + \dfrac{\partial \rho_f}{\partial t} = I \delta (\mathbf{r} - \mathbf{r_s})
 
-
-Note that the positive sign refers to positive current being injected into the
-medium. Under steady state conditions the time derivative term is zero and the
-equation reduces to
+Observe que o sinal positivo se refere à corrente positiva sendo injetada no
+meio. Sob condições de estado estacionário, o termo da derivada de tempo é zero e o
+equação se reduz a
 
 .. math::
 	\nabla \cdot \mathbf{j}  = I \delta (\mathbf{r} - \mathbf{r_s})
 
-which is a starting equation for DC resistivity problems. 
+que é uma equação inicial para problemas de resistividade DC.
 
+Dissipação de carga livre em um meio condutor
+*********************************************
 
-Dissipation of free charge in a conducting medium
-*************************************************
-
-
-This is a classic but insightful computation (ref: stratton) Consider a small
-volume having an intial charge density of :math:`\rho_0`. The charge is released
-in a homogeneous medium that has a conductivity :math:`\sigma` and permittivity
-:math:`\epsilon_0`. Using :math:`\mathbf{j} = \sigma \mathbf{e}`  we write
+Este é um cálculo clássico, mas criterioso (:cite:`stratton1941`). Considere um pequeno
+volume tendo uma densidade de carga inicial de :math:`\rho_0`. A carga é liberada
+em um meio homogêneo que tem uma condutividade :math:`\sigma` e permissividade 
+:math:`\epsilon_0`. Usando :math:`\mathbf{j}=\sigma\mathbf{e}` podemos escrevemos
 
 .. math::
 	\nabla \cdot \mathbf{j} = \dfrac{\sigma}{\epsilon_0} \nabla \cdot \mathbf{d} = \dfrac{\sigma}{\epsilon_0}\rho_f
 
-The conservation of charge equation becomes
+A conservação das cargas torna-se
 
 .. math::	
 	\dfrac{\partial \rho_f}{\partial t} + \dfrac{\sigma}{\epsilon_0}\rho_f = 0
 
-which has a solution
+que tem uma solução
 
 .. math::
 	\rho_f(t)= \rho_0 e^{ \frac {-\sigma}{\epsilon_0} t}
-
-
-Even with very low conductivity, e.g. :math:`\sigma= 10^{-5}` with :math:`
-\epsilon_0=8.85 \times 10^{-12}` the charge density at the location of
-release decreases by a factor of :math:`e` in :math:`10^{-6}` seconds. Thus for
-earth types of materials, a charge inserted into the earth dissipates
-extremely quickly.
+	
+Mesmo com condutividade muito baixa, por exemplo :math:`\sigma=10^{-5}` com 
+:math:`\epsilon_0 = 8,85 \times 10^{-12}` a densidade de carga no local de
+liberação diminui por um fator de :math:`e` em :math:`10^{-6}` segundos. Assim para
+tipos de materiais de Terra, uma carga inserida na terra se dissipa
+extremamente rápido.
 
 

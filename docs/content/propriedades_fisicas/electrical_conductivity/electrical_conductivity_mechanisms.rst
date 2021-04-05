@@ -49,7 +49,7 @@ Polarização de Eletrodo e de Membrana
 A cargabilidade dos materiais terrestres é essencialmente um efeito eletroquímico e pode ser
 causada por muitos fatores, nem todos completamente compreendidos. Se o solo
 é carregável, ele responde como se a resistividade fosse uma quantidade complexa - ele
-se comporta como um capacitor com vazamento. Portanto, a caragbilidade pode ser
+se comporta como um capacitor com vazamento. Portanto, a cargabilidade pode ser
 medido de várias maneiras usando técnicas no domínio do tempo ou no domínio da frequência.
 Os aspectos que afetam a exigibilidade de uma amostra incluem:
 
@@ -61,7 +61,7 @@ Os aspectos que afetam a exigibilidade de uma amostra incluem:
   enquanto arenitos não são, e as imagens aqui ilustram um motivo porque isso é verdade. Além disso, as interações de superfície entre minerais de argila e os fluidos aumentam a capacidade desses materiais de reter cargas.
 
   
-Existem duas causas principais de caragbailidade, "polarização da membrana" e "polarização do eletrodo". 
+Existem duas causas principais de cargabilidades, "polarização da membrana" e "polarização do eletrodo". 
 Em ambos os casos, a redistribuição de cargas após a aplicação de um campo elétrico DC externo leva algum tempo para ocorrer. Da mesma forma, leva a mesma quantidade de tempo para reverter para uma distribuição de carga equilibrada, uma vez que o campo elétrico é removido.
 
 ..     - Induced polarization is greater when there are larger regions of
@@ -100,7 +100,7 @@ Em ambos os casos, a redistribuição de cargas após a aplicação de um campo 
             :figwidth: 100 %
             :name: fig_elec_pol_3
             
-            Anomalia hipotética da distribuição de íons perto de uma inteface sólidi-líquido.
+            Anomalia hipotética da distribuição de íons perto de uma interface sólido-líquido.
             
         .. figure:: ./images/elec_pol_4.gif
             :align: center
@@ -155,7 +155,7 @@ Polarização de Membrana
 		Circuito dipolo elétrico.
 
 
-A polarização da membrana ocorre quando o espaço dos poros se estreita para dentro de vários espessuras da camada limite (que são as espessuras dos íons adsorvidos em um superfície). Observe que as superfícies dos grãos minerais possuem naturalmente uma carga negata fraca que atrai cátions 
+A polarização da membrana ocorre quando o espaço dos poros se estreita para dentro de várias espessuras da camada limite (que são as espessuras dos íons adsorvidos em um superfície). Observe que as superfícies dos grãos minerais possuem naturalmente uma carga negativa fraca que atrai cátions 
 (:numref:`fig_memb_pol_1`).
 
 Quando um campo elétrico é aplicado, as cargas não podem fluir facilmente através da "garganta dos poros", então se acumulam 

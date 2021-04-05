@@ -38,7 +38,7 @@ onde:
 
 O primeiro termo do lado direito da equação foi descoberto por Ampere. Mostra o relacionamento
 entre uma corrente :math:`I_ {enc}` e a circulação do campo magnético, :math:`\mathbf {b}`,
-em torno de qualquer linha de contorno fechada (Veja :numref:`Ienc`). :math: `I_{enc}` refere-se a todas as correntes
+em torno de qualquer linha de contorno fechada (Veja :numref:`Ienc`). :math:`I_{enc}` refere-se a todas as correntes
 independentemente de sua origem física.
 
 A segunda parte da equação é a contribuição de Maxwell e mostra que um
@@ -94,8 +94,7 @@ onde as densidade de correntes são:
 
 - :math:`\mathbf{j_f}` é a corrente livre causada por cargas móveis
 - :math:`\mathbf{j_p} = \frac{\partial \mathbf{p}}{\partial t}` é a corrente de polarização ou corrente de deslocamento, onde :math:`\mathbf{p}` é a polarização elétrica resultante das cargas deslocadas dentro do dieletros
-- :math:`\mathbf{j_m} = \nabla\times\mathbf{m}` 
-é a corrente de magnetização, ou seja, as correntes necessárias para gerar a magnetização :math:`\mathbf{m}`
+- :math:`\mathbf{j_m} = \nabla\times\mathbf{m}` é a corrente de magnetização, ou seja, as correntes necessárias para gerar a magnetização :math:`\mathbf{m}`
 
 A densidade de corrente total é a soma dessas três contribuições e é descrita por
 

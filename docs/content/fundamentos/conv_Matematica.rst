@@ -1,4 +1,4 @@
-.. _conv_Matematica:
+.. _conv_matematica:
 
 Notação e Convenção
 ===================
@@ -11,7 +11,7 @@ Vetores
 
 - vetores e operadores vetoriais são em negrito:
     * exemplo: :math:`\mathbf{v}`, :math:`\boldsymbol{\nabla\cdot}`, :math:`\boldsymbol{\nabla\times}`
-- tensores são em negrito and sublinhados:
+- tensores são em negrito e sublinhados:
     * exemplo: :math:`\mathbf{\underline{v}}`, :math:`\boldsymbol{\underline{\sigma}}`
 - variáveis no domínio do tempo são minúsculas:
     * exemplo: :math:`\mathbf{e}`, :math:`\mathbf{j}`, :math:`\mathbf{h}`, :math:`\mathbf{b}`
@@ -46,6 +46,27 @@ Integrais
         \oint_C \mathbf{f} \cdot \mathbf{dl} = \oint_C \mathbf{f} \cdot \mathbf{\hat{n}} ~dl
 
 
+Teoremas de Gauss e Stokes 
+--------------------------
+
+.. _Gauss_teorema:
+
+Teorema de Gauss
+****************
+
+    .. math::
+        \int_V \nabla\cdot\mathbf{f}~dv = \oint_S \mathbf{f}\cdot\mathbf{\hat{n}}~da
+
+
+.. _Stokes_teorema:
+
+Teorema de Stokes
+*****************
+
+    .. math::
+        \int_S \nabla\times\mathbf{f}~ds = \oint_C \mathbf{f}\cdot\mathbf{\hat{n}}~dl
+        
+        
 .. _fourier_transform_convention:
 
 Convenção da Transformada de Fourier

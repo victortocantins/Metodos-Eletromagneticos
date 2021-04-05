@@ -1,4 +1,4 @@
-.. _lei_gauss:
+.. _gauss_electric:
 
 Lei de Gauss para campos elétricos
 ==================================
@@ -44,7 +44,7 @@ Forma Diferencial
 -----------------
 
 Ao considerar um corpo carregado espacialmente estendido, podemos pensar em sua carga como sendo continuamente distribuído por todo o corpo com densidade
-: math: `\ rho`. A carga total é então dada pela integral da carga densidade sobre o volume do corpo.
+: math:`\rho`. A carga total é então dada pela integral da carga densidade sobre o volume do corpo.
 
 .. math::
 	Q = \int_V \rho \; \mathrm{d}v\;.
@@ -56,7 +56,7 @@ Usando esta definição e aplicando o teorema da divergência no lado esquerda d
 	\int_V \boldsymbol{\nabla} \cdot \mathbf{e} \; \mathrm{d}v = \int_V \frac{\rho}{\varepsilon_0} \; \mathrm{d}v \;.
 	:label:
 	
-Uma vez que esta equação deve valer para qualquer volume :math: `V`, podemos igualar o integrantes, dando a forma diferencial da lei de Gauss:
+Uma vez que esta equação deve valer para qualquer volume :math:`V`, podemos igualar o integrantes, dando a forma diferencial da lei de Gauss:
 
 .. math::
 	\boldsymbol{\nabla} \cdot \mathbf{e} = \frac{\rho}{\varepsilon_0}.

@@ -90,7 +90,7 @@ Lei de Coulomb
  .. figure:: images/CoulombsLaw.png
     :align: right
     :scale: 75% 
-    :name: CoulombsLaw
+    :name: lei_de_Coulomb
     
 A lei de Coulomb é uma lei experimental obtida por Charles Augustin de Coulomb que define quantitativamente a força
 entre dois pontos de carga. Diz que:

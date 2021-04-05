@@ -32,7 +32,7 @@ Lembre-se de uma definição anterior, que a condutividade iônica era proporcio
 .. math::
 	\sigma = e (n^+ \mu_m^+ + n^- \mu_m^-)
 
-onde (+) e (-) foram usados para denotar cátions e ânions, respectivamente. Portanto, à medida que a salinidade aumenta, há mais portadores de carga iônica. Isso é responsável por aumentar a condutividade da rocha. O número de portadores de carga iônica também aumenta à medida que o espaço dos poros e a saturação dos poros aumentam. O espaço dos poros permite que uma parte maior da rocha seja composta de poros-água iônica, em oposição aos minerais resistivos. No entanto, a rocha só será condutiva se a saturação de água dos poros for suficientemente grande. O ar é um resistor perfeito. Por isso, as rochas secas são muito resistentes, pois o único mecanismo de condução é a condução elétrica através dos grãos minerais. Conforme a porcentagem de saturação dos poros aumenta, a condução iônica se torna mais disponível, aumentando assim a condutividade da rocha.
+onde (+) e (-) foram usados para denotar cátions e ânions, respectivamente. Portanto, à medida que a salinidade aumenta, há mais portadores de carga iônica. Isso é responsável por aumentar a condutividade da rocha. O número de portadores de carga iônica também aumenta à medida que o espaço dos poros e a saturação dos poros aumentam. O espaço dos poros permite que uma parte maior da rocha seja composta de poros água iônica, em oposição aos minerais resistivos. No entanto, a rocha só será condutiva se a saturação de água dos poros for suficientemente grande. O ar é um resistor perfeito. Por isso, as rochas secas são muito resistentes, pois o único mecanismo de condução é a condução elétrica através dos grãos minerais. Conforme a porcentagem de saturação dos poros aumenta, a condução iônica se torna mais disponível, aumentando assim a condutividade da rocha.
 
 A tortuosidade define o quão complicada é a rede de poros-espaços interconectados dentro de uma rocha. Se a tortuosidade for baixa, as cargas iônicas podem mais livremente e desimpedidas através do espaço dos poros. Para rochas de alta tortuosidade, a polarização da membrana é mais provável e os íons devem seguir caminhos complicados através da rocha. Para rochas sedimentares (assim como outras em alguns casos), a condutividade DC pode ser entendida através da **lei de Archie**.
 
@@ -82,7 +82,7 @@ Conteúdo de Argila
 ^^^^^^^^^^^^^^^^^^
 
 Na abordagem clássica da engenharia de petróleo para rochas sedimentares, rochas
-contendo partículas de argila são freqüentemente chamadas de “areias sujas”. Uma vez que as partículas de argila são
+contendo partículas de argila são frequentemente chamadas de “areias sujas”. Uma vez que as partículas de argila são
 substancialmente mais condutores do que a maioria dos minerais formadores de rocha, eles representam um
 caminho condutor. A lei de Archie geralmente funciona bem para rochas sedimentares, no entanto, deve ser corrigida no caso de areias sujas. A causa fundamental da condutividade anormalmente alta para areias sujas é baseada na capacitância de camada dupla de cátions absorvidos, conforme mostrado em
 :numref:`DoubleLayer`.
@@ -94,14 +94,14 @@ caminho condutor. A lei de Archie geralmente funciona bem para rochas sedimentar
 
    Diagrama conceitual de cátions absorvidos na partícula de argila.
 
-Os cátions são necessários para equilibrar a carga devido a substituições dentro do
+Os cátions são necessários para equilibrar a carga devido a substituições dentro da
 estrutura de cristal ou partículas de argila e ligações quebradas. O tamanho finito dos cátions impede
 a formação de uma única camada. Em vez disso, uma “camada dupla” é criada. A camada dupla é
-composto por uma "camada fixa" imediatamente adjacente à superfície da argila e um
+composta por uma "camada fixa" imediatamente adjacente à superfície de argila e uma
 "Camada difusa" que diminui na densidade de carga exponencialmente com a distância
 da camada fixa. Diferente da camada fixa, a camada difusa não é
-fixo, mas livre para se mover sob um campo elétrico aplicado. Esta camada dupla
-fenômeno é simplesmente considerado como uma membrana seletiva de cátions. Aqueles
+fixa, mas livre para se mover sob um campo elétrico aplicado. Este fenômeno de camada dupla 
+é simplesmente considerada como uma membrana seletiva de cátions. Aqueles
 cátions capturados por minerais de argila são adicionados ao íon normal
 concentração e, assim, aumentar a densidade dos portadores de carga disponíveis. O resultado líquido
 é uma maior "condutividade de superfície" :cite:`ward1990`.

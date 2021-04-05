@@ -101,7 +101,7 @@ As medições no domínio da frequência são geralmente plotadas em termos de a
 
 **Gráfico Cole-Cole**
 
-O gráfico Cole-Cole também é uma escolha popular para visualizar medições no domínio da frequência. Aqui, a componente real da impedância complexa é traçado no eixo X e a componente imaginária negativa é traçado no eixo Y. A maior componente imaginária ocorre em :math:`\tilde f = 1/2 \pi \tau`. Esta é a frequência em que a polarização induzida é mais significativa para a amostra. O comportamento característico mostrado em :numref:`fig_props_Cole_Cole` é freqüentemente referido como um arco de impedância ou "Zarc ".
+O gráfico Cole-Cole também é uma escolha popular para visualizar medições no domínio da frequência. Aqui, a componente real da impedância complexa é traçado no eixo X e a componente imaginária negativa é traçado no eixo Y. A maior componente imaginária ocorre em :math:`\tilde f = 1/2 \pi \tau`. Esta é a frequência em que a polarização induzida é mais significativa para a amostra. O comportamento característico mostrado em :numref:`fig_props_Cole_Cole` é frequentemente referido como um arco de impedância ou "Zarc ".
 
 
 Medidas de resistividade e cargabilidade DC
@@ -213,7 +213,7 @@ e a cargabilidade aparente é dada em unidades de milissegundos [ms]. Ou a tens�
 .. math::
    \eta_{app} = \frac{1}{t_2 - t_1} \int_{t_1}^{t_2} \frac{V_s(t)}{V_0} dt
 
-Nesse caso, a caragabilidade aparente é dada em unidades de mili-Volts por Volt [mV/V], ou como uma quantidade sem unidade. Os valores de cargabilidade intrínseca dependem muito da definição, bem como do tempo de integração. Existem várias convenções comuns. Uma escolha bem estabelecida é a cargabilidade Newmont Standard, que integra entre 0,15 s e 1,1 s.
+Nesse caso, a cargabilidade aparente é dada em unidades de mili-Volts por Volt [mV/V], ou como uma quantidade sem unidade. Os valores de cargabilidade intrínseca dependem muito da definição, bem como do tempo de integração. Existem várias convenções comuns. Uma escolha bem estabelecida é a cargabilidade Newmont Standard, que integra entre 0,15 s e 1,1 s.
 
 
 

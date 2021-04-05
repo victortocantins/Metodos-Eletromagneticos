@@ -29,12 +29,12 @@ Cargabilidade
 
 As tabelas a seguir (de Telford et al, 1976) fornecem um guia muito geral para possíveis cargabilidades dos materiais. Uma razão pela qual as cargabilidades in-situ tendem a parecer mais baixas do que os valores de laboratório é que grandes volumes de materiais misturados estão envolvidos nas medições de campo.
 
-Esses exemplos mostram que uma ampla gama de variação pode ser esperada, o que implica que é difícil usar valores de caragabilidade intrínseca (em modelos obtidos por inversão de dados de IP) para determinar exatamente que tipo de rocha ou material está no solo. No entanto, este é um tópico de pesquisa em andamento.
+Esses exemplos mostram que uma ampla gama de variação pode ser esperada, o que implica que é difícil usar valores de cargabilidade intrínseca (em modelos obtidos por inversão de dados de IP) para determinar exatamente que tipo de rocha ou material está no solo. No entanto, este é um tópico de pesquisa em andamento.
 
 **Tabela 1:** Os valores abaixo envolvem tempos de carregamento e integração mais realistas de 3 segundos e 0,02-1,0 segundos, respectivamente.
 
 +---------------------------+---------------------------+
-|  **Tipo de Material**     | **caragabilidade (msec)** |
+|  **Tipo de Material**     | **cargabilidade  (msec)** |
 +===========================+===========================+
 | água subterrânea          | 0                         |
 +---------------------------+---------------------------+
@@ -55,10 +55,10 @@ Esses exemplos mostram que uma ampla gama de variação pode ser esperada, o que
 | quartzitos                | 5-12                      |
 +---------------------------+---------------------------+
 
-**Tabela 2:** Caragabilidade de minerais na concentração de 1% nas amostras (tempos de carregamento e integração conforme Tabela 1 acima)
+**Tabela 2:** Cargabilidade de minerais na concentração de 1% nas amostras (tempos de carregamento e integração conforme Tabela 1 acima)
 
 +-----------------------+--------------------------+
-|  **Material type**    | **Chargeability (msec)** |
+|  **Tipo de Material** | **Cargabilidade (msec)** |
 +=======================+==========================+
 | pirita                | 13.4                     |
 +-----------------------+--------------------------+
