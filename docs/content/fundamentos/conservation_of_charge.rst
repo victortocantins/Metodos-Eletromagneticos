@@ -27,9 +27,6 @@ onde:
 - :math:`V` é o volume
 
 
-DWO: Check applicability for total or free charges.
-
-
 Forma Diferencial:
 ------------------
 

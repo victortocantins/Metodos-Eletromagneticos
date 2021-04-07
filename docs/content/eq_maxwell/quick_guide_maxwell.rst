@@ -11,7 +11,7 @@ Visão Geral das Equações de Maxwell
 
 As equações de Maxwell são compostas de quatro :ref:`leis fundamentais<fundamentos_index>`; ie :ref:`Lei de Gauss para campos elétricos<gauss_electric>`, 
 :ref:`Lei de Gauss para campos magnéticos<gauss_magnetic>`, :ref:`Lei de Faraday<faraday>` e a :ref:`Lei de Ampère-Maxwell<ampere_maxwell>`. 
-As equações podem ser escritas de várias maneiras e caracterizam as relações físicas entre os campos :math:`(\mathbf{e},\mathbf{h})` e os fluxos :math:`(\mathbf{b}\mathbf{d})`. 
+As equações podem ser escritas de várias maneiras e caracterizam as relações físicas entre os campos :math:`(\mathbf{e},\mathbf{h})` e os fluxos :math:`(\mathbf{b},\mathbf{d})`. 
 Formulações específicas podem ser obtidas através do uso de :ref:`relações constitutivas <physical_properties_index>`. As equações de Maxwell podem ser escritas na frequência 
 ou no tempo e na forma diferencial ou integral:
 
