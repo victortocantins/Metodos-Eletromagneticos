@@ -1,64 +1,63 @@
 .. _harmonic_planewaves_homogeneous_index:
 
-Harmonic Planewaves in Homogeneous Media
-========================================
+Ondas Planas Harmônicas num Meio Homogêneo
+==========================================
 
-.. purpose::
+.. note::
 
-    We have already shown that in a homogeneous media, electromagnetic signals in the frequency domain behave according to the :ref:`Helmholtz<frequency_domain_equations>` equation. Here, we discuss the properties of harmonic planewave solutions in the frequency domain. Educational content is augmented by using the :ref:`interactive apps<apps_index>` provided to answer a set of fundamental questions. We also discuss the relationships between the electric and magnetic fields carried by planewaves. The content here parallels materials provided in many EM resources (see :cite:`ward1988,griffiths1999,stratton1941`).
+    Já mostramos que, que num meio homogêneo, os sinais eletromagnéticos no domínio da frequência se comportam de acordo com a equação :ref:`Helmholtz<frequency_domain_equations>`. Aqui, discutimos as propriedades das soluções de ondas planas harmônicas no domínio da frequência. O conteúdo educacional é aumentado usando :ref:`aplicativos interativos<apps_index>` fornecidos para responder a um conjunto de questões fundamentais. Também discutimos as relações entre os campos elétricos e magnéticos transportados por ondas planas. O conteúdo aqui é paralelo aos materiais fornecidos em muitos fontes de teoria eletromagnética (EM) (consulte :cite:`ward1988, griffiths1999, stratton1941`).
 
-**Introduction**
+**Introdução**
 
-We have previously shown that in homogeneous media, the propagation of electromagnetic signals in the frequency domain is governed by the :ref:`Helmholtz equation<frequency_domain_equations>`. One solution to this equation is a planewave, where electric and magnetic fields lie in a 2D plane and the wave propagates in a direction perpendicular to that plane. Physically, the planewave solutions offer good approximations to what is happening far away from electromagnetic sources. As a result, planewaves form a primary basis for understanding the fundamental behaviours of many electromagnetic phenomena. 
+Mostramos anteriormente que em meios homogêneos, a propagação de sinais eletromagnéticos no domínio da frequência é governada pela :ref:`equação de Helmholtz<frequency_domain_equations>`. Uma solução para essa equação é uma onda plana, onde os campos elétricos e magnéticos ficam em um plano 2D e a onda se propaga em uma direção perpendicular a esse plano. Fisicamente, as soluções de ondas planas oferecem boas aproximações para o que está acontecendo longe de fontes eletromagnéticas. Como resultado, as ondas planas formam uma base primária para a compreensão dos comportamentos fundamentais de muitos fenômenos eletromagnéticos.
 
 .. figure:: images/planewavedown.png
    :align: right
    :figwidth: 50%
    :name: planewavedown_index_freq_1
 
-   Geometry of an EM planewave propagating downwards.
+   Geometria de uma onda plana EM porpagando-se para baixo.
+   
+Aqui, exploramos a propagação de ondas planas no domínio da frequência (para sinais harmônicos). O conteúdo fornecido aqui se assemelha a materiais de muitos recursos EM (consulte [WH88] [Gri99] [Str41]). `Um aplicativo <http://notebooks.azure.com/library/em_apps>`_ é fornecido para permitir que você explore os conceitos de comprimento de onda, atenuação e outros aspectos dos campos EM propagados. Para complementar o aplicativo, :ref:`questões<harmonic_planewaves_homogeneous_questions>` são fornecidas para promover a aprendizagem interativa. O recurso é ampliado com derivações e equações que quantificam as informações aprendidas com o uso dos aplicativos.
 
-Here, we explore the propagation of planewaves in the frequency domain (for harmonic signals). The content provided here parallels materials from many EM resources (see [WH88][Gri99][Str41]). `An app <http://notebooks.azure.com/library/em_apps>`__ is provided that allow you to explore the concepts of wavelength, attenuation and other aspects of the propagating EM fields. To compliment the app, :ref:`questions<harmonic_planewaves_homogeneous_questions>` are provided to promote interactive learning. The resource is augmented with derivations and equations that quantify the information learned through using the apps. 
+**Links Rápidos**
 
-**Quick Links**
-
-    - :ref:`Deriving the planewave solution<harmonic_planewaves_homogeneous_derivation>`
+    - :ref:`Derivando a solução de ondas planas<harmonic_planewaves_homogeneous_derivation>`
     - `Link to the FDEM Planewave Wholespace App <http://notebooks.azure.com/library/em_apps>`__
     - :ref:`Supporting math for the app<harmonic_planewaves_homogeneous_derivation_app>`
     - :ref:`Question to be answered using the app<harmonic_planewaves_homogeneous_questions>`
 
-**Planewave Topics**
+**Tópicos em Ondas Planas**
 
-There are numerous properties which can be used to understand the propagation of planewaves in the frequency domain. Understanding these properties is very important, as they can be used to describe the behaviours of EM waves in more general cases. Here, we will discuss the following properties:
+Existem inúmeras propriedades que podem ser usadas para entender a propagação de ondas planas no domínio da frequência. Compreender essas propriedades é muito importante, pois elas podem ser usadas para descrever o comportamento das ondas EM em casos mais gerais. Aqui, discutiremos as seguintes propriedades:
 
-    - :ref:`Wavenumber<harmonic_planewaves_homogeneous_wavenumber>`: A fundamental constant which characterizes planewaves at a particular frequency.
-    - :ref:`Attenuation<harmonic_planewaves_homogeneous_skindepth>`: The amplitude loss of a planewave as it propagates.
-    - :ref:`Skin Depth<harmonic_planewaves_homogeneous_skindepth>`: The distance an EM wave travels before it experiences an amplitude loss of :math:`1/e`.
-    - :ref:`Wavelength<harmonic_planewaves_homogeneous_wavelength>`: The wavelength of a planewave.
-    - :ref:`Phase Velocity<harmonic_planewaves_homogeneous_phasevelocity>`: The velocity at which planewaves at a certain frequency travel.
-    - :ref:`Impedance<harmonic_planewaves_homogeneous_impedancephase>`: A medium property which characterizes the relationship between perpendicular components of the electric and magnetic fields supported by EM waves.
-    - :ref:`Apparent Resistivity<harmonic_planewaves_homogeneous_apparentresistivity>`: An approximation of a medium's electrical resistivity based on the relationship between the electric and magnetic fields.
+    - :ref:`Número de onda<harmonic_planewaves_homogeneous_wavenumber>`: Uma constante fundamental que caracteriza as ondas planas em uma determinada frequência.
+    - :ref:`Atenuação<harmonic_planewaves_homogeneous_skindepth>`: A amplitude perdida de uma onda plana  quando ela se propaga.
+    - :ref:`Skin Depth<harmonic_planewaves_homogeneous_skindepth>`: A distância de uma onda EM viaja antes de  experimentar uma perda de amplitude de :math:`1/e`.
+    - :ref:`Comprimento de onda<harmonic_planewaves_homogeneous_wavelength>`: O comprimento de onda de uma onda plana.
+    - :ref:`Velocidade de fase<harmonic_planewaves_homogeneous_phasevelocity>`: A velocidade em que as ondas planas em uma determinada frequência viaja.
+    - :ref:`Impedância<harmonic_planewaves_homogeneous_impedancephase>`: Uma propriedade média que caracteriza a relação entre as componentes perpendiculares dos campos elétricos e magnéticos suportados pelas ondas EM.
+    - :ref:`Resistividade aparente<harmonic_planewaves_homogeneous_apparentresistivity>`: Uma aproximação da resistividade elétrica de um meio com base na relação entre os campos elétrico e magnético.
 
 .. _harmonic_planewaves_homogeneous_index_app:
 
 .. geosciapp::
     While navigating through the subsequent materials on planewaves in homogeneous media, it is suggested that you open the `FDEM Planewave Wholespace App <http://notebooks.azure.com/library/em_apps/html/FDEM_Planewave_Wholespace.ipynb>`__ from the notebooks page. Don't forget to sign in.
-
-A fundamental understanding of planewave propagation in the frequency domain can be obtained by using the `FDEM Planewave Wholespace App <http://notebooks.azure.com/library/em_apps/html/FDEM_Planewave_Wholespace.ipynb>`__ (:numref:`FDEM_planewaves_wholespace_app`); which allows the user to simulate the electric and magnetic fields supported by a downward propagating planewave. The app allows the user to explore the effects of different parameters (e.g. conductivity, observer location, frequency) and answer a set of fundamental questions. For example, assume you are sending a harmonic EM planewave signal into the Earth and that the ground has a conductivity of 0.1 S/m.
-
-    - For a harmonic signal at a particular frequency (100 Hz for example), how deep does the signal penetrate the Earth before it loses 90% of its amplitude?
-    - By choosing a different frequency for the signal, can I change how deep the signal penetrates the Earth?
-
-A host of additional questions which can be answered using the app are found :ref:`here<harmonic_planewaves_homogeneous_questions>`.
+    
+Uma compreensão fundamental da propagação das ondas planas no domínio da frequência pode ser obtida usando o `FDEM Planewave Wholespace App <http://notebooks.azure.com/library/em_apps/html/FDEM_Planewave_Wholespace.ipynb>`__ (:numref:`FDEM_planewaves_wholespace_app`); que permite ao usuário simular os campos elétricos e magnéticos suportados por uma onda plana de propagando-se para baixo. O aplicativo permite que o usuário explore os efeitos de diferentes parâmetros (por exemplo, condutividade, localização do observador, frequência) e responda a um conjunto de questões fundamentais. Por exemplo, suponha que você esteja enviando um sinal de onda plana EM harmônico para a Terra e que o solo tenha uma condutividade de 0,1 S / m.
+    - Para um sinal harmônico em uma determinada frequência (100 Hz, por exemplo), qual a profundidade do sinal que penetra na Terra antes de perder 90% de sua amplitude?
+    - Ao escolher uma frequência diferente para o sinal, posso alterar a profundidade da penetração do sinal na Terra?
+    
+Uma série de perguntas adicionais que podem ser respondidas usando o aplicativo são encontradas :ref:`aqui<harmonic_planewaves_homogeneous_questions>`.    
 
 .. figure:: images/simulation_Ex.png
    :align: center
    :figwidth: 80%
    :name: FDEM_planewaves_wholespace_app
 
-   Screen shot of the FDEM planewaves wholespace app.
+   Screen shot do appr do FDEM planewaves wholespace app.
 
-**Contents**
+**Conteúdo**
 
 .. toctree::
     :maxdepth: 1

@@ -3,7 +3,7 @@
 Propriedades Físicas
 ====================
 
-.. Note::
+.. purpose::
     
     Para gerar um recurso que tem uma compilação de valores para físicos
     propriedades em função do tipo de rocha, composição mineral e saturação

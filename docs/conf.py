@@ -13,9 +13,9 @@
 import os
 import sys
 # sys.path.insert(0, os.path.abspath('.'))
-# from flask import request
-# sys.path.append(os.path.abspath('./_ext'))
-from sphinx_gallery.sorting import ExplicitOrder, FileNameSortKey
+#from flask import request
+sys.path.append(os.path.abspath("./_ext"))
+#from sphinx_gallery.sorting import ExplicitOrder, FileNameSortKey
 
 
 # -- Project information -----------------------------------------------------
@@ -42,6 +42,7 @@ extensions = [
     'sphinx.ext.todo',
     'sphinx.ext.intersphinx',
     'numpydoc',
+    'purpose',
     'sphinxcontrib.bibtex', 
 #    'sphinx_gallery.gen_gallery',
     'sphinx_automodapi.automodapi',

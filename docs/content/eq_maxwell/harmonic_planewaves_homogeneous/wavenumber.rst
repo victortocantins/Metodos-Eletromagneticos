@@ -1,58 +1,59 @@
 .. _harmonic_planewaves_homogeneous_wavenumber:
 
-Wavenumber
-==========
+Número de Onda
+==============
 
-For electromagnetic waves characterized by the Helmholtz equation, all of the corresponding wave properties can be derived from the wavenumber :math:`k`. The wavenumber at a particular frequency depends on the physical properties of the propagation medium and is given by:
+Para ondas eletromagnéticas caracterizadas pela equação de Helmholtz, todas as propriedades de onda correspondentes podem ser derivadas do número de onda :math:`k`. O número de onda em uma determinada frequência depende das propriedades físicas do meio de propagação e é dado por:
 
 .. math:: k = \sqrt{\mu \epsilon \omega^2 - i \mu \sigma \omega}
 
-The wavenumber has both real and imaginary components and may be decomposed as follows:
+O número de onda tem componentes real e imaginária e pode ser decomposto da seguinte forma:
 
 .. math:: k = \alpha - i \beta
 
-such that the :ref:`general solution<harmonic_planewaves_homogeneous_derivation>` for EM planewaves propagating in the vertical direction becomes:
+tal que :ref:`solução geral<harmonic_planewaves_homogeneous_derivation>` para a propagação de ondas planas EM na direção vertical torna-se:
 
 .. math::
 	\mathbf{E} = \mathbf{E}_0^- \, e^{\beta z}e^{i(\alpha z-\omega t)} + \mathbf{E}_0^+ \, e^{-\beta z}e^{-i(\alpha z+\omega t)}
 
-According to :cite:`stratton1941,ward1988`, :math:`\alpha` and :math:`\beta` are given by:
+De acordo com :cite:`stratton1941,ward1988`, :math:`\alpha` e :math:`\beta` are given by:
 
 .. math:: \alpha = \omega \left ( \frac{\mu \epsilon}{2} \left [ \left ( 1 + \frac{\sigma^2}{\epsilon^2 \omega^2} \right )^{1/2} + 1 \right ] \right )^{1/2} \geq 0
 
 .. math:: \beta = \omega \left ( \frac{\mu\epsilon}{2} \left [ \left ( 1 + \frac{\sigma^2}{\epsilon^2 \omega^2} \right)^{1/2} - 1 \right ] \right ) ^{1/2} \geq 0
 
-When deriving a :ref:`general solution<harmonic_planewaves_homogeneous_derivation>`, we stated that :math:`\alpha` (the real component of the wavenumber) determines the :ref:`wavelength<harmonic_planewaves_homogeneous_wavelength>` and :ref:`velocity<harmonic_planewaves_homogeneous_phasevelocity>` of the planewave. Whereas :math:`\beta` (the imaginary component of the wavenumber) determines the :ref:`attenuation<harmonic_planewaves_homogeneous_skindepth>`. The details of this can be learned visually through app as well as through the following material on planewave properties.
+Onde derivando uma :ref:`solução geral<harmonic_planewaves_homogeneous_derivation>`, estabelecemos que :math:`\alpha` (a componente real do número de onda) determina o  :ref:`comprimento de onda<harmonic_planewaves_homogeneous_wavelength>` e :ref:`velocidade<harmonic_planewaves_homogeneous_phasevelocity>` da onda plana. Enquanto :math:`\beta` (a componente imaginária  do número de onda) determina a :ref:`atenuação<harmonic_planewaves_homogeneous_skindepth>`. Os detalhes disso podem ser aprendidos visualmente por meio do aplicativo, bem como por meio do seguinte material sobre as propriedades de ondas plans.
 
-Approximations
---------------
+Aproximações
+------------
 
-Quasi-Static Approximation
+Aproximação Quase Estática
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-In the quasi-static regime (:math:`\epsilon\omega \ll \sigma`), the wavenumber simplifies to:
+No regime quase estático (:math:`\epsilon\omega \ll \sigma`), o número de onda simplifica para:
 
 .. math::
     k \approx \sqrt{- i \mu \sigma \omega}
 
-where it can be shown that:
+onde pode ser mostrado que:
 
 .. math::
     \alpha = \beta = \left ( \frac{\omega \mu \sigma}{2} \right ) ^{1/2}
 
-In this case, EM waves oscillate and decay as they propagate.
+Neste caso, ondas EM oscilam e decaem quando se propagam.
 
-Wave Regime Approximation
-^^^^^^^^^^^^^^^^^^^^^^^^^
+Aproximação de Regime de Onda
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-In the wave regime (:math:`\epsilon\omega \gg \sigma`), the wavenumber simplifies to:
+No regime de onda (:math:`\epsilon\omega \gg \sigma`), o número de onda simplifica para:
 
 .. math::
     k \approx \alpha = \sqrt{\mu \epsilon \omega^2} = \omega \sqrt{\mu \epsilon}
 
-and
+e
 
 .. math::
     \beta \approx \frac{\sigma}{2} \sqrt{\frac{\mu}{\epsilon}} \sim 0
-
-For a perfect wave equation, :math:`\beta = 0` and the waves do not decay in amplitude as they propagate. In geophysical problems (:ref:`ground-penetrating radar<gpr_index>` for example), signals still experience amplitude loss as they propagate through the Earth.
+    
+Para uma equação de onda perfeita, :math:`\beta = 0` e as ondas não diminuem em amplitude à medida que se propagam. Em problemas geofísicos (:ref:`radar de penetração no solo <gpr_index>` 
+por exemplo), os sinais ainda sofrem perda de amplitude à medida que se propagam pela Terra.

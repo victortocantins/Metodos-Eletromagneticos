@@ -1,37 +1,37 @@
 .. _harmonic_planewaves_homogeneous_impedancephase:
 
-Wave Impedance and Phase
-========================
+Impedância de Onda e Fase
+=========================
 
-Wave Impedance
---------------
+Impedância de Onda
+------------------
 
-Wave impedance defines the ratio between transverse components of the electric and magnetic fields supported by an EM planewave. For the downward propagating EM planewave shown in :numref:`planewavedown_impedance_1`, the impedance is given by:
+A impedância de onda define a relação entre os componentes transversais dos campos elétricos e magnéticos suportados por uma onda plana EM. Para a propagação descendente da ondas planas EM mostrada em :numref:`planewavedown_impedance_1`, a impedância é dada por:
 
 .. figure:: images/planewavedown.png
    :align: right
    :figwidth: 50%
    :name: planewavedown_impedance_1
 
-   Geometry of an EM planewave propagating downwards.
+   Geometria de uma onda plana EM propagando-se para baixo.
 
 .. math::
 	Z_{xy} = -\frac{E_x}{H_y} = \frac{\omega \mu}{k}
 
-where :math:`\mu` is the :ref:`magnetic permeability<magnetic_permeability_index>` and :math:`k` is the :ref:`complex wavenumber<harmonic_planewaves_homogeneous_wavenumber>`. From the previous equation, we see that the wave impedance depends on the frequency and physical properties of the medium. Thus in a homogeneous isotropic medium, a single wave impedance can be used to characterize EM waves propagating in any direction. However if the physical properties are :ref:`anisotropic<physical_properties_index>` (direction dependent), waves propagating in different directions are characterized by separate impedances.
+onde :math:`\mu` é a :ref:`permeabilidade magnética<magnetic_permeability_index>` e :math:`k` é o :ref:`número de onda complexo<harmonic_planewaves_homogeneous_wavenumber>`. Pela equação anterior, vemos que a impedância da onda depende da frequência e das propriedades físicas do meio. Assim, em um meio isotrópico homogêneo, uma impedância de onda única pode ser usada para caracterizar as ondas EM que se propagam em qualquer direção. No entanto, se as propriedades físicas são :ref:`anisotrópicas<physical_properties_index>` (dependente da direção), as ondas que se propagam em diferentes direções são caracterizadas por impedâncias separadas.
 
-Phase
------
+Fase
+----
 
-The wave impedance can be used to obtain the phase difference between the electric and magnetic fields supported by a planewave. The phase difference between the electric and magnetic fields shown in :numref:`planewavedown_impedance_1`:
+A impedância de onda pode ser usada para obter a diferença de fase entre os campos elétricos e magnéticos suportados por uma onda plana. A diferença de fase entre os campos elétrico e magnético mostrado em :numref:`planewavedown_impedance_1`:
 
 .. math::
     \phi_{Z_{xy}} = \textrm{tan}^{-1} \Bigg ( \frac{\textrm{Im}[Z_{xy}]}{\textrm{Re}[Z_{xy}]} \Bigg )
 
-where :math:`0 \leq \phi_{xy} \leq \pi/4`. According the above expression, the electric field lags the magnetic field.
+onde :math:`0 \leq \phi_{xy} \leq \pi/4`. De acordo com a expressão acima, o campo elétrico está atrasado em relação ao campo magnético.
 
-Approximations
---------------
+Aproximações
+------------
 
 
 .. figure:: images/EHquasi.gif
@@ -39,43 +39,44 @@ Approximations
    :figwidth: 50%
    :name: waves_homogeneous_freq_EHquasi
 
-   Electric and magnetic fields of an EM wave propagating in the x-direction (quasi-static regime).
+   Campos elétricos e magnéticos de uma onda EM propagando-se na direção :math:`x` (regime quase estático).
 
-Quasi-Static Approximation
+Aproximação Quase Estático
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-In the quasi-static regime (:math:`\epsilon \omega \ll \sigma`), the wavenumber becomes :math:`\sqrt{-i\omega\mu\sigma}` and the impedance simplifies to:
+No regime quase estático (:math:`\epsilon \omega \ll \sigma`), o número de onda torna-se :math:`\sqrt{-i\omega\mu\sigma}` e a impedância simplifica para:
 
 .. math::
     Z_{xy} = \frac{\omega \mu}{\sqrt{-i\omega\mu\sigma}}
     = \sqrt{\frac{i \omega \mu}{\sigma}}
 
-The phase of the impedance is given by:
+A fase da impedância é dado por:
 
 .. math::
     \phi_{Z_{xy}} = \textrm{tan}^{-1} \Bigg ( \frac{\textrm{Im}[Z_{xy}]}{\textrm{Re}[Z_{xy}]} \Bigg ) = \frac{\pi}{4}
 
-In this case, the electric field lags the magnetic field by :math:`\pi/4` radians.
+Neste caso, o campo elétrico atrasa o campo magnético em :math:`\pi/4` radianos.
 
 .. figure:: images/EHwave.gif
    :align: right
    :figwidth: 50%
    :name: waves_homogeneous_freq_EHwave
+   
+   Campos elétricos e magnéticos de uma onda EM propagando-se na direção :math:`x` (regime de onda).
 
-   Electric and magnetic fields of an EM wave propagating in the x-direction (wave regime).
+Aproximação de Regime de Onda
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Wave Regime Approximation
-^^^^^^^^^^^^^^^^^^^^^^^^^
-
-In the wave regime (:math:`\epsilon \omega \gg \sigma`), the wavenumber simplifies to :math:`\omega \sqrt{\mu\epsilon}` and the impedance simplifies to:
+No regime de onda (:math:`\epsilon\omega\gg\sigma`), o número de onda simplifica para :math:`\omega\sqrt{\mu\epsilon}` e a impedância simplifica para:
 
 .. math::
     Z_{xy} = \frac{\omega \mu}{\omega \sqrt{\mu\epsilon}}
     = \sqrt{\frac{\mu}{\epsilon}}
 
-where the phase is equal to:
+onde a fase é igual a:
 
 .. math::
     \phi_{Z_{xy}} = \textrm{tan}^{-1} \Bigg ( \frac{\textrm{Im}[Z_{xy}]}{\textrm{Re}[Z_{xy}]} \Bigg ) = 0
 
-In this case, the electric and magnetic fields are in phase with one another.
+Neste caso, os campos elétrico e magnético estão em fase um com o outro.
+

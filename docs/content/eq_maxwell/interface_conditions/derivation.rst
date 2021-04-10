@@ -138,7 +138,7 @@ A condição de interface para a componente normal da densidade de fluxo magnét
   b_{1}^\perp - b_{2}^\perp = 0
   :label: interface_b_n
 
-Desta forma, as componentes normais da densidade de fluxo elétrico são contínuas através das interfaces.
+Desta forma, as componentes normais da densidade de fluxos magnéticos são contínuas através das interfaces.
 
 Campo Magnético
 ^^^^^^^^^^^^^^^

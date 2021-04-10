@@ -1,13 +1,13 @@
 .. _harmonic_planewaves_homogeneous_apparentresistivity:
 
-Apparent Resistivity
-====================
+Resistividade Aparente
+======================
 
-The resistivity value obtained using simplified geometry and physics is known as the apparent resistivity. It is useful in providing a ball-park estimate of the Earth's electric properties. Various definitions for apparent resistivity will be provided when learning about :ref:`direct current resistivity<dcr_index>` and :ref:`magnetotelluric<mt_index>` methods.
+O valor de resistividade obtido usando geometria e física simplificadas é conhecido como resistividade aparente. É útil para fornecer uma estimativa das propriedades elétricas da Terra. Várias definições para resistividade aparente serão fornecidas ao aprender sobre os métodos :ref:`resistividade de corrente contínua<dcr_index>` e :ref:`magnetotelúrico <mt_index>`.
 
-Here, we present the definition for apparent resistivity which is most relevant to magnetotellurics. According to our quasi-static approximation for the impedance, where resistivity is the reciprocal of the conductivity:
+Aqui, apresentamos a definição de resistividade aparente que é mais relevante para o método magnetotelúrico. De acordo com nossa aproximação quase estática para a impedância, onde a resistividade é o recíproco da condutividade:
 
 .. math::
     \rho_{app} = \frac{1}{\sigma_{app}} = \frac{| Z_{xy}|^2}{\omega \mu}
-
-Therefore, if perpendicular components of the electric and magnetic fields are known within a homogeneous medium, it is possible to estimate the electrical resisitivity of that medium; assuming also that the Earth is approximately non-permeable (:math:`\mu = \mu_0`). For a half-space model, the Earth's true resistivity is equal to the apparent resistivity.
+    
+Portanto, se as componentes perpendiculares dos campos elétrico e magnético são conhecidos dentro de um meio homogêneo, é possível estimar a resistividade elétrica desse meio; assumindo também que a Terra é aproximadamente não permeável (:math:`\mu = \mu_0`). Para um modelo de semi-espaço, a resistividade verdadeira da Terra é igual à resistividade aparente.

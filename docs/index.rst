@@ -15,6 +15,7 @@ Métodos Eletromagnéticos
    :maxdepth: 2
    :caption: Conteúdo:
 
+   ./content/apps
    ./content/introducao/index
    ./content/propriedades_fisicas/index
    ./content/fundamentos/index
