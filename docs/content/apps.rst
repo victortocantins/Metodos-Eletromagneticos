@@ -28,6 +28,9 @@ Dentro do ambiente Notebook Jupyter, você pode usar :code:`shift + enter` para
 executar cada código da célula, ou do menu, escolha :code:`cell, run all`
 
 .. image:: images/run_all_cells.png
+    :alt: run_all_cells
+    :width: 80%
+    :align: center
 
 
 .. _binder:
@@ -50,6 +53,6 @@ Binder
 
 .. image:: images/binder-steps.png
     :alt: binder-steps
-    :width: 100%
+    :width: 80%
     :align: center
 
