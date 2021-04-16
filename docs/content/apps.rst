@@ -30,3 +30,24 @@ executar cada código da célula, ou do menu, escolha :code:`cell, run all`
     :alt: run_all_cells
     :width: 80%
     :align: center
+
+.. _binder:
+
+Binder
+^^^^^^
+    
+.. image:: https://mybinder.org/badge_logo.svg
+   :target: https://mybinder.org/v2/gh/victortocantins/em-notebooks/main?filepath=notebooks%2Findex.ipynb
+    
+    
+1. Inicie o binder clicando no emblema acima ou indo para: https://mybinder.org/v2/gh/victortocantins/em-notebooks/main?filepath=notebooks%2Findex.ipynb
+   Isto pode levar alguns minutos, então seja paciente...
+    
+2. Escolha o notebook de interesse do índice
+    
+3. :ref:`Run the Jupyter notebook<jupyter_notebooks>`
+    
+.. image:: images/binder-steps.png
+    :alt: binder-steps
+    :width: 80%
+    :align: center
