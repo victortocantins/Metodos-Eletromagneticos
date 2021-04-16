@@ -73,5 +73,5 @@ As relações constitutivas, junto com as equações de Maxewll, formam um conju
     :maxdepth: 1
 
     electrical_conductivity/index
-..    magnetic_permeability/index
+    magnetic_permeability/index
 ..    dielectric_permittivity/index

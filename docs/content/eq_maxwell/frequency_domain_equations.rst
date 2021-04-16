@@ -3,7 +3,7 @@
 Equações de Maxwell: Domínio da Frequência
 ==========================================
 
-.. note::
+.. purpose::
     Aqui, :ref:`Lei de Faraday<faraday>` e a equação :ref:`Ampere-Maxwell<ampere_maxwell>` são usadas para construir equações vetoriais de Helmholtz para :math:`\mathbf{E}` e 
     :math:`\mathbf{H}`, respectivamente. Isso é realizado assumindo que estamos em um meio homogêneo. Várias componentes das equações diferenciais resultantes em frequência são discutidas. 
     O entendimento físico das equações derivadas aqui pode ser estendido para aplicações mais complexas em todo o curso.
@@ -40,7 +40,7 @@ em que :math:`k = \sqrt{\mu \epsilon \omega^2 - i \mu \sigma \omega}` é conheci
 Equação de Helmholtz
 --------------------
 
-As Equações :eq:`hme9` e :eq:`hmh9` têm formas idênticas e são ambas caracterizadas pela **equação vetorial de Helmholtz **. Em teoria eletromagnética, a equação vetorial de Helmholtz é a equivalente no domínio da frequência da :ref:`equação de onda com perdas <time_domain_equations>`. As propriedades de :math:`\mathbf{E}` e :math:`\mathbf{H}` dependem do número de onda 
+As Equações :eq:`hme9` e :eq:`hmh9` têm formas idênticas e são ambas caracterizadas pela **equação vetorial de Helmholtz**. Em teoria eletromagnética, a equação vetorial de Helmholtz é a equivalente no domínio da frequência da :ref:`equação de onda com perdas <time_domain_equations>`. As propriedades de :math:`\mathbf{E}` e :math:`\mathbf{H}` dependem do número de onda 
 :math:`k`. Soluções para a equação de Helmholtz são frequentemente proporcionais a :math:`e^{\pm i k r}`, onde :math:`r` define alguma distância percorrida pelo sinal. Para essas soluções, 
 a componente real de :math:`k` define a perda de amplitude à medida que o sinal viaja. A componente imaginária de :math:`k` define o comportamento oscilatório do sinal. Isso é discutido com muito mais detalhes quando falamos sobre :ref:`ondas planas harmônicas em um meio homogêneo <harmonic_planewaves_homogeneous_index>`.
 

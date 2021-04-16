@@ -1,73 +1,44 @@
 .. _magnetic_permeability_factors:
 
-Impact of Mineralogy on Magnetic Properties
-===========================================
+Impacto de Mineralogia nas Propriedades Magnéticas
+==================================================
 
-Magnetism in rocks is primarily attributed to the presence of iron-bearing
-minerals. These minerals, and their relative importance in rock magnetism, are
-listed here. The magnetic susceptibilities of common rock types are discussed
-qualitatively.
+O magnetismo nas rochas é atribuído principalmente à presença de minerais contendo ferro. 
+Esses minerais e sua importância relativa no magnetismo das rochas são listados aqui. 
+As suscetibilidades magnéticas de tipos de rochas comuns são discutidas qualitativamente.
 
-Important Iron-Bearing Minerals
--------------------------------
+Minerais que Contêm Ferros
+--------------------------
 
-Magnetite, titano-magnetite and maghemite are ferrimagnetic minerals, and
-exhibit very strong induced magnetization; with magnetite being the most
-susceptible. Even in small abundances, these iron-oxide minerals frequently
-represent the dominant contribution towards a rock's magnetic susceptibility.
-Certain sulfide minerals, such as pyrrhotite and greigite, are also
-ferrimagnetic and capable of experiencing strong induced magnetization. Other
-iron-bearing minerals may be weakly paramagnetic. If sufficiently abundant
-however, they offer a secondary contribution towards the rock's magnetic
-susceptibility. Notable paramagnetic minerals include: lepidocrosite,
-dolomite, biotite, siderite, and fayalite. Anti-ferrimagnetic minerals, most
-notably hematite, exhibit extremely weak induced magnetization. As a result,
-their contribution is considered more or less negligible.
+Magnetita, titano-magnetita e maghemita são minerais ferrimagnéticos e exibem magnetização induzida muito forte; 
+sendo a magnetita a mais suscetível. Mesmo em pequenas quantidades, esses minerais de óxido de ferro frequentemente representam a 
+contribuição dominante para a suscetibilidade magnética de uma rocha. Certos minerais de sulfeto, como pirrotita e greigita, 
+também são ferrimagnéticos e capazes de sofrer forte magnetização induzida. Outros minerais contendo ferro podem ser fracamente paramagnéticos. 
+No entanto, se forem suficientemente abundantes, eles oferecem uma contribuição secundária para a suscetibilidade magnética da rocha. Os minerais paramagnéticos notáveis incluem: lepidocrosita, dolomita, biotita, siderita e fayalita. Minerais anti-ferrimagnéticos, principalmente hematita, exibem magnetização induzida extremamente fraca. Como resultado, sua contribuição é considerada mais ou menos desprezível.
 
-Magnetic Susceptibility of Various Rock Types
----------------------------------------------
 
-For reference, the typical range of intrinsic magnetic susceptibilities for
-various rock types can be found at the bottom of the page. The magnetic
-susceptibility of a rock ultimately depends on its mineralogy. Rocks
-containing higher abundances of magnetite, titano-magnetite and maghemite are
-more susceptible. Magnetite is frequently the dominant source of magnetic
-susceptibility in rocks. A rough estimate of magnetic susceptibility based on
-\% volume magnetite content represented by vertical red dashed lines.
+Susceptibilidade Magnética de Vários Tipos de Rochas
+----------------------------------------------------
 
-Igneous
-^^^^^^^
+Para referência, a faixa típica de susceptibilidades magnéticas intrínsecas para vários tipos de rocha pode ser encontrada na parte inferior da página. A suscetibilidade magnética de uma rocha, em última análise, depende de sua mineralogia. Rochas contendo maiores abundâncias de magnetita, titano-magnetita e maghemita são mais suscetíveis. A magnetita é frequentemente a fonte dominante de suscetibilidade magnética nas rochas. Uma estimativa aproximada da suscetibilidade magnética com base em \% do volume do conteúdo de magnetita representado por linhas tracejadas vermelhas verticais.
 
-The magnetic susceptibility of igneous rocks depends on the temperature,
-pressure, and composition of the parent magma. These parameters determine the
-abundance and type of iron-bearing minerals which are present once the magma
-has cooled. In general, felsic igneous rocks are characterized as having a
-lower iron content than mafic rocks. As a result, their magnetic
-susceptibilities are frequently smaller in comparison.
 
-Sedimentary
-^^^^^^^^^^^
+Ígneas
+^^^^^^
 
-The magnetic susceptibility of a sedimentary rock depends on the mineralogy of
-its parent material, as well as its weathering history. Clays, shales,
-carbonates and sandstones are not typically susceptible. In laterites,
-weathering has leached out more soluble minerals, leaving behind minerals
-which are rich in iron and aluminum. Laterities therefore have the potential
-to be somewhat susceptible. Banded-iron formations are a class of sedimentary
-rock, characterized by alternating layers of chert/shale and
-magnetite/hematite. Magnetite-rich banded-iron formations are one of the most
-susceptible rock types.
+A suscetibilidade magnética das rochas ígneas depende da temperatura, pressão e composição do magma original. Esses parâmetros determinam a abundância e o tipo de minerais contendo ferro que estão presentes depois que o magma esfria. Em geral, as rochas ígneas félsicas são caracterizadas por possuírem menor teor de ferro do que as rochas máficas. Como resultado, suas suscetibilidades magnéticas são frequentemente menores em comparação.
 
-Metamorphic
-^^^^^^^^^^^
 
-Metamorphism changes the mineral composition of pre-existing rock by supplying
-heat, pressure and chemically active fluids. Some rocks become enriched with
-magnetite and pyrrhotite during metamorphism, making them more susceptible.
-Skarns and mineralized veins frequently exhibit high magnetic
-susceptibilities. In general, unmineralized metamorphic rocks exhibit a broad
-range of magnetic susceptibilities. These rocks include: metasediments,
-amphibolites, granulites, eclogites and schists.
+Sedimentares
+^^^^^^^^^^^^
+
+A suscetibilidade magnética de uma rocha sedimentar depende da mineralogia de seu material original, bem como de sua história de intemperismo. Argilas, xistos, carbonatos e arenitos não são tipicamente suscetíveis. Em lateritas, o intemperismo lixiviou minerais mais solúveis, deixando para trás minerais que são ricos em ferro e alumínio. As lateridades, portanto, têm o potencial de ser um tanto suscetíveis. As formações ferríferas bandadas são uma classe de rochas sedimentares, caracterizadas por camadas alternadas de cherte/xisto e magnetita/hematita. As formações de ferro em faixas ricas em magnetita são um dos tipos de rocha mais suscetíveis.
+
+
+Metamorficas
+^^^^^^^^^^^^
+
+O metamorfismo altera a composição mineral da rocha pré-existente, fornecendo calor, pressão e fluidos quimicamente ativos. Algumas rochas enriquecem com magnetita e pirrotita durante o metamorfismo, tornando-as mais suscetíveis. Escarnitos e veios mineralizadas freqüentemente exibem alta suscetibilidade magnética. Em geral, as rochas metamórficas não mineralizadas exibem uma ampla gama de suscetibilidades magnéticas. Essas rochas incluem: metassedimentos, anfibolitos, granulitos, eclogitos e xistos.
 
 
 

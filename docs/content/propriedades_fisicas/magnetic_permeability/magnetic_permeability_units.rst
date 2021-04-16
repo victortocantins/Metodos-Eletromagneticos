@@ -1,33 +1,31 @@
 .. _magnetic_permeability_units:
 
-Units
-=====
+Unidades
+========
 
-Two sets of units may be used to represent the magnetic permeability: Teslas times meters per Ampere (T :math:`\! \cdot \!` m/A), and Henrys per meter (H/m):
+Dois conjuntos de unidades podem ser usados para representar a permeabilidade magnética: Teslas vezes metros por Ampère (T :math:`\! \cdot \!` m/A) e Henrys por metro (H/m):
 
 .. math::
     \frac{H}{m} = \frac{T \cdot m}{A}
     :label: Units_Hm
 
-The magnetic field intensity :math:`{\bf H}` is frequently given in Amperes per meter (A/m), whereas the magnetic flux density is given in Teslas (T).
-Therefore, the first choice in units is defined by the :ref:`magnetic constitutive relationship <magnetic_permeability_index>`.
-Henrys are used to represent a unit of magnetic inductance.
-Therefore, the magnetic permeability also characterizes the magnetic inductance per unit length of a material.
+A intensidade do campo magnético :math:`{\bf H}` é frequentemente dada em Amperes por metro (A/m), enquanto a densidade do fluxo magnético é dada em Teslas (T). Portanto, a primeira escolha em unidades é definida pela :ref:`relação constitutiva magnética <índice_permeabilidade magnética>`.
+Henrys é usado para representar uma unidade de indutância magnética. Portanto, a permeabilidade magnética também caracteriza a indutância magnética por unidade de comprimento de um material.
 
-More commonly, the magnetic properties of rocks are represented using the magnetic susceptibility :math:`\chi`.
-Magnetic susceptibility represents the proportion of total magnetic flux density attributed to induced magnetization.
-A physical description of the magnetic susceptibility is discussed in :ref:`magnetic_permeability_magnetism`.
-Magnetic susceptibility is related to the magnetic permeability by the following equation:
+Mais comumente, as propriedades magnéticas das rochas são representadas usando a susceptibilidade magnética :math:`\chi`.
+A susceptibilidade magnética representa a proporção da densidade de fluxo magnético total atribuída à magnetização induzida.
+Uma descrição física da susceptibilidade magnética é discutida em :ref:`magnetic_permeability_magnetism`. 
+suceptibilidade magnética está relacionada à permeabilidade magnética pela seguinte equação:
 
 .. math::
     \mu = \mu_0 \big [ 1 + \chi \, \big ]
     :label: susc_to_perm
 
-where :math:`\mu_0 = 4\pi \times 10^{-7}` H/m is the permeability of free-space.
-The correct SI units for magnetic susceptibility are (A/m)/(A/m).
-However, it is commonly expressed as a unitless quantity.
-Magnetic susceptibilities are occasionally given in CGS units.
-The conversion between SI and CGS units is given by:
+onde :math:`\mu_0 = 4\pi \times 10^{-7}` H/m é a permeabilidade do espaço livre.
+As unidades SI corretas para suscetibilidade magnética são (A/m)/(A/ m).
+No entanto, é comumente expresso como uma quantidade sem unidade.
+As susceptibilidades magnéticas são ocasionalmente dadas em unidades CGS.
+A conversão entre unidades SI e CGS é dada por:
 
 .. math::
     \chi^{(SI)} = 4\pi \chi^{(CGS)}

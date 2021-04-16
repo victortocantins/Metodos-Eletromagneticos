@@ -1,22 +1,20 @@
 .. _magnetic_permeability_values:
 
-Typical Values for Rocks
-========================
+Valores Típicos para Rochas
+===========================
 
-The range of magnetic susceptibilities (in SI) for rocks is illustrated in the
-figure below (Adapted from :cite:`ClarkEmerson1991`). Recall that a
-relationship between the magnetic permeability and magnetic susceptibility is
-defined in the :ref:`units section <magnetic_permeability_units>`.
+A gama de susceptibilidades magnéticas (em SI) para rochas é ilustrada no
+figura abaixo (adaptado de :cite:`ClarkEmerson1991`). Lembre-se de que um
+relação entre a permeabilidade magnética e a susceptibilidade magnética é
+definido na :ref:`seção unidades <unidades_permeabilidade magnética>`.
 
 
 .. figure:: ./images/figMagSuscTable.png
     :align: center
     :width: 70%
-
-    Intrinsic magnetic susceptibilities for common rock types. Adapted from
-    Clark and Emerson (:cite:`ClarkEmerson1991`). Black and white bars are used to provide the
-    range of magnetic susceptibility values for more distinct rock types.
-    Vertical dashed red lines are used to represent the approximate magnetic
-    susceptibility of rocks, based on \% volume magnetite.
-
-
+    
+    Suscetibilidades magnéticas intrínsecas para tipos de rochas comuns. Adaptado de
+    Clark e Emerson (:cite:`ClarkEmerson1991`). Barras pretas e brancas são usadas para fornecer
+    gama de valores de susceptibilidade magnética para tipos de rocha mais distintas.
+    Linhas vermelhas tracejadas verticais são usadas para representar o valor magnético da
+    suscetibilidade aproximada das rochas, com base em \% do volume da magnetita.

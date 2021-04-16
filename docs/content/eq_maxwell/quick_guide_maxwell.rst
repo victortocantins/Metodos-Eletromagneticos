@@ -3,7 +3,7 @@
 Visão Geral das Equações de Maxwell
 ===================================
 
-.. note::
+.. purpose::
 	
 	Tendo fornecido o conjunto de :ref:`leis fundamentais<fundamentos_index>` para eletromagnetismo, apresentamos as quatro representações mais comuns das equações de Maxwell. 
 	Esta página serve como um guia rápido. Para problemas específicos, pode ser benéfico começar a partir de formas menos comuns das equações de Maxwell. 

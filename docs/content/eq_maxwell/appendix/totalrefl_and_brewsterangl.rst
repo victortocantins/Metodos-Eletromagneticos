@@ -88,10 +88,10 @@ App
 
 :numref:`totalreflection_angle` e :numref:`WHfig3_3` são gerados pelo aplicativo Reflexão e Refração que permite ajustar a condutividade de cada meio e obter o ângulo de transmissão correspondente, a potência  de reflexão e os coeficientes de transmissão em função do ângulo de incidência. O link abaixo direcionará você para o aplicativo:
 
+   
 .. image:: http://mybinder.org/badge.svg
-   :target: https://mybinder.org/v2/gh/geoscixyz/em_apps/main?filepath=%2Fnotebooks%2FFDEM_Planewave_Reflection.ipynb
-   :align: center
-
+    :target: https://mybinder.org/v2/gh/victortocantins/em-notebooks/e2520ea4ed8ebca2aa501152878b465e45b29f11?filepath=notebooks%2Fem%2FFDEM_Planewave_Reflection.ipynb
+    :align: center
 
 .. figure:: images/reflection_app.png
    :align: center

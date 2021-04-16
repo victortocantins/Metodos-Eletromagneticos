@@ -3,7 +3,7 @@
 Equações de Maxwell: Domínio do Tempo
 =====================================
 
-.. note::
+.. purpose::
 
     Aqui, :ref:`Lei de Faraday <faraday>` e a equação :ref:`Ampere-Maxwell <ampere_maxwell>` são usadas para construir equações de onda com perdas para :math:`\mathbf{e}` e 
     :math:`\mathbf{h}`, respectivamente. Isso é realizado assumindo que estamos em um meio homogêneo. Derivações detalhadas podem ser encontradas no :ref:`Apêndice <maxwell1_apethoscope_wave_eq_derivation_time>`. Várias componentes das equações diferenciais de 2ª ordem resultantes no tempo são discutidos. 

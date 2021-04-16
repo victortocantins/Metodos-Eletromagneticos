@@ -3,7 +3,7 @@
 Ondas Planas Harmônicas num Meio Homogêneo
 ==========================================
 
-.. note::
+.. purpose::
 
     Já mostramos que, que num meio homogêneo, os sinais eletromagnéticos no domínio da frequência se comportam de acordo com a equação :ref:`Helmholtz<frequency_domain_equations>`. Aqui, discutimos as propriedades das soluções de ondas planas harmônicas no domínio da frequência. O conteúdo educacional é aumentado usando :ref:`aplicativos interativos<apps_index>` fornecidos para responder a um conjunto de questões fundamentais. Também discutimos as relações entre os campos elétricos e magnéticos transportados por ondas planas. O conteúdo aqui é paralelo aos materiais fornecidos em muitos fontes de teoria eletromagnética (EM) (consulte :cite:`ward1988, griffiths1999, stratton1941`).
 
@@ -42,10 +42,23 @@ Existem inúmeras propriedades que podem ser usadas para entender a propagação
 .. _harmonic_planewaves_homogeneous_index_app:
 
 .. geosciapp::
-    While navigating through the subsequent materials on planewaves in homogeneous media, it is suggested that you open the `FDEM Planewave Wholespace App <http://notebooks.azure.com/library/em_apps/html/FDEM_Planewave_Wholespace.ipynb>`__ from the notebooks page. Don't forget to sign in.
+    While navigating through the subsequent materials on planewaves in homogeneous media, 
+    it is suggested that you open the 
+    `Aplicativo de ondas planas num meio hogêneo<https://hub.gke2.mybinder.org/user/victortocantins-em-notebooks-8kwwgs43/notebooks/notebooks/em/FDEM_Planewave_Wholespace.ipynb>`_
     
-Uma compreensão fundamental da propagação das ondas planas no domínio da frequência pode ser obtida usando o `FDEM Planewave Wholespace App <http://notebooks.azure.com/library/em_apps/html/FDEM_Planewave_Wholespace.ipynb>`__ (:numref:`FDEM_planewaves_wholespace_app`); que permite ao usuário simular os campos elétricos e magnéticos suportados por uma onda plana de propagando-se para baixo. O aplicativo permite que o usuário explore os efeitos de diferentes parâmetros (por exemplo, condutividade, localização do observador, frequência) e responda a um conjunto de questões fundamentais. Por exemplo, suponha que você esteja enviando um sinal de onda plana EM harmônico para a Terra e que o solo tenha uma condutividade de 0,1 S / m.
-    - Para um sinal harmônico em uma determinada frequência (100 Hz, por exemplo), qual a profundidade do sinal que penetra na Terra antes de perder 90% de sua amplitude?
+    
+    
+    from the notebooks page. Don't forget to sign in.
+
+
+Uma compreensão fundamental da propagação das ondas planas no domínio da frequência pode ser obtida usando o 
+`FDEM Planewave Wholespace App<http://notebooks.azure.com/library/em_apps/html/FDEM_Planewave_Wholespace.ipynb>`_
+(:numref:`FDEM_planewaves_wholespace_app`); que permite ao usuário simular os campos elétricos e magnéticos suportados por uma 
+onda plana de propagando-se para baixo. O aplicativo permite que o usuário explore os efeitos de diferentes parâmetros 
+(por exemplo, condutividade, localização do observador, frequência) e responda a um conjunto de questões fundamentais. Por exemplo, 
+suponha que você esteja enviando um sinal de onda plana EM harmônica para a Terra e que o solo tenha uma condutividade de 0,1 S / m.
+    - Para um sinal harmônico em uma determinada frequência (100 Hz, por exemplo), qual a profundidade do sinal que penetra na Terra 
+    - antes de perder 90% de sua amplitude?
     - Ao escolher uma frequência diferente para o sinal, posso alterar a profundidade da penetração do sinal na Terra?
     
 Uma série de perguntas adicionais que podem ser respondidas usando o aplicativo são encontradas :ref:`aqui<harmonic_planewaves_homogeneous_questions>`.    

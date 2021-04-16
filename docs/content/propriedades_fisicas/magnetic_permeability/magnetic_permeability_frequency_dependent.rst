@@ -1,84 +1,56 @@
 .. _magnetic_permeability_frequency_dependent:
 
-Frequency-Dependent Magnetic Permeability
-=========================================
 
-In response to changes in an applied magnetic field, the induced magnetization
-within most rocks may be considered an instantaneous process. For some
-lateritic soils and rapidly cooled basalts however, a portion of the induced
-magnetization undergoes a relaxation process. This relaxation process is
-commonly referred to as: viscous remanent magnetization, magnetic viscosity, or
-magnetic after-effect. As a result of their magnetic viscosity, lateritic
-soils and rapidly cooled basalts are characterized by frequency-dependent
-magnetic permeabilities.
+Permeabilidade Magnética Dependente da Frequência
+=================================================
 
-Here, our description of the magnetic viscosity is limited to providing useful
-expressions for implementation in applied problems. Comprehensive studies of
-magnetic viscosity, and its relevance to geophysical surveying, may be found
-in (:cite:`Neel1949,Buselli1982,Lee1984,Dabasetal1992,DunlopOzdemir1997,Das2006,Pasion2007`).
+Em resposta às mudanças em um campo magnético aplicado, a magnetização induzida dentro da maioria das rochas pode ser considerada um processo instantâneo. Para alguns solos lateríticos e basaltos resfriados rapidamente, no entanto, uma parte da magnetização induzida sofre um processo de relaxação. Esse processo de relaxação é comumente referido como: magnetização remanente viscosa, viscosidade magnética ou efeito residual magnético. Como resultado de sua viscosidade magnética, solos lateríticos e basaltos resfriados rapidamente são caracterizados por permeabilidades magnéticas dependentes de frequência.
 
-Mathematical Description
-------------------------
+Aqui, nossa descrição da viscosidade magnética é limitada a fornecer expressões úteis para implementação em problemas aplicados. Estudos abrangentes de viscosidade magnética e sua relevância para levantamentos geofísicos podem ser encontrados em (:cite:`Neel1949, Buselli1982, Lee1984, Dabasetal1992, DunlopOzdemir1997, Das2006, Pasion2007`).
 
-For rocks which are characterized by frequency-dependent magnetic
-permeabilities, the :ref:`magnetic constitutive relationship
-<magnetic_permeability_index>` becomes:
+Descrição Mathematica
+---------------------
+
+Para rochas que são caracterizadas pelas permeabilidades dependentes da frequência, as 
+:ref:`relações constitutivas magnéticas<magnetic_permeability_index>` tronam-se:
 
 .. math::
     {\bf B}(\omega) = \mu (\omega) \, {\bf H}(\omega)
     :label: FreqConstRel
 
-where :math:`\mu (\omega)` may also be characterized a frequency-dependent magnetic susceptibility :math:`\chi (\omega)`:
+onde :math:`\mu (\omega)` pode ser caracterizada também por uma susceptibilidade magnética dependente da frequência :math:`\chi (\omega)`:
 
 .. math::
     \mu (\omega) = \mu_0 \big [ 1 + \chi (\omega) \, \big ]
     :label: SuscPermRel
 
-As presented in :ref:`magnetism in rocks <magnetic_permeability_magnetism>`, magnetic
-susceptibility represents the proportional degree of induced magnetization, in
-response to an applied magnetic field. For rocks exhibiting magnetic
-viscosity, the relaxation process may be understood by considering a Debye
-model:
+Conforme apresentado em :ref:`magnetismo em rochas<magnetic_permeability_magnetism>`, a susceptibilidade magnética representa o grau proporcional de magnetização induzida, em resposta a um campo magnético aplicado. Para rochas que exibem viscosidade magnética, o processo de relaxação pode ser compreendido considerando um modelo de Debye:
 
 .. math::
     \chi(\omega) = \chi_\infty + \frac{\chi_0 - \chi_\infty}{1 + i \omega \tau}
     :label: EqDebye
 
-
-where :math:`\chi_0` defines the zero-frequency limit, :math:`\chi_\infty`
-defines the infinite frequency limit, and :math:`\tau` defines the rate of
-magnetic relaxation. The instantaneous portion of induced magnetization is
-represented by :math:`\chi_\infty`, whereas :math:`\chi_0-\chi_\infty`
-represents the viscous contribution. In rocks, the magnetic viscosity is
-characterized by a distribution of time-relaxation constants. This can be
-represented by introducing a weighting function :math:`f(\tau)`, and
-integrating over all Debye models:
+onde :math:`\chi_0` define o limite de frequência zero, :math:`\chi_\infty` define o limite de frequência infinito e :math:`\tau` define a taxa de relaxamento magnético. A porção instantânea da magnetização induzida é representada por :math:`\chi_\infty`, enquanto :math:`\chi_0- \chi_\infty` representa a contribuição viscosa. Em rochas, a viscosidade magnética é caracterizada por uma distribuição de constantes de relaxamento de tempo. Isso pode ser representado pela introdução de uma função de ponderação :math:`f(\tau)`, e integrando todos os modelos de Debye:
 
 .. math::
     \chi (\omega) = \chi_\infty + \big ( \chi_0 - \chi_\infty \big ) \int_0^\infty \frac{f(\tau)}{1 + i\omega\tau} d\tau
     :label: EqWeigthFcn
 
-The magnetic viscosity of a rock ultimately depends on the distribution of
-time relaxation constants. From expression :eq:`EqWeigthFcn`, a multitude of
-models have been proposed. One of the simplest and most popular models is
-obtained by assuming a log-uniform distribution of time relaxation constants:
+A viscosidade magnética de uma rocha depende, em última análise, da distribuição das constantes de relaxação de tempo. A partir da expressão 
+:eq:`EqWeigthFcn`, vários modelos foram propostos. Um dos modelos mais simples e populares é obtido assumindo uma distribuição uniforme logarítmica das constantes de relaxamento de tempo:
 
 .. math::
     \chi(\omega) = \chi_0 - \frac{\chi_0 - \chi_\infty}{ln (\tau_2/\tau_1)} ln \Bigg ( \frac{1 + i\omega\tau_2}{1 + i\omega\tau_1} \Bigg )
     :label: EqLogUniform
-
-where :math:`\tau_1` and :math:`\tau_2` represent lower and upper bounds for
-distribution. A specific weighting function may also be used to obtain the
-Cole-Cole model:
+    
+onde :math:`\tau_1` e :math:`\tau_2` representam os limites inferior e superior para distribuição. 
+Uma função de ponderação específica também pode ser usada para obter o modelo Cole-Cole:
 
 .. math::
     \chi(\omega) = \chi_\infty + \frac{\chi_0 - \chi_\infty}{1 + (i \omega \tau_c)^\alpha}
     :label: EqColeCole
 
-where :math:`\tau_c` represents the center of a distribution of time-
-relaxation constants, and :math:`\alpha` represents the broadness of the
-distribution. The frequency-dependent magnetic susceptibilities for a Debye
-model, log-uniform distribution, and Cole-Cole model are compared in :numref:`figMuFrequency`.
+onde :math:`\tau_c` representa o centro de uma distribuição de constantes de relaxação de tempo, e :math:`\alpha` representa a amplitude da distribuição. As suscetibilidades magnéticas dependentes de frequência para um modelo de Debye, com distribuição uniforme logarítmica e modelo Cole-Cole são comparadas na :numref:`figMuFrequency`.
 
 
 .. figure:: ./images/figChiOmegaDistr.png
@@ -86,11 +58,11 @@ model, log-uniform distribution, and Cole-Cole model are compared in :numref:`fi
     :width: 65%
     :name: figMuFrequency
 
-    Comparison between frequency-dependent magnetic susceptibilities for a
-    Debye model (:math:`\chi_0=6\times 10^{-3}, \; \chi_\infty = 10^{-3}`), a
-    log-uniform distribution of time-relaxation constants
+    Comparação entre susceptibilidade magnéticas dependente da frequência para um 
+    modelo de Debye (:math:`\chi_0=6\times 10^{-3}, \; \chi_\infty = 10^{-3}`), uma
+    distribuição uniforme logarítmica de constantes de tempo de relaxação 
     (:math:`\chi_0=6\times 10^{-3}, \; \chi_\infty = 10^{-3}, \tau_1=10^{-5}
-    \; s, \tau_2 =10^{-1} \, s`), and a Cole-Cole model (:math:`\chi_0=6\times
+    \; s, \tau_2 =10^{-1} \, s`), e um modelo Cole-Cole (:math:`\chi_0=6\times
     10^{-3}, \; \chi_\infty = 10^{-3}, \tau_c = 10^{-3} \, s, \alpha = 0.5`).
 
 

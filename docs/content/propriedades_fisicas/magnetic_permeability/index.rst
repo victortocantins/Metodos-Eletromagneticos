@@ -1,101 +1,84 @@
 .. _magnetic_permeability_index:
 
-Magnetic Permeability
-=====================
+Permeabilidade Magnética
+========================
 
-Magnetic permeability is a diagnostic physical property which characterizes the degree of induced magnetism a material experiences under the influence of an external magnetic field. Magnetic permeability is relevant to a variety of geophysical surveys, including: :ref:`frequency-domain EM <airborne_fdem_index>` (FDEM), :ref:`time-domain EM <airborne_tdem_index>` (TDEM), :ref:`unexploded ordnance <uxo_index>` (UXO) and :ref:`ground penetrating radar <gpr_index>` (GPR).
+A permeabilidade magnética é uma propriedade física diagnóstica que caracteriza o grau de magnetismo induzido que um material experimenta sob a influência de um campo magnético externo. A permeabilidade magnética é relevante para uma variedade de levantamentos geofísicos, incluindo: 
+:ref:`EM no domínio da frequência<airborne_fdem_index>` (FDEM), :ref:`EM no domínio do tempo<airborne_tdem_index>` (TDEM), :ref:`levantamento de munição não detonadas<uxo_index>` (unexploded ordnance - UXO) e :ref:`radar de penetração no solo <gpr_index>`(GPR).
 
-Constitutive Relationship
--------------------------
+Relações Constitutivas
+----------------------
 
-When exposed to an applied magnetic field, the collection of individual
-magnetic dipole moments within most materials will attempt to reorient
-themselves along the direction of the field. This generates an induced
-magnetization, which contributes towards the net magnetic flux density inside
-the material. The degree in which the induced magnetization impacts the
-magnetic flux density depends on the material's magnetic permeability.
+Quando exposto a um campo magnético aplicado, a coleção de momentos dipolo magnéticos individuais dentro da maioria dos materiais tentarão 
+reorientar-se ao longo da direção do campo. Isso gera uma magnetização induzido, que contribui para a densidade de fluxo magnético efetiva dentro
+do material. O grau em que a magnetização induzida impacta a densidade do fluxo magnético depende da permeabilidade magnética do material.
 
 .. figure:: ./images/figBvsHillustr.png
     :name: BvsHillustr
     :figwidth: 45%
     :align: right
+    
+    Densidade de fluxo magnético em função da intensidade do campo magnético para 
+    várias classificações de tipos de rochas permeáveis: diamagnética, vácuo,
+    paramagnética e ferromagnética.
 
-    Magnetic flux density as a function of magnetic field intensity for
-    various classifications of permeable rock types: diamagnetic, vacuum,
-    paramagnetic, and ferromagnetic.
+A permeabilidade magnética :math:`\mu` define a razão entre a densidade de fluxo magnético 
+:math:`{\bf B}` dentro de um material, e a intensidade de um campo magnético aplicado 
+:math:`{\bf H}`; desde que os campos sejam suficientemente fracos:
 
-Magnetic permeability :math:`\mu` defines the ratio between the magnetic flux
-density :math:`{\bf B}` within a material, and the intensity of an applied
-magnetic field :math:`{\bf H}`; provided the fields are sufficiently weak:
 
 .. math::
     {\bf B}(\omega) = \mu \, {\bf H}(\omega)
     :label: Const_Rel_Flux
 
-In a vacuum, the relationship between :math:`{\bf B}` and :math:`{\bf H}` is
-given by the permeability of free-space :math:`\mu_0 = 4\pi \times 10^{-7}` H/m. An illustration representing the magnetic flux density
-as a function of the applied field strength for various rock classifications is shown here.
+No vácuo, a relação entre :math:`{\bf B}` e :math:`{\bf H}` é dada pela permeabilidade do espaço livre :math:`\mu_0 = 4 \pi \times 10^{- 7}` H / m.  Uma ilustração que representa a densidade de fluxo magnético em função da intensidade do campo aplicado para várias classificações de rocha é mostrada aqui.
 
-Relative Permeability
----------------------
+Permeabilidade Relativa
+-----------------------
 
-In addition to the magnetic permeability, magnetic properties are frequently
-represented using the relative permeability. Relative permeability
-characterizes whether the induced magnetization increases or reduces the
-density of magnetic flux within a material. The relative permeability
-:math:`\mu_r` is the ratio between the magnetic permeability of a material and
-the permeability of free-space:
+Além da permeabilidade magnética, as propriedades magnéticas são frequentemente representadas usando a permeabilidade relativa. A permeabilidade relativa caracteriza se a magnetização induzida aumenta ou reduz a densidade do fluxo magnético dentro de um material. A permeabilidade relativa 
+:math:`\mu_r` é a razão entre a permeabilidade magnética de um material e a permeabilidade do espaço livre:
 
 .. math::
     \mu_r = \frac{\mu}{\mu_0}
     :label: Rel_Permeability
+    
+Para a maioria das rochas, a magnetização induzida é paralela ao campo aplicado, aumentando assim a densidade do fluxo magnético. Essas rochas são caracterizadas por permeabilidades relativas :math:`\mu_r> 1`. Uma permeabilidade relativa de :math:`\mu_r = 1` é usada para caracterizar materiais que são incapazes de suportar magnetização induzida. Em casos raros, uma magnetização muito pequena pode ser induzida nas rochas, o que se opõe ao campo aplicado e reduz a densidade do fluxo magnético. Essas rochas são caracterizadas por permeabilidades magnéticas :math:`\mu_r < 1`.
 
-For the majority of rocks, induced magnetization is parallel to the applied
-field, thus adding to the density of magnetic flux. These rocks are
-characterized by relative permeabilities :math:`\mu_r > 1`. A relative
-permeability of :math:`\mu_r = 1` is used to characterize materials which are
-incapable of supporting induced magnetization. In rare cases, a very small
-magnetization can be induced in rocks, which opposes the applied field, and
-reduces the density of magnetic flux. These rocks are characterized by
-magnetic permeabilities :math:`\mu_r < 1`.
-The partial alignment of magnetic dipole moments under an applied field, and
-the resulting magnetic flux densities in all three cases, are represented in
-the figure below.
+O alinhamento parcial dos momentos dipolares magnéticos sob um campo aplicado e as densidades de fluxo magnético resultantes em todos os três casos são representados na figura abaixo.
 
 .. figure:: ./images/figMagFluxDensity.png
     :align: center
     :scale: 60%
+    
+    Alinhamento parcial de momentos dipolares magnéticos sob a influência de um campo magnético 
+    aplicado para vários casos. (a) Paramagnético (:math:`\mu_r > 1`). A magnetização é paralela 
+    ao campo aplicado e aumenta a densidade do fluxo magnético. (b) Não permeável (:math:`\mu_r = 1`). 
+    Não suporta magnetização induzida. (c) Diamagnético (:math:`\mu_r < 1`). A magnetização é fraca e 
+    se opõe ao campo magnético aplicado, reduzindo assim a densidade do fluxo magnético.
 
-    Partial alignment of magnetic dipole moments under the influence of an
-    applied magnetic field for various cases. (a) Paramagnetic (:math:`\mu_r > 1`).
-    Magnetization is parallel to the applied field and increases the density
-    of magnetic flux. (b) Non-permeable (:math:`\mu_r = 1`).
-    Does not support induced magnetization. (c) Diamagnetic (:math:`\mu_r < 1`).
-    Magnetization is weak and opposes the applied magnetic field, thus reducing
-    the density of magnetic flux.
+Importância para a Geofísica
+----------------------------
 
+**Sistemas EM de Fontes Indutivas**
 
-Importance to Geophysics
-------------------------
+Na maioria dos ambientes geológicos, as variações na permeabilidade magnética da Terra são insignificantes (:math:`\mu\sim \mu_0`) e os levantamentos  são sensíveis apenas a contrastes na condutividade elétrica da Terra. No entanto, há uma variedade de casos em que a permeabilidade magnética se torna uma propriedade física diagnóstica importante. Por exemplo, algumas rochas contendo minério (magnetita, pirrotita) têm permeabilidades magnéticas muito altas. Ao usar :ref:`levantamentos no domínio da frequência<airborne_fdem_index>` (FDEM) e :ref:`levantamentos no domínio do tempo<airborne_tdem_index>` de sistemas eletromagnéticos (TDEM), grandes permeabilidades magnéticas foram mostradas impactar a resposta medida. Assim, deixar de levar em consideração as propriedades magnéticas da Terra pode resultar em uma caracterização incorreta das estruturas subterrâneas em certos ambientes.
 
-**Inductive Source EM Systems**
+**Levantamentos de Munição Não Detonandos**
 
-In most geological environments, variations in the Earth's magnetic permeability are insignificant (:math:`\mu \sim \mu_0`) and surveys are only sensitive to contrasts in the Earth's electrical conductivity. However, there are a variety of cases where magnetic permeability becomes an important diagnostic physical property. For example, some ore-bearing rocks (magnetite, pyrrhotite) have very high magnetic permeabilities. When using :ref:`frequency-domain <airborne_fdem_index>` (FDEM) and :ref:`time-domain <airborne_tdem_index>` (TDEM) electromagnetic systems, large magnetic permeabilities have been shown to impact the measured response. Thus failure to account for the Earth's magnetic properties can result in a mis-characterization of subsurface structures in certain environments. 
+A permeabilidade magnética também é uma propriedade física de diagnóstico para :ref:`levantamentos de munições não detonadas<uxo_index>` (unexploded ordnance - UXO). Um engenho não detonado (UXO) é uma munição que foi armada, disparada e permanece não detonada devido a um mau funcionamento. Os invólucros UXO são extremamente permeáveis em comparação ao meio hospedeiro. Esse contraste pode ser explorado para localizar e remover UXOs de áreas contaminadas. As propriedades magnéticas do UXO também são responsáveis por produzir respostas TDEM distintas.
 
-**Unexploded Ordnance Surveys**
+**Radar de Penetração no Solo - Ground Penetrating Radar (GPR)**
 
-Magnetic permeability is also a diagnostic physical property for :ref:`unexploded ordnance <uxo_index>` (UXO) surveys. An unexploded ordnance (UXO) is a munition that was armed, fired and remains unexploded through malfunction. UXO casings are extremely permeable in comparison to the host medium. This contrast can be exploited in order to locate an remove UXOs from contaminated areas. The UXO's magnetic properties are also responsible for producing distinct TDEM responses. 
-
-**Ground Penetrating Radar**
-
-Magnetic permeability acts as a secondary diagnostic physical property in :ref:`ground penetrating radar <gpr_index>` (GPR). Magnetic permeability impacts the reflection, refraction and velocity of radiowave signals as they propagate through the Earth.
-
-**Magnetic Viscosity**
-
-:ref:`Magnetic viscosity <magnetic_permeability_frequency_dependent>` refers to a dispersive magnetic permeability which is exhibited by lateritic soils and rapidly cooled basalts. When using TDEM systems, these rocks produce a response which masks the responses from UXOs and deeply buried conductors. Currently, methods are being developed to model this phenomenon and its response from field collected data.
+A permeabilidade magnética atua como uma propriedade física de diagnóstico secundária no :ref:`radar de penetração no solo <gpr_index>` (GPR). A permeabilidade magnética afeta a reflexão, a refração e a velocidade dos sinais de ondas de rádio à medida que se propagam pela Terra.
 
 
-Contents
+**Viscosidade Magnética**
+
+:ref:`Viscosidade magnética<magnetic_permeability_frequency_dependent>` refere-se a uma permeabilidade magnética dispersiva que é exibida por solos lateríticos e basaltos rapidamente resfriados. Ao usar sistemas TDEM, essas rochas produzem uma resposta que mascara as respostas de UXOs e condutores profundamente enterrados. Atualmente, métodos estão sendo desenvolvidos para modelar este fenômeno e sua resposta a partir de dados coletados em campo.
+
+
+Conteúdo
 --------
 
  .. toctree::

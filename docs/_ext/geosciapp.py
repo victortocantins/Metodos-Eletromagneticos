@@ -53,7 +53,7 @@ class Geosciapp(BaseAdmonition):
         if isinstance(geosciapp, nodes.system_message):
             return [geosciapp]
 
-        geosciapp.insert(0, nodes.title(text=_('GeoSci App')))
+        geosciapp.insert(0, nodes.title(text=_('App')))
         set_source_info(self, geosciapp)
 
         env = self.state.document.settings.env

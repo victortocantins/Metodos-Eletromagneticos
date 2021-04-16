@@ -2,7 +2,7 @@
 
 Condições de Interfaces
 =======================
-.. note::
+.. purpose::
     Aqui, definimos as condições de interface para os campos :math:`\mathbf{e}` e :math:`\mathbf{h}`, bem como para os fluxos 
     :math:`\mathbf{j}`, :math:`\mathbf{d}` e :math:`\mathbf{b}` de acordo com Griffiths (:cite:`griffiths1999`). 
     Como mostraremos, as condições de interface em cada caso podem ser derivadas diretamente das equações de Maxwell em :ref:`na forma integral<integral_equations_time>`.

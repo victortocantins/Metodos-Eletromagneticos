@@ -43,6 +43,7 @@ extensions = [
     'sphinx.ext.intersphinx',
     'numpydoc',
     'purpose',
+    'geosciapp',
     'sphinxcontrib.bibtex', 
 #    'sphinx_gallery.gen_gallery',
     'sphinx_automodapi.automodapi',
