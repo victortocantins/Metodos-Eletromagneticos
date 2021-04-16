@@ -11,7 +11,7 @@ sphinx:
 # Optionally set the version of Python and requirements required to build your
 #formats:
    - epub
-   - pdf
+   
 # docs
 python:
   version: 3.7
