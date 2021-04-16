@@ -42,15 +42,13 @@ Existem inúmeras propriedades que podem ser usadas para entender a propagação
 
 .. geosciapp::
     Ao navegar pelas ondas planas em meios materiais e homogêneos, sugere-se que você abra o
-    `Aplicativo de ondas planas num meio hogêneo<https://hub.gke2.mybinder.org/user/victortocantins-em-notebooks-8kwwgs43/notebooks/notebooks/em/FDEM_Planewave_Wholespace.ipynb>`_
-    
-    
-Uma compreensão fundamental da propagação das ondas planas no domínio da frequência pode ser obtida usando o 
-(:numref:`FDEM_planewaves_wholespace_app`); que permite ao usuário simular os campos elétricos e magnéticos suportados por uma 
-onda plana de propagando-se para baixo. O aplicativo permite que o usuário explore os efeitos de diferentes parâmetros 
-(por exemplo, condutividade, localização do observador, frequência) e responda a um conjunto de questões fundamentais. Por exemplo, 
+    https://mybinder.org/v2/gh/victortocantins/em-notebooks/e2520ea4ed8ebca2aa501152878b465e45b29f11?filepath=notebooks%2Fem%2FFDEM_Planewave_Wholespace.ipynb 
+    Uma compreensão fundamental da propagação das ondas planas no domínio da frequência pode ser obtida usando o 
+    (:numref:`FDEM_planewaves_wholespace_app`); que permite ao usuário simular os campos elétricos e magnéticos suportados por uma 
+    onda plana de propagando-se para baixo. O aplicativo permite que o usuário explore os efeitos de diferentes parâmetros 
+    (por exemplo, condutividade, localização do observador, frequência) e responda a um conjunto de questões fundamentais.
 
-suponha que você esteja enviando um sinal de onda plana EM harmônica para a Terra e que o solo tenha uma condutividade de 0,1 S / m.
+Por exemplo, suponha que você esteja enviando um sinal de onda plana EM harmônica para a Terra e que o solo tenha uma condutividade de 0,1 S / m.
 
     - Para um sinal harmônico em uma determinada frequência (100 Hz, por exemplo), qual a profundidade do sinal que penetra na Terra 
     - antes de perder 90% de sua amplitude?
