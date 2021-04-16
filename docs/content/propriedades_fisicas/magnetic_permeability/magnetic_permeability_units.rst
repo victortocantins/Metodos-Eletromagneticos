@@ -9,7 +9,7 @@ Dois conjuntos de unidades podem ser usados para representar a permeabilidade ma
     \frac{H}{m} = \frac{T \cdot m}{A}
     :label: Units_Hm
 
-A intensidade do campo magnético :math:`{\bf H}` é frequentemente dada em Amperes por metro (A/m), enquanto a densidade do fluxo magnético é dada em Teslas (T). Portanto, a primeira escolha em unidades é definida pela :ref:`relação constitutiva magnética <índice_permeabilidade magnética>`.
+A intensidade do campo magnético :math:`{\bf H}` é frequentemente dada em Amperes por metro (A/m), enquanto a densidade do fluxo magnético é dada em Teslas (T). Portanto, a primeira escolha em unidades é definida pela :ref:`relação constitutiva magnética<índice_permeabilidade magnética>`.
 Henrys é usado para representar uma unidade de indutância magnética. Portanto, a permeabilidade magnética também caracteriza a indutância magnética por unidade de comprimento de um material.
 
 Mais comumente, as propriedades magnéticas das rochas são representadas usando a susceptibilidade magnética :math:`\chi`.

@@ -3,8 +3,10 @@
 Permeabilidade Magnética
 ========================
 
-A permeabilidade magnética é uma propriedade física diagnóstica que caracteriza o grau de magnetismo induzido que um material experimenta sob a influência de um campo magnético externo. A permeabilidade magnética é relevante para uma variedade de levantamentos geofísicos, incluindo: 
-:ref:`EM no domínio da frequência<airborne_fdem_index>` (FDEM), :ref:`EM no domínio do tempo<airborne_tdem_index>` (TDEM), :ref:`levantamento de munição não detonadas<uxo_index>` (unexploded ordnance - UXO) e :ref:`radar de penetração no solo <gpr_index>`(GPR).
+A permeabilidade magnética é uma propriedade física diagnóstica que caracteriza o grau de magnetismo induzido que um material 
+experimenta sob a influência de um campo magnético externo. A permeabilidade magnética é relevante para uma variedade de levantamentos 
+geofísicos, incluindo: :ref:`EM no domínio da frequência<airborne_fdem_index>` (FDEM), :ref:`EM no domínio do tempo<airborne_tdem_index>` (TDEM), 
+:ref:`levantamento de munição não detonadas<uxo_index>` (unexploded ordnance - UXO) e  :ref:`radar de penetração no solo<gpr_index>`(GPR).
 
 Relações Constitutivas
 ----------------------

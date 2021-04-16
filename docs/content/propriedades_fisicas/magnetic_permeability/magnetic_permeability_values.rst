@@ -6,7 +6,7 @@ Valores Típicos para Rochas
 A gama de susceptibilidades magnéticas (em SI) para rochas é ilustrada no
 figura abaixo (adaptado de :cite:`ClarkEmerson1991`). Lembre-se de que um
 relação entre a permeabilidade magnética e a susceptibilidade magnética é
-definido na :ref:`seção unidades <unidades_permeabilidade magnética>`.
+definido na :ref:`seção unidades<unidades_permeabilidade magnética>`.
 
 
 .. figure:: ./images/figMagSuscTable.png

@@ -11,9 +11,11 @@ Uma onda plana :ref:`atenua-se<harmonic_planewaves_homogeneous_skindepth>` quand
 de 10 Hz e a condutividade de :math:`\sigma` = 1 S/m para simulção inicial.
 
 	- Plote a amplitude versus profundidade e estime a profundidade de penetração (skin depth).
-	- Avalie o skin depth usando a :ref:`fórmula fornecida <harmonic_planewaves_homogeneous_skindepth_formula_quasi>`. 
-      Como esses valores se comparam?
+
+	- Avalie o skin depth usando a :ref:`fórmula fornecida<harmonic_planewaves_homogeneous_skindepth_formula_quasi>`. Como esses valores se comparam?
+
 	- Como o skin depth varia, se f = 100 Hz e :math:`\sigma` = 0,1 S/m forem usados?
+
 	- Como o skin depth varia, se f = 1 Hz e :math:`\sigma` = 1 S/m forem usados?
 
 Componentes Real and Imaginária
@@ -64,8 +66,7 @@ Resistividade Aparente
 
 Impedâncias podem ser convertidas para :ref:`resistividades aparentes<harmonic_planewaves_homogeneous_apparentresistivity>`.
 
-	- Use seus valores de impedância do exercício anterior e :ref:`esta equação<harmonic_planewaves_homogeneous_apparentresistivity>` para calcular a resistividade aparente. Como esse valor se compara à resistividade inserida no app? (*Observe que não importa em que profundidade as medições foram obtidas *).
-
-
+- Use seus valores de impedância do exercício anterior e :ref:`esta equação<harmonic_planewaves_homogeneous_apparentresistivity>` 
+  para calcular a resistividade aparente. Como esse valor se compara à resistividade inserida no app? (*Observe que não importa em que profundidade as medições foram obtidas*).
 
 

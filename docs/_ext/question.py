@@ -53,7 +53,7 @@ class Question(BaseAdmonition):
         if isinstance(question, nodes.system_message):
             return [question]
 
-        question.insert(0, nodes.title(text=_('Question')))
+        question.insert(0, nodes.title(text=_('Pergunta')))
         set_source_info(self, question)
 
         env = self.state.document.settings.env

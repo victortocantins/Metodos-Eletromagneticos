@@ -43,7 +43,7 @@ A tabela abaixo mostra os comprimentos de onda das ondas EM viajando em determin
 +----------------------+-------------------+-------------+------------------+---------------------+----------------------+----------------------+----------------------+
 
 Aproximações
---------------
+------------
 
 Aproximação Quase Estática
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -56,7 +56,7 @@ No regime quase estático (:math:`\epsilon\omega \ll \sigma`), o comprimento de 
 
 
 Aproximação de Regime de Onda
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 No regime de onda ( :math:`\epsilon \omega \gg \sigma` ), o comprimento de onda simplifica para^:
 

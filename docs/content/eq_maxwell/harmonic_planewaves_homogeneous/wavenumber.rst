@@ -43,7 +43,7 @@ onde pode ser mostrado que:
 Neste caso, ondas EM oscilam e decaem quando se propagam.
 
 Aproximação de Regime de Onda
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 No regime de onda (:math:`\epsilon\omega \gg \sigma`), o número de onda simplifica para:
 

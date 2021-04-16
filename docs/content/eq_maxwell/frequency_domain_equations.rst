@@ -58,7 +58,13 @@ e o número de onda é aproximadamente igual a:
 .. math::
 	k \approx \sqrt{-i\omega\mu\sigma}
 
-O número de onda ainda tem componentes real e imaginária. Como resultado, o sinal EM experimenta atenuação e oscilação. O número de onda é controlado pelo produto de :math:`\mu\sigma`. Lembre-se de :ref:`propriedades físicas<physical_properties_index>` entretanto, que :math:`\mu\approx\mu_0` para a maioria dos materiais e que :math:`\sigma` varia em muitas ordens de magnitude. Como resultado, as propriedades de :math:`\mathbf{E}` e :math:`\mathbf{H}` são controladas principalmente pela condutividade. A relação entre :math:`\sigma` e sinais EM é muito importante para métodos eletromagnéticos no domínio de frequência (:ref:`FDEM <airborne_fdem_index> `).
+
+O número de onda ainda tem componentes real e imaginária. Como resultado, o sinal EM experimenta atenuação e oscilação. 
+O número de onda é controlado pelo produto de :math:`\mu\sigma`. 
+Lembre-se de :ref:`propriedades físicas<physical_properties_index>` entretanto, que :math:`\mu\approx\mu_0` para a maioria dos materiais e 
+que :math:`\sigma` varia em muitas ordens de magnitude. Como resultado, as propriedades de :math:`\mathbf{E}` e :math:`\mathbf{H}` 
+são controladas principalmente pela condutividade. A relação entre :math:`\sigma` e sinais EM é muito 
+importante para métodos eletromagnéticos no domínio de frequência (:ref:`FDEM <airborne_fdem_index>`).
 
 
 Regime de Onda

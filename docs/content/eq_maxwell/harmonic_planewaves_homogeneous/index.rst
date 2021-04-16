@@ -18,14 +18,13 @@ Mostramos anteriormente que em meios homogêneos, a propagação de sinais eletr
 
    Geometria de uma onda plana EM porpagando-se para baixo.
    
-Aqui, exploramos a propagação de ondas planas no domínio da frequência (para sinais harmônicos). O conteúdo fornecido aqui se assemelha a materiais de muitos recursos EM (consulte [WH88] [Gri99] [Str41]). `Um aplicativo <http://notebooks.azure.com/library/em_apps>`_ é fornecido para permitir que você explore os conceitos de comprimento de onda, atenuação e outros aspectos dos campos EM propagados. Para complementar o aplicativo, :ref:`questões<harmonic_planewaves_homogeneous_questions>` são fornecidas para promover a aprendizagem interativa. O recurso é ampliado com derivações e equações que quantificam as informações aprendidas com o uso dos aplicativos.
+Aqui, exploramos a propagação de ondas planas no domínio da frequência (para sinais harmônicos). O conteúdo fornecido aqui se assemelha a materiais de muitos recursos EM (consulte [WH88] [Gri99] [Str41]). Um aplicativo é fornecido para permitir que você explore os conceitos de comprimento de onda, atenuação e outros aspectos dos campos EM propagados. Para complementar o aplicativo, :ref:`questões<harmonic_planewaves_homogeneous_questions>` são fornecidas para promover a aprendizagem interativa. O recurso é ampliado com derivações e equações que quantificam as informações aprendidas com o uso dos aplicativos.
 
 **Links Rápidos**
 
     - :ref:`Derivando a solução de ondas planas<harmonic_planewaves_homogeneous_derivation>`
-    - `Link to the FDEM Planewave Wholespace App <http://notebooks.azure.com/library/em_apps>`__
-    - :ref:`Supporting math for the app<harmonic_planewaves_homogeneous_derivation_app>`
-    - :ref:`Question to be answered using the app<harmonic_planewaves_homogeneous_questions>`
+    - :ref:`Suporte Matemático<harmonic_planewaves_homogeneous_derivation_app>`
+    - :ref:`Questões para ser respondidas usando o app<harmonic_planewaves_homogeneous_questions>`
 
 **Tópicos em Ondas Planas**
 
@@ -42,21 +41,17 @@ Existem inúmeras propriedades que podem ser usadas para entender a propagação
 .. _harmonic_planewaves_homogeneous_index_app:
 
 .. geosciapp::
-    While navigating through the subsequent materials on planewaves in homogeneous media, 
-    it is suggested that you open the 
+    Ao navegar pelas ondas planas em meios materiais e homogêneos, sugere-se que você abra o
     `Aplicativo de ondas planas num meio hogêneo<https://hub.gke2.mybinder.org/user/victortocantins-em-notebooks-8kwwgs43/notebooks/notebooks/em/FDEM_Planewave_Wholespace.ipynb>`_
     
     
-    
-    from the notebooks page. Don't forget to sign in.
-
-
 Uma compreensão fundamental da propagação das ondas planas no domínio da frequência pode ser obtida usando o 
-`FDEM Planewave Wholespace App<http://notebooks.azure.com/library/em_apps/html/FDEM_Planewave_Wholespace.ipynb>`_
 (:numref:`FDEM_planewaves_wholespace_app`); que permite ao usuário simular os campos elétricos e magnéticos suportados por uma 
 onda plana de propagando-se para baixo. O aplicativo permite que o usuário explore os efeitos de diferentes parâmetros 
 (por exemplo, condutividade, localização do observador, frequência) e responda a um conjunto de questões fundamentais. Por exemplo, 
+
 suponha que você esteja enviando um sinal de onda plana EM harmônica para a Terra e que o solo tenha uma condutividade de 0,1 S / m.
+
     - Para um sinal harmônico em uma determinada frequência (100 Hz, por exemplo), qual a profundidade do sinal que penetra na Terra 
     - antes de perder 90% de sua amplitude?
     - Ao escolher uma frequência diferente para o sinal, posso alterar a profundidade da penetração do sinal na Terra?

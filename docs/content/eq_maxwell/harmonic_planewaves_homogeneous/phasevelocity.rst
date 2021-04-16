@@ -46,7 +46,7 @@ No regime quase estático (:math:`\epsilon\omega \ll \sigma`), a velocidade de f
 Assim, a velocidade de fase é mais rápida para ondas que oscilam em frequências mais altas. As ondas EM também se movem mais lentamente em meios que são condutores e altamente permeáveis.
 
 Aproximação de Regime de Onda
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 No regime de onda ( :math:`\epsilon \omega \gg \sigma` ), a velocidade de fase simplifica para:
 

@@ -65,7 +65,7 @@ Neste caso, o campo elétrico atrasa o campo magnético em :math:`\pi/4` radiano
    Campos elétricos e magnéticos de uma onda EM propagando-se na direção :math:`x` (regime de onda).
 
 Aproximação de Regime de Onda
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 No regime de onda (:math:`\epsilon\omega\gg\sigma`), o número de onda simplifica para :math:`\omega\sqrt{\mu\epsilon}` e a impedância simplifica para:
 

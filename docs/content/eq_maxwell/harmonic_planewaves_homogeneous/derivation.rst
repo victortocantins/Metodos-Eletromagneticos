@@ -3,7 +3,7 @@
 Derivação
 =========
 
-Solução Gerla para uma Onda Plana
+Solução Geral para uma Onda Plana
 ---------------------------------
 
 .. figure:: images/planewavedown.png
@@ -70,7 +70,7 @@ Usando a mesma abordagem na equação de Helmholtz para :math:`\mathbf{H}`, o ca
 
 .. _harmonic_planewaves_homogeneous_derivation_app:
 
-Derivação de Suporte para o Aplicativo
+Derivação Matemática para o Aplicativo
 --------------------------------------
 
 .. figure:: images/planewavedown.png
