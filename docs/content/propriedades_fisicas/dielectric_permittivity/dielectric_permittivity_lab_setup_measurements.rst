@@ -1,39 +1,32 @@
 .. _dielectric_permittivity_lab_setup_measurements:
 
-Lab Setup and Measurements
-==========================
+Laboratório e Medidas
+=====================
 
-There are a host of methods for measuring the dielectric permittivity of a material.
-Here, we will describe two basic experiments.
-These experiments assume that 1) the sample is non-magnetic (i.e. :math:`\mu = \mu_0`) and 2) the conductivity of the sample is sufficiently small (:math:`\sigma < 0.01`).
+Existem vários métodos para medir a permissividade dielétrica de um material.
+Aqui, descreveremos dois experimentos básicos.
+Esses experimentos assumem que 1) a amostra é não magnética (ou seja :math:`\mu = \mu_0`) e 2) a condutividade da amostra é suficientemente pequena (:math:`\sigma < 0.01`).
 
-Transmission Time Measurements
-------------------------------
+Medidas de Tempo de Transmissão
+-------------------------------
 
-The speed at which high-frequency electromagnetic (EM) waves move through a material depends on the material's dielectric permittivity.
-Assuming the material is non-magnetic, this relationship is given by:
+A velocidade na qual as ondas eletromagnéticas (EM) de alta frequência se movem através de um material depende da permissividade dielétrica do material. Supondo que o material seja não magnético, essa relação é dada por:
 
 .. math::
     v = \frac{c}{\sqrt{\varepsilon_r}}
 
+onde :math:`\varepsilon_r` é a permissividade relativa e :math:`c = 2.998 \times 10^8` m/s é a constante da velocidade da luz.
+No espaço livre, :math:`\varepsilon_r = 1` e as ondas EM viajam à velocidade da luz.
+No entanto, dentro de um material dielétrico, as ondas EM se propagam mais lentamente de acordo com a relação acima.
 
-where :math:`\varepsilon_r` is the relative permittivity and :math:`c = 2.998 \times 10^8` m/s is the speed light constant.
-In free-space, :math:`\varepsilon_r = 1` and EM waves travel at the speed of light.
-However, within a dielectric material, EM waves propagate more slowly according to the above relationship.
-
-When performing physical property measurements, a source sends EM waves towards a sample.
-A portion of these waves transmit through the sample and reach a sensor on the other side.
-For samples that have high dielectric permittivities, it will take much longer for the signal to arrive at the sensor.
-This is because the transmitted waves slow down as they propagates through the sample.
-An equation for the total travel time (:math:`\Delta t`) for transmitted EM waves as the go from the source to the receiver is given by:
+Quando as medições de propriedades físicas, uma fonte envia ondas EM para uma amostra. Uma parte dessas ondas é transmitida através da amostra e atinge um sensor do outro lado. Para amostras com altas permissividades dielétricas, demorará muito mais para o sinal chegar ao sensor. Isso ocorre porque as ondas transmitidas diminuem à medida que se propagam pela amostra. Uma equação para o tempo total de viagem (:math:`\Delta t`) para ondas EM transmitidas à medida que vão da fonte para o receptor é dada por:
 
 .. math::
     \Delta t = \frac{L - \Delta x}{c} + \frac{\Delta x}{v}
-
-
-where :math:`L` is the distance from the source to the receiver, :math:`\Delta x` is the length of the sample, :math:`c` is the speed of light and :math:`v` is the velocity of the waves as they propagate through the material.
-Using the signal measured by the receiver, we can determine the total travel time for the transmitted EM waves.
-By combining the previous two equations and solving for the relative permittivity:
+    
+onde :math:`L` é a distância da fonte ao receptor, :math:`\Delta x` é o comprimento da amostra, :math:`c` é a velocidade da luz e :math:`v` é a velocidade das ondas à medida que se propagam pelo material.
+Usando o sinal medido pelo receptor, podemos determinar o tempo total de viagem para as ondas EM transmitidas.
+Combinando as duas equações anteriores e resolvendo a permissividade relativa:
 
 .. math::
     \varepsilon_r = \Bigg ( 1 + \frac{c\Delta t - L}{\Delta x} \Bigg )^2
@@ -44,36 +37,22 @@ By combining the previous two equations and solving for the relative permittivit
     :scale: 40%
 
 
-Reflection Coefficient Measurements
------------------------------------
+Medidas do Coeficiente Reflexão
+-------------------------------
 
-When EM waves meet an interface, some of their energy is reflected and some of their energy is transmitted.
-For high-frequency EM waves, the proportion of energy which is reflected depends on the dielectric properties of the materials comprising the interface.
-This relationship is generally characterized by a reflection coefficient.
-The reflection coefficient :math:`R` defines the ratio between the amplitude of the reflected wave and the amplitude of the incoming wave:
+Quando as ondas EM encontram uma interface, parte de sua energia é refletida e parte de sua energia é transmitida. Para ondas EM de alta frequência, a proporção de energia que é refletida depende das propriedades dielétricas dos materiais que compõem a interface. Esta relação é geralmente caracterizada por um coeficiente de reflexão. O coeficiente de reflexão
+:math:`R` define a razão entre a amplitude da onda refletida e a amplitude da onda de entrada ou incidente:
 
 .. math::
     R = \frac{A_{ref}}{A_{inc}}
 
-
-Below is a diagram for a simplified experiment.
-In this experiment, a source generates EM waves which are reflected due to a difference in dielectric permittivity.
-The reflected waves are measured by a sensor.
-Assuming the incoming waves have a zero incidence angle relative to the interface, the reflection coefficient is given by:
+Abaixo está um diagrama para um experimento simplificado. Neste experimento, uma fonte gera ondas EM que são refletidas devido a uma diferença na permissividade dielétrica. As ondas refletidas são medidas por um sensor. Assumindo que as ondas de entrada têm um ângulo de incidência zero em relação à interface, o coeficiente de reflexão é dado por:
 
 .. math::
     R = \frac{1 - \sqrt{\varepsilon_r}}{1 + \sqrt{\varepsilon_r}}
 
-
-where :math:`\varepsilon_r` is the relative permittivity of the sample.
-From the source, it is trivial to determine the amplitude of incident EM waves at the interface.
-Using the sensor, we may also determine the amplitude of reflected EM waves at the interface.
-If both amplitudes are known, the first equation may be used to determine the reflection coefficient.
-Once obtained, the second equation may be used to solve for the relative permittivity of the sample.
-
+onde :math:`\varepsilon_r` é a permissividade relativa da amostra. Da fonte, é trivial determinar a amplitude das ondas EM incidentes na interface. Usando o sensor, também podemos determinar a amplitude das ondas EM refletidas na interface. Se ambas as amplitudes são conhecidas, a primeira equação pode ser usada para determinar o coeficiente de reflexão. Uma vez obtida, a segunda equação pode ser usada para resolver a permissividade relativa da amostra.
 
 .. figure:: ./images/permittivity_reflection_measurements.png
     :align: center
     :scale: 40%
-
-

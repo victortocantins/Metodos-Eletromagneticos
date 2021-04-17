@@ -10,11 +10,11 @@ FT Apps
 
 
 .. image:: https://mybinder.org/badge_logo.svg
-    :target: https://mybinder.org/v2/gh/victortocantins/em-notebooks/main?filepath=notebooks%2Findex.ipynb
+   :target: https://mybinder.org/v2/gh/victortocantins/em-notebooks/main?filepath=notebooks%2Findex.ipynb
 
-    - :ref:`Binder <binder>` (free, no login required)
+   - :ref:`Binder<binder>` (free, no login required)
 
-    Como alternativa, eles podem ser baixados do GitHub e executados localmente.
+Como alternativa, eles podem ser baixados do GitHub e executados localmente.
     
     
     

@@ -1,23 +1,23 @@
 .. _dielectric_permittivity_units:
 
-Units
-=====
+Unidades
+========
 
-The units for dielectric properties and associated quantities are summarized in the table below. The units for the dielectric permittivity reflect the fact that it relates a field (:math:`\vec E`) to a flux (:math:`\vec D`). On the other hand, the relative permittivity is unitless, as is the dielectric susceptibililty.
+As unidades para propriedades dielétricas e quantidades associadas estão resumidas na tabela abaixo. As unidades para a permissividade dielétrica refletem o fato de que ela relaciona um campo (:math:`\mathbf E`) a um fluxo (:math:`mathbf D`). Por outro lado, a permissividade relativa é sem unidade, assim como a suscetibilidade dielétrica.
 
-+---------------------------+-----------------------------------+------------------+
-| **Property**              | **Symbol**                        | **Units**        |
-+===========================+===================================+==================+
-| Electric Field            | :math:`\vec E`                    | N/C or V/m       |
-+---------------------------+-----------------------------------+------------------+
-| Displacement Current      | :math:`\vec D`                    | A/m :math:`\!^2` |
-+---------------------------+-----------------------------------+------------------+
-| Electric Polarization     | :math:`\vec P`                    | A/m :math:`\!^2` |
-+---------------------------+-----------------------------------+------------------+
-| Dielectric Permittivity   | :math:`\varepsilon`               | F/m              |
-+---------------------------+-----------------------------------+------------------+
-| Dielectric Susceptibility | :math:`\chi_e`                    | *Unitless*       |
-+---------------------------+-----------------------------------+------------------+
-| Relative Permittivity     | :math:`\varepsilon_r`             | *Unitless*       |
-+---------------------------+-----------------------------------+------------------+
++-----------------------------+-----------------------------------+------------------+
+| **Propriedade**             | **Símbolo**                       | **Unidades**     |
++=============================+===================================+==================+
+| Campo Elétrico              | :math:`\mathbf E`                 | N/C or V/m       |
++-----------------------------+-----------------------------------+------------------+
+| Corrente de Deslocamento    | :math:`\mathbf D`                 | A/m :math:`\!^2` |
++-----------------------------+-----------------------------------+------------------+
+| Polarização Elétrica        | :math:`\mathbf P`                 | A/m :math:`\!^2` |
++-----------------------------+-----------------------------------+------------------+
+| Permissividade Dielétrica   | :math:`\varepsilon`               | F/m              |
++-----------------------------+-----------------------------------+------------------+
+| Susceptibilidade Dielétrica | :math:`\chi_e`                    | *Adimensional*   |
++-----------------------------+-----------------------------------+------------------+
+| Permissividade Relativa     | :math:`\varepsilon_r`             | *Adimensional*   |
++-----------------------------+-----------------------------------+------------------+
 

@@ -1,7 +1,7 @@
 .. _eq_maxwell_index:
 
-Equações de Maxwell
-===================
+Equações de Maxwell e Ondas EM na Geofísica
+===========================================
 
 **Conteúdo:**
 
@@ -13,4 +13,5 @@ Equações de Maxwell
     time_domain_equations
     frequency_domain_equations
     harmonic_planewaves_homogeneous/index
+    transient_planewaves_homogeneous/index
     appendix/appendix_index

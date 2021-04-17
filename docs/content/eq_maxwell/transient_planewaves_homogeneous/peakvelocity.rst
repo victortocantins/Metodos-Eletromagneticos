@@ -1,9 +1,9 @@
 .. _transient_planewaves_homogeneous_peakvelocity:
 
-Peak Velocity
-=============
+Velocidade de Pico
+==================
 
-As the EM wave propagates, the peak depth moves as a function of time. The velocity at which the peak moves is called the peak velocity. By by taking time derivative of the :ref:`peak distance<transient_planewaves_homogeneous_peakdistance>` and setting it to zero, the peak velocity is given by:
+À medida que a onda EM se propaga, a profundidade do pico se move em função do tempo. A velocidade na qual o pico se move é chamada de velocidade de pico. Ao tomar a derivada do tempo da :ref:`distância de pico<transient_planewaves_homogeneous_peakdistance>` e defini-la como zero, a velocidade de pico é dada por:
 
 .. math::
     v_{max} = \frac{d z_{max}}{dt} = \frac{1}{\sqrt{2\mu\sigma t}}
@@ -13,4 +13,4 @@ As the EM wave propagates, the peak depth moves as a function of time. The veloc
    :scale: 40%
    :name: fig_planewaves_peakvelocity
 
-   Electric field as a function of time 100 m from a 1D impulse in the field in a 0.01 S/m whole space (a). Electric field at t = 0.03 ms as a function of distance (Modifed from :cite:`ward1988`) (b).    
+   Campo elétrico em função do tempo 100 m de um impulso 1D no campo em um espaço ilimitado de 0,01 S/m (a). Campo elétrico em t = 0,03 ms em função da distância (modificado de :cite:`ward1988`) (b).

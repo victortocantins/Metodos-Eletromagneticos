@@ -23,7 +23,7 @@ e
 .. math:: \boldsymbol{\nabla}^2 \mathbf{H} + (\mu \epsilon \omega^2 - i \mu \sigma \omega) \mathbf{H}  = 0
     :label: hmh8
 
-Equações :eq:`hme8` e :eq:`hmh8` são geralemnte expressadas na seguinte forma:
+Equações :eq:`hme8` e :eq:`hmh8` são geralmente expressadas na seguinte forma:
 
 .. math::
 	\boldsymbol{\nabla}^2 \mathbf{E} + k^2 \mathbf{E}  = 0

@@ -58,7 +58,7 @@ Regime Quase Estático
 No regime quase estático, o termo difusivo é muito maior do que o termo de conservação, ou seja:
 
 .. math::
-    \sigma \frac{\partial \mathbf{e}}{\partial t} \gg \epsilon \frac{\partial^2 \mathbf{e}}{\partial t^2} \;\;\;\;\; \textrm{and} \;\;\;\;\; \sigma \frac{\partial \mathbf{h}}{\partial t} \gg \epsilon \frac{\partial^2 \mathbf{h}}{\partial t^2}
+    \sigma \frac{\partial \mathbf{e}}{\partial t} \gg \epsilon \frac{\partial^2 \mathbf{e}}{\partial t^2} \;\;\;\;\; \textrm{e} \;\;\;\;\; \sigma \frac{\partial \mathbf{h}}{\partial t} \gg \epsilon \frac{\partial^2 \mathbf{h}}{\partial t^2}
 
 Nete caso, ambos :math:`\mathbf{e}` e :math:`\mathbf{h}`  se comportam de acordo com a **equação do calor**, com:
 
@@ -79,7 +79,7 @@ Regime de Ondas
 No regime de ondas, o termo difusivo é muito menor do que o termo de conservação, ou seja:
 
 .. math::
-    \sigma \frac{\partial \mathbf{e}}{\partial t} \ll \epsilon \frac{\partial^2 \mathbf{e}}{\partial t^2} \;\;\;\;\; \textrm{and} \;\;\;\;\; \sigma \frac{\partial \mathbf{h}}{\partial t} \ll \epsilon \frac{\partial^2 \mathbf{h}}{\partial t^2}
+    \sigma \frac{\partial \mathbf{e}}{\partial t} \ll \epsilon \frac{\partial^2 \mathbf{e}}{\partial t^2} \;\;\;\;\; \textrm{e} \;\;\;\;\; \sigma \frac{\partial \mathbf{h}}{\partial t} \ll \epsilon \frac{\partial^2 \mathbf{h}}{\partial t^2}
 
 Neste, caso :math:`\mathbf{e}` e :math:`\mathbf{h}` comportam-se de acordo a clássica **equação da onda**, com:
 
