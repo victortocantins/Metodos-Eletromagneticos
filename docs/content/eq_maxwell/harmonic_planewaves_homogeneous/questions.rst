@@ -8,7 +8,7 @@ Skin Depth
 ----------
 
 Uma onda plana :ref:`atenua-se<harmonic_planewaves_homogeneous_skindepth>` quando ela se propaga dentro da Terra. Use a frequência
-de 10 Hz e a condutividade de :math:`\sigma` = 1 S/m para simulção inicial.
+de 10 Hz e a condutividade de :math:`\sigma` = 1 S/m para simulação inicial.
 
 	- Plote a amplitude versus profundidade e estime a profundidade de penetração (skin depth).
 
@@ -21,7 +21,7 @@ de 10 Hz e a condutividade de :math:`\sigma` = 1 S/m para simulção inicial.
 Componentes Real and Imaginária
 -------------------------------
 
-À medida que a onda plana se propaga para a Terra, há uma componente real (em fase) e uma imaginário (em quadratura ou fora de fase). 
+A medida que a onda plana se propaga para a Terra, há uma componente real (em fase) e uma imaginária (em quadratura ou fora de fase). 
 Por padrão, o aplicativo mostra esses sinais no tempo t = 0 (por exemplo :math:`e^{\pm i\omega t}` = 1). 
 Assim, na superfície (z = 0) o campo :math:`E_x` é puramente real e o campo :math:`H_y` tem partes reais e imaginárias iguais. 
 Por que isso é verdade? (dica: examine a solução final para :math:`H_y` :ref:`aqui<harmonic_planewaves_homogeneous_derivation_app_soln>`).

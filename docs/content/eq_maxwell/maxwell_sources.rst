@@ -1,66 +1,68 @@
 .. _maxwell_fundamentals_sources:
 
-Maxwell's Equations with Electromagnetic Sources
+Equações de Maxwell com Fontes Electromagnéticas
 ================================================
 
 .. purpose::
 	
-	Here, we show how Maxwell's equations are altered in the presence of electromagnetic sources. The two principle types of electromagnetic sources are discussed.
+	Aqui, mostramos como as equações de Maxwell são alteradas na presença de fontes eletromagnéticas. Os dois principais tipos de fontes eletromagnéticas são discutidos.
 
-In many cases, the fields and fluxes within a region result from the presence of an electromagnetic source. Because Maxwell's equations fully characterize all electromagnetic interactions, they must also accommodate the existence of electromagnetic sources. There are two principle types of electromagnetic sources: electrical sources (:math:`\mathbf{j_e^s}`) and magnetic sources (:math:`\mathbf{j_m^s}`).
+Em muitos casos, os campos e fluxos dentro de uma região resultam da presença de uma fonte eletromagnética. Como as equações de Maxwell caracterizam totalmente todas as interações eletromagnéticas, elas também devem acomodar a existência de fontes eletromagnéticas. Existem dois tipos principais de fontes eletromagnéticas: fontes elétricas (:math:`\mathbf{j_e^s}`) e fontes magnéticas (:math:`\mathbf{j_m^s}`).
 
-Electrical Sources
-------------------
+Fontes Elétricas
+----------------
 
-In Maxwell's equations, electrical sources are represented using a current density (:math:`\mathbf{j_e^s}`). Thus they have units [A/m :math:`\! ^2`]. Electrical sources may correspond to an :ref:`electrical current dipole<definition_electric_dipole_index>` or a current-carrying loop of wire. 
+Nas equações de Maxwell, as fontes elétricas são representadas usando uma densidade de corrente (:math:`\mathbf{j_e^s}`). Portanto, eles têm unidades 
+:math:`[\mathrm{A/m}^2]`. As fontes elétricas podem corresponder a um :ref:`dipolo de corrente elétrica<definition_electric_dipole_index>` ou um loop de fio transportando corrente.
 
-According to the :ref:`Ampere-Maxwell<ampere_maxwell>` equation, electrical currents are responsible for generating magnetic fluxes. By accounting for the electrical source term, the Ampere-Maxwell equation becomes:
+De acordo com a Equação de :ref:`Ampere-Maxwell<ampere_maxwell>`, correntes elétricas são responsáveis por gerar fluxos magnéticos. Ao contabilizar o termo da fonte elétrica, a equação Ampère-Maxwell torna-se:
 
 .. math::
 	 \nabla\times \mathbf{h} - \mathbf{j_f} - \frac{\partial \mathbf{d}}{\partial t} = \mathbf{j_e^s}
 
-where :math:`\mathbf{j_f}` is now the free current density not accounted for by the source term. The total current density within the region can be treated as the sum of the source current density and the remaining free current density (i.e. :math:`\mathbf{j_{tot} = j_e^s + j_f}`). In the frequency domain, the Ampere-Maxwell equation becomes:
+onde :math:`\mathbf{j_f}` agora é a densidade de corrente livre não contabilizada pelo termo fonte. A densidade de corrente total dentro da região pode ser tratada como a soma da densidade de corrente de origem e a densidade de corrente livre restante (ou seja :math:`\mathbf{j_{tot} = j_e^s + j_f}`). No domínio da frequência, a equação Ampère-Maxwell torna-se:
 
 .. math::
 	\nabla\times \mathbf{H} - \mathbf{J_f} - i\omega \mathbf{D} = \mathbf{J_e^s}
 
-where the electrical source term is given by :math:`\mathbf{J_e^s}` and the remaining free current density is given by :math:`\mathbf{J_f}`.
+onde o termo da fonte elétrica é dado por :math:`\mathbf{J_e^s}` e a densidade de corrente livre remanescente é dada por :math:`\mathbf{J_f}`.
 
-Magnetic Sources
-----------------
+Fontes Magnéticas
+-----------------
 
-In Maxwell's equations, the magnetic source is a magnetic flux density (:math:`\mathbf{b_m^s}`); which has units [T]. One example of a magnetic source is the :ref:`magnetic dipole<definition_magnetic_dipole_index>`. 
+Nas equações de Maxwell, a fonte magnética é uma densidade de fluxo magnético (:math:`\mathbf{b_m^s}`); que tem unidades [T]. Um exemplo de fonte magnética é o :ref:`dipolo magnético<definition_magnetic_dipole_index>`.
 
-According to :ref:`Faraday's law<faraday>`, time-varying magnetic fluxes induce rotational electric fields. Note however, that dimensional analysis of Faraday's law shows the right hand side has units [T/s]. As a result, the magnetic source term is commonly defined as :math:`\mathbf{j_m^s}`, where:
+De acordo com :ref:`Lei de Faraday <faraday>`, fluxos magnéticos variáveis no tempo induzem campos elétricos rotacionais. Observe, entretanto, que a análise dimensional da lei de Faraday mostra que o lado direito tem unidades [T/s]. Como resultado, o termo de fonte magnética é comumente definido como :math:`\mathbf{j_m^s}`, onde:
+
 
 .. math::
 	\mathbf{j_m^s} = - \frac{\partial \mathbf{b_m^s}}{\partial t}
 
-By this convention, the magnetic source term can be thought of as a magnetic current density. In the presence of a magnetic source term, Faraday's law becomes:
+Por esta convenção, o termo fonte magnética pode ser considerado uma densidade de corrente magnética. Na presença de um termo de fonte magnética, a lei de Faraday torna-se:
 
 .. math::
 	\nabla \times \mathbf{e} + \frac{\partial \mathbf{b}}{\partial t} = \mathbf{j_m^s}
 
-where :math:`\mathbf{b}` is the magnetic flux density not accounted for within the source term. The total density of magnetic flux within the region can be treated as the sum of the source flux density and the remaining flux density (i.e. :math:`\mathbf{b_{tot} = b_m^s + b}`). In the frequency domain, the source magnetic flux density is given by :math:`\mathbf{B_m^s}`. The corresponding source term is therefore defined as:
+onde :math:`\mathbf{b}` é a densidade de fluxo magnético não considerada dentro do termo fonte. A densidade total do fluxo magnético dentro da região pode ser tratada como a soma da densidade do fluxo da fonte e a densidade do fluxo restante (ou seja :math:`\mathbf{b_{tot}=b_m^s + b}`). No domínio da frequência, a densidade do fluxo magnético da fonte é dada por :math:`\mathbf{B_m^s}`. O termo de origem correspondente é, portanto, definido como:
 
 .. math::
 	\mathbf{J_m^s} = -i\omega\mathbf{B_m^s}
 
-and Faraday's law is give by:
+e a Lei de Faraday é dado por:
 
 .. math::
 	\nabla\times \mathbf{E} + i\omega\mathbf{B} = \mathbf{J_m^s}
 
+	
+Reafirmando as Equações de Maxwell
+----------------------------------
 
-Restating Maxwell's Equations
------------------------------
+A existência de fontes elétricas e magnéticas resulta em alterações na equação de Maxwell-Ampère e na lei de Faraday, respectivamente. Vamos agora reafirmar as equações de Maxwell em forma diferencial na presença de fontes eletromagnéticas.
 
-The existence of electrical and magnetic sources results in alterations for the Maxwell-Ampere equation and Faraday's law, respectively. Let us now restate Maxwell's equations in differential form in the presence of electromagnetic sources.
+Forma Diferencial no Domínio do Tempo
+*************************************
 
-Differential Form in the Time Domain
-************************************
-
-Here, we present differential forms for :ref:`Gauss's law for electric fields<gauss_electric>`, :ref:`Gauss's law for magnetic fields<gauss_magnetic>`, :ref:`Faraday's law<faraday>` and the :ref:`Ampere-Maxwell equation<ampere_maxwell>` in the time domain.
+Aqeui, apresentamos as formas diferenciais para :ref:`lei de Gauss para campos elétricos<gauss_electric>`, :ref:`lei de Gauss para campos magnéticos<gauss_magnetic>`, :ref:`lei de Faraday<faraday>` e a :ref:`equação de Ampere-Maxwell<ampere_maxwell>` no domínio do tempo.
 
 .. math::
 	\begin{align}
@@ -70,7 +72,7 @@ Here, we present differential forms for :ref:`Gauss's law for electric fields<ga
 	\textbf{Ampere-Maxwell:}   \;\;  &\nabla\times\mathbf{h} - \mathbf{j_f} - \dfrac{\partial \mathbf{d}}{\partial t} = \mathbf{j_e^s}
 	\end{align}
 
-where the following :ref:`constitutive relationships<physical_properties_index>` can be used to replace fields and fluxes:
+onde as seguintes :ref:`relações constitutivas<physical_properties_index>` podem ser usadas para substituir campos e fluxos.
 
 .. math::
 	\begin{align}
@@ -79,22 +81,24 @@ where the following :ref:`constitutive relationships<physical_properties_index>`
 	\mathbf{d} &= \varepsilon \mathbf{e}
 	\end{align}
 
-If we consider a **homogeneous medium** and combined the Maxwell-Ampere equation and Faraday's law to obtain the wave equation, we see that for an **electrical source**:
+Se considerarmos um **meio homogêneo** e combinamos a equação de Maxwell-Ampère e a lei de Faraday para obter a equação de onda, vemos que para uma 
+**fonte elétrica**:
 
 .. math::
 	\nabla^2 \mathbf{e} - \mu\sigma \frac{\partial \mathbf{e}}{\partial t} - \mu \varepsilon \frac{\partial^2 \mathbf{e}}{\partial t^2} = \mu \frac{\partial \mathbf{j_e^s}}{\partial t}
 
-As we can see, the forcing term in the above wave equation depends on the time-derivative of an electric current density. For a **magnetic source**:
+Como podemos ver, o termo fonte na equação de onda acima depende da derivada no tempo de uma densidade de corrente elétrica. Para uma 
+**fonte magnética**:
 
 .. math::
 	\nabla^2 \mathbf{h} - \mu\sigma \frac{\partial \mathbf{h}}{\partial t} - \mu \varepsilon \frac{\partial^2 \mathbf{h}}{\partial t^2} = - \sigma \mathbf{j_m^s} - \mu \frac{\partial \mathbf{j_m^s}}{\partial t}
 
-where the forcing term contains both first and second order time-derivatives.
+onde o termo fonte contém derivada no tempo de primeira ordem além do termo sem derivada da fonte :math:`j_m^s` (ordem 0).
 
-Differential Form in the Frequency Domain
-*****************************************
+Forma Diferencial no Domínio da Frequência
+******************************************
 
-Here, we present differential forms for :ref:`Gauss's law for electric fields<gauss_electric>`, :ref:`Gauss's law for magnetic fields<gauss_magnetic>`, :ref:`Faraday's law<faraday>` and the :ref:`Ampere-Maxwell equation<ampere_maxwell>` in the frequency domain:
+Aqui, apresentamos as formas diferenciais para :ref:`lei de Gauss para os acampos elétricos<gauss_electric>`, :ref:`lei de Gauss para os campos magnéticos<gauss_magnetic>`, :ref:`lei de Faraday<faraday>` e a :ref:`equação de Ampere-Maxwell<ampere_maxwell>` no domínio da frequência:
 
 .. math::
 	\begin{align}
@@ -104,7 +108,7 @@ Here, we present differential forms for :ref:`Gauss's law for electric fields<ga
 	\textbf{Ampere-Maxwell:}    \;\; &\nabla\times\mathbf{H} - \mathbf{J_f} - i\omega \mathbf{D} = \mathbf{J_e^s}
 	\end{align}
 
-where the following :ref:`constitutive relationships<physical_properties_index>` can be used to replace fields and fluxes:
+onde as seguintes :ref:`relações constitutivas<physical_properties_index>` podem ser usadas para substituir campos e fluxos:
 
 .. math::
 	\begin{align}
@@ -113,17 +117,18 @@ where the following :ref:`constitutive relationships<physical_properties_index>`
 	\mathbf{D} &= \varepsilon \mathbf{E}
 	\end{align}
 
-If we consider a **homogeneous medium** and combined the Maxwell-Ampere equation and Faraday's law to obtain the Helmholtz equation, we see that for an **electrical source**:
+Se considerarmos um **meio homogêneo** e combinamos a equação de Maxwell-Ampère e a lei de Faraday para obter a equação de Helmholtz, vemos que para uma **fonte elétrica**:
 
 .. math::
 	\nabla^2 \mathbf{E} + k^2 \mathbf{E} = i\omega\mu \mathbf{J_e^s}
 
-where the magnitude of the forcing term increases linearly with respect to the angular frequency. For a **magnetic source**:
+onde a magnitude do termo de fonte aumenta linearmente em relação à frequência angular. Para uma **fonte magnética**:
 
 .. math::
 	\nabla^2 \mathbf{H} + k^2 \mathbf{H} = - \big ( \sigma + i\omega\varepsilon \big ) \mathbf{J_m^s}
 
-where the right-hand side depends on both the conductive and dielectric properties of the medium. Recall that the :ref:`wavenumber<harmonic_planewaves_homogeneous_wavenumber>` is given by:
+onde o lado direito depende das propriedades condutivas e dielétricas do meio. Lembre-se de que o
+:ref:`o número de onda<harmonic_planewaves_homogeneous_wavenumber>` é dado por:
 
 .. math::
 	k = \sqrt{\omega^2 \mu \varepsilon - i\omega \mu\sigma}

@@ -1,49 +1,47 @@
 .. _definition_electric_dipole_index:
 
-Defining the Electrical Current Dipole
-======================================
+Definindo o Dipolo de Corrente Elétrico
+=======================================
 
 
 .. Purpose::
 
-    Here, we provide a physical description of the electrical current dipole.
-    This is used to develop a mathematical expression which can be used to replace the electrical source term in Maxwell's equations.
+    Aqui, fornecemos uma descrição física do dipolo de corrente elétrica. 
+    Isso é usado para desenvolver uma expressão matemática que pode ser usada para substituir o termo de fonte elétrica nas equações de Maxwell.
+    
 
-
-**General Definition**
-
+**Definição Geral**
 
 .. figure:: images/E_source_current_dipole.png
-		:align: right
-		:figwidth: 50%
-		:name: ElecDipole
+    :align: center
+    :figwidth: 50%
+    :name: ElecDipole
 
-        	Physical representation of the electrical current dipole source where :math:`\mathbf{p}` = 1 Am.
+    Representação física fonte de dipolo de corrente elétrica onde :math:`\mathbf{p}` = 1 Am.
+
+
+O dipolo de corrente elétrica pode ser considerado um comprimento infinitesimal de fio que carrega uma corrente.
+A força da fonte é definida por seu momento de dipolo (:math:`\mathbf{p}`).
+Isso leva a um termo de fonte elétrica da forma:
 
 
 
-The electrical current dipole can be thought of as an infinitesimally short length of wire which carries a current.
-The strength of the source is defined by its dipole moment (:math:`\mathbf{p}`).
-This leads to an electrical source term of the form:
 
 .. math::
 	\mathbf{J_e^s} = \mathbf{p} \delta (x) \delta (y) \delta (z)
 	:label: eq_Je_def
 
 
-where :math:`\delta (x)` is the Dirac delta function.
-The source is responsible for generating a primary current density (:math:`\mathbf{J}`) in the surrounding region; secondary electric and magnetic fields are discussed later.
-This is illustrated in :numref:`ElecDipole`.
-In many cases, the term 'electric dipole source' is used instead.
-However, a true electric dipole represents the polarization of electrical charges of opposite sign.
+onde :math:`\delta (x)` é a função delta de Dirac.
+A fonte é responsável por gerar uma densidade de corrente primária (:math:`\mathbf{J}`) na região circundante; campos elétricos e magnéticos secundários são discutidos mais tarde.
+Isso é ilustrado em :numref:`ElecDipole`.
+Em muitos casos, o termo 'fonte de dipolo elétrico' é usado em seu lugar.
+No entanto, um verdadeiro dipolo elétrico representa a polarização de cargas elétricas de sinal oposto.
 
 
-**Wire Model for an Electrical Current Dipole**
+**Modelo de fio para um dipolo de corrente elétrica**
 
-
-In order to develop a more detailed definition for the electrical current dipole, let us first consider the source current from a wire of finite length.
-Assume the wire has length :math:`\Delta s` and carries a current :math:`I` which flows in the :math:`\mathbf{\hat x}` direction along the wire.
-The source current density :math:`\mathbf{J_e^s}` for the wire segment is given by:
+Para desenvolver uma definição mais detalhada para o dipolo da corrente elétrica, vamos primeiro considerar a corrente da fonte de um fio de comprimento finito. Suponha que o fio tenha comprimento :math:`\Delta s` e carregue uma corrente :math:`I` que flui na direção :math:`\mathbf{\hat x}` ao longo do fio. A densidade de corrente de origem :math:`\mathbf{J_e^s}` para o segmento de fio é dada por:
 
 .. math::
 	\mathbf{J_e^s} = \mathbf{\hat x} I \Delta s \Bigg [ \frac{\textrm{u}\big (x + \frac{\Delta s}{2} \big ) - \textrm{u} \big ( x - \frac{\Delta s}{2} \big )}{\Delta s} \Bigg ] \delta (y) \delta (z)
@@ -51,76 +49,61 @@ The source current density :math:`\mathbf{J_e^s}` for the wire segment is given 
 
 
 
-where :math:`u(x)` is the unit step function.
-In Maxwell's equations, :math:`\mathbf{J_e (r)}` defines the electrical source term and has units A/m :math:`\!^2`.
+onde :math:`u(x)` é a função degrau uintária.
+Nas equações de Maxwell, :math:`\mathbf{J_e (r)}` define o termo fonte elétrico e tem unidade :math:`\mathrm{A/m}^2`.
 
-As we can see in :numref:`FiniteWire`, the source generates a primary current density (:math:`\mathbf{J}`) in the surrounding region.
-Notice how the current flows out one end of the wire and into the other (:numref:`FiniteWire` left).
-However, when the wire segment is much smaller than the scale of observation (:math:`\Delta s \ll r`), then it appears as though the current density converges to a single point; see :numref:`FiniteWire` (right).
-The purpose of the electrical current dipole is to approximate a finite wire segment when observation scales are much larger than the wire's length.
-The electrical current dipole accomplishes this by defining a source term which exists at a single point in space.
-
+Como podemos ver em :numref:`FiniteWire`, a fonte gera uma densidade de corrente primária (:math:`\mathbf{J}`) na região circundante.
+Observe como a corrente flui por uma extremidade do fio e para a outra (:numref:`FiniteWire` à esquerda). No entanto, quando o segmento de fio é muito menor do que a escala de observação (:math:`\Delta s \ll r`), então parece que a densidade de corrente converge para um único ponto; veja 
+:numref:`FiniteWire` (direita). O objetivo do dipolo de corrente elétrica é aproximar um segmento finito do fio quando as escalas de observação são muito maiores do que o comprimento do fio. O dipolo de corrente elétrica faz isso definindo um termo fonte que existe em um único ponto no espaço.
 
 
 .. figure:: images/E_source_finte_wire.png
-		:align: center
-		:figwidth: 100%
-		:name: FiniteWire
+    :align: center
+    :figwidth: 100%
+    :name: FiniteWire
+    
+    Densidade de corrente elétrica devido a um fio condutor de corrente finito. Fio longo (à esquerda). Fio curto (direita). Para ambos os fios, a corrente foi ajustada de modo que :math:`I\Delta s` = 1 Am.
 
-        	Electrical current density due to a finite current-carrying wire. Long wire (left). Short wire (right). For both wires, the current was adjusted so that :math:`I\Delta s` = 1 Am.
-
-
-
-
-
-The electrical current dipole source is defined by letting :math:`\Delta s \rightarrow ds` in the previous equation; making it a wire of infinitessimal length.
-As a result, the source current density for a harmonic electrical current dipole in the :math:`\mathbf{\hat x}` direction is given by:
+A fonte de dipolo de corrente elétrica é definida fazendo :math:`\Delta s \rightarrow ds` na equação anterior; tornando-o um fio de comprimento infinito.
+Como resultado, a densidade de corrente de origem para um dipolo de corrente elétrica harmônica na direção :math:`\mathbf{\hat x}` é dada por:
 
 .. figure:: images/E_source_current_dipole.png
-		:align: right
-		:figwidth: 50%
-		:name: CurrentDipole
+    :align: center
+    :figwidth: 50%
+    :name: CurrentDipole
 
-        	Primary electrical current density due to an electrical current dipole with :math:`\mathbf{p}` = 1 Am.
+    Densidade de corrente elétrica primária devido a um dipolo de corrente elétrica com :math:`\mathbf{p}` = 1 Am.
 
 
 .. math::
 	\mathbf{J_e^s} = \mathbf{\hat x} I ds \delta (x) \delta (y) \delta (z)
 	:label: eq_Je_xdip
 
+Examinando :numref:`CurrentDipole`, vemos que a densidade de corrente na região circundante converge para um único ponto; assim como em :numref:`FiniteWire` (direita). No entanto, como um segmento de fio finito, a corrente ainda flui para fora de um lado da fonte para o outro.
 
-Examining :numref:`CurrentDipole`, we see that the current density in the surrounding region converges to a single point; just like in :numref:`FiniteWire` (right).
-However like a finite wire segment, the current still flows outwards from one side of the source and into the other.
-
-
-If we consider an electrical current dipole oriented in an arbitrary direction, the source current becomes a vector :math:`\mathbf{I}`.
-Thus, the source current density for an electrical current dipole is given by:
+Se considerarmos um dipolo de corrente elétrica orientado em uma direção arbitrária, a fonte de corrente se torna um vetor :math:`\mathbf{I}`.
+Assim, a densidade de corrente de fonte para um dipolo de corrente elétrica é dada por:
 
 .. math::
 	\mathbf{J_e^s} = \mathbf{I}ds \, \delta (x) \delta (y) \delta (z)
 	:label: eq_Je_xdipI
 
-
-
-
-The strength of the electrical current dipole source is defined by its dipole moment (:math:`\mathbf{p}`).
-As we can see from the previous equation, the source term depends on the product :math:`\mathbf{I} ds`.
-Thus the dipole moment for an electrical current dipole source is given by:
+A força da fonte de dipolo de corrente elétrica é definida por seu momento de dipolo (:math:`\mathbf{p}`).
+Como podemos ver na equação anterior, o termo fonte depende do produto :math:`\mathbf{I} ds`.
+Assim, o momento de dipolo para uma fonte de dipolo de corrente elétrica é dado por:
 
 .. math::
 	\mathbf{p} = \mathbf{I}ds
 	:label: eq_Je_p_def
 
-
-where
-
+onde
 
 .. math::
 	\mathbf{J_e^s} = \mathbf{p} \, \delta (x) \delta (y) \delta (z)
 	:label: eq_Je_rdip
 
-
-From our definition of the electrical current dipole, :math:`\mathbf{p}` has units Am, each of the Dirac delta functions carry units m :math:`\!^{-1}`, and thus :math:`\mathbf{J_e^s}` has units A/m :math:`\!^2`.
+De nossa definição de dipolo de corrente elétrica, :math:`\mathbf{p}` tem unidades Am, cada uma das funções delta de Dirac carregam unidades 
+:math:`\mathrm{m}^ {-1}`, e assim :math:`\mathbf{J_e^s}` tem unidades :math:`\mathrm{A/m}^ 2`.
 
 
 

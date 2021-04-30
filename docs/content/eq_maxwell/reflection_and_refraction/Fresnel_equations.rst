@@ -1,45 +1,51 @@
 .. _Fresnel_equations:
 
-Fresnel Equations
-=================
+Equações de Fresnel
+===================
 
 .. purpose::
 
-    Here, we present mathematical expressions which relate the geometry and amplitudes of EM waves at interfaces. This is accomplished by separating the incident wave into two modes: the TE mode and the TM mode. A physical description of each mode is presented along with subsequent derivation. The resulting Fresnel equations allow us to interrelate the amplitudes of the :math:`\mathbf{E}` and :math:`\mathbf{H}` across the interface.
+    Aqui, apresentamos expressões matemáticas que relacionam a geometria e amplitudes das ondas EM nas interfaces. Isso é feito separando o
+    onda incidente em dois modos: o modo TE e o modo TM.Uma descrição física de cada modo é apresentada junto com uma derivação subsequente.
+    Como as equações de Fresnel permitem nos permitir inter-relacionar como as amplitudes fazem :math:`\mathbf{E}` e :math:`\mathbf{H}` através da interface.
 
 Setup
 -----
 
-Here, we will consider the reflection and transmission of a uniform, linearly polarized, homogeneous plane wave at a horizontal interface (:numref:`fresnel_law_setup`). The incident wave is confined to the xz-plane. The interface is denoted by :math:`S`, has a normal vector :math:`\mathbf{\hat n}` and separates two homogeneous media with physical properties :math:`\sigma_1`, :math:`\mu _1`, :math:`\epsilon_1` and :math:`\sigma_2`, :math:`\mu _2`, :math:`\epsilon_2`.
+Aqui, vamos considerar uma reflexão e transmissão de uma onda plana uniforme, linearmente polarizada homogênea em uma interface horizontal
 
-For the setup in :numref:`fresnel_law_setup`, the incident wave (:math:`k_i`) arrives at angle :math:`\theta_i`. Once this wave reaches the interface, it breaks into two parts, a reflected wave (:math:`k_r`) and a transmitted wave (:math:`k_t`). The reflected and transmitted waves travel in directions characterized by angles :math:`\theta_r` and :math:`\theta_t`, respectively.
+Aqui, consideraremos a reflexão e a transmissão de uma onda plana uniforme, linearmente polarizada e homogênea em uma interface horizontal (:numref:`fresnel_law_setup`). A onda incidente está confinada ao plano xz. A interface é denotada por :math:`S`, tem um vetor normal :math:`\mathbf{\hat n}` e separa dois meios homogêneas com propriedades físicas 
+:math:`\sigma_1`, :math:`\mu_1`, :math:`\epsilon_1` e :math:`\sigma_2`, :math:`\mu _2`, :math:`\epsilon_2`.
+
+Para a configuração em :numref:`fresnel_law_setup`, a onda incidente (:math:`k_i`) chega no ângulo :math:`\theta_i`. Uma vez que esta onda atinge a interface, ela se divide em duas partes, uma onda refletida (:math:`k_r`) e uma onda transmitida (:math:`k_t`). As ondas refletidas e transmitidas viajam em direções caracterizadas por ângulos :math:`\theta_r` e 
+:math:`\theta_t`, respectivamente.
 
 .. figure:: images/snellslaw_setup.png
    :align: center
    :figwidth: 70%
    :name: fresnel_law_setup
 
-   Geometry for Snell's law. Modified from :cite:`ward1988` Figure 3.1.
+   Geometria da lei de Snell. Modificado de :cite:`ward1988` Figure 3.1.
 
-Electromagnetic waves follow the superposition principle. In order to simplify the math associate with our problem and derive the Fresnel equation, we split the incoming EM wave into two modes. The **TE mode** represents the portion of the wave associated with electric field components parallel to the surface (:numref:`fresnel_setup_TE`). The **TM mode** represents the portion of the wave associated with magnetic field components coming parallel to the surface (:numref:`fresnel_setup_TM`).
+As ondas eletromagnéticas seguem o princípio de superposição. Para simplificar a matemática associada ao nosso problema e derivar a equação de Fresnel, dividimos a onda EM de entrada em dois modos. O **modo TE** representa a porção da onda associada as componentes do campo elétrico paralelo à superfície (:numref:`fresnel_setup_TE`). O **modo TM** representa a porção da onda associada aos componentes do campo magnético que vêm paralelamente à superfície (:numref:`fresnel_setup_TM`).
 
 .. note::
 
-    The modes are often called the "transverse electric" (denoted by TE or TE :sub:`z`) mode and the tranverse magnetic (denoted by TM or TM  :sub:`z`) mode because either electric or magnetic field is transverse to :math:`z`-direction.
+    Os modos são frequentemente chamados de modo "elétrico transversal" (denotado por TE ou TE:sub:`z`) e modo magnético transversal (denotado por TM ou TM:sub:`z`) porque o campo elétrico ou magnético é transversal a direção :math:`z`.
 
 .. _Fresnel_equations_TE:
 
-Fresnel Equation for TE Mode
-----------------------------
+Equação de Fresnel para o Modo TE
+---------------------------------
 
 .. figure:: images/fresnel_setup_TE.png
    :align: right
    :figwidth: 55%
    :name: fresnel_setup_TE
 
-   the relative orientations of the :math:`\mathbf{E}`, :math:`\mathbf{H}`, and :math:`\mathbf{k}` vectors for relflection at a plane interface when :math:`\mathbf{E}_i` is normal to the plane of incidence (parallel to surface S).
+   As orientações relativas dos vetores :math:`\mathbf{E}`, :math:`\mathbf{H}` e :math:`\mathbf{k}` para reflexão em uma interface plana quando :math:`\mathbf{E}_i` é normal ao plano de incidência (paralelo à superfície S).
 
-The geometry, as it relates to the TE mode, is shown in :numref:`fresnel_setup_TE`. For the TE mode, the reflection and transmission coefficients are given by:
+A geometria, no que se refere ao modo TE, é mostrada em :numref:`fresnel_setup_TE`. Para o modo TE, os coeficientes de reflexão e transmissão são dados por:
 
 .. math::
     r_{TE} = \frac{\mathbf{E}_r}{\mathbf{E}_i} = \frac{\mu_2 u_1 - \mu_1 u_2}
@@ -49,20 +55,20 @@ The geometry, as it relates to the TE mode, is shown in :numref:`fresnel_setup_T
     t_{TE} = \frac{\mathbf{E}_t}{\mathbf{E}_i} = \frac{2\mu_2 u_1}
     {\mu_2 u_1 + \mu_1 u_2}
 
-where
+onde
 
 .. math::
     u_1 = k_1 \text{cos} \theta_i
 
-and
+e
 
 .. math::
     u_2 = (k_2^2-k_1^2 \text{sin}^2 \theta_i)^{1/2}
 
 
-**Derivation**
+**Derivação**
 
-In order to relate the amplitude of the reflected and transmitted waves to that of the incident wave, we required reflection and transmission coefficients for the TE mode, where:
+A fim de relacionar a amplitude das ondas refletidas e transmitidas com a da onda incidente, devemod determinar os coeficientes de reflexão e transmissão para o modo TE, em que:
 
 .. math::
     r_{TE} = \frac{\mathbf{E}_r}{\mathbf{E}_i}
@@ -70,51 +76,53 @@ In order to relate the amplitude of the reflected and transmitted waves to that 
 .. math::
     t_{TE} = \frac{\mathbf{E}_t}{\mathbf{E}_i}
 
-According to the geometry illustrated in :numref:`fresnel_setup_TE`, there are no components of :math:`\mathbf{E}` along :math:`\mathbf{k}` and no components of :math:`\mathbf{E}` along :math:`\mathbf{\hat n}`. Thus:
+De acordo com a geometria ilustrada em :numref:`fresnel_setup_TE`, não há componentes de :math:`\mathbf{E}` junto com :math:`\mathbf{k}` e nenhum componente de :math:`\mathbf{E}` junto 
+com :math:`\mathbf{\hat n}`. Desse modo:
 
 .. math::
     \hat{\mathbf{n}} \cdot \mathbf{E_i} = \mathbf{k_i} \cdot \mathbf{E_i} = 0
     :label: eq_1_TE
 
-and
+e
 
 .. math::
     \hat{\mathbf{n}} \cdot \mathbf{E_t} = \mathbf{\hat n} \cdot \mathbf{E_r} = 0
     :label: eq_2_TE
 
-According to the :ref:`interface conditions<maxwell1_fundamentals_interface_conditions_index>` stated in constitutive relationships, components of the electric field parallel to surface :math:`S` are continuous across the interface. Thus:
+De acordo com as :ref:`condições da interface<maxwell1_fundamentals_interface_conditions_index>` declaradas em relações constitutivas, as componentes do campo elétrico paralelo à 
+superfície :math:`S` são contínuas através da interface. Desse modo:
 
 .. math::
     \mathbf{E}_i + \mathbf{E}_r = \mathbf{E}_t
     :label: TE_fresnel1
 
-By applying :ref:`Snell's law<Snells_law>` to Eqs. :eq:`eq_1_TE` and :eq:`eq_2_TE`, we obtain:
+Aplicando a  :ref:`lei de Snell<Snells_law>` as Equações :eq:`eq_1_TE` e :eq:`eq_2_TE`, obtemo:
 
 .. math::
 	\text{cos} \theta_i \mathbf{E}_i - \text{cos} \theta_r \mathbf{E}_r
     = \frac{\mu_1 k_2}{\mu_2 k_1} \text{cos} \theta_t \mathbf{E}_t
     :label: TE_fresnel2
 
-Rearranging Eqs. :eq:`TE_fresnel1` and :eq:`TE_fresnel2`, we obtain:
+Rearranjando as Equações :eq:`TE_fresnel1` e :eq:`TE_fresnel2`, obtemos:
 
 .. math::
     \mathbf{E}_r = \frac{\mu_2 k_1 \text{cos} \theta_i - \mu_1(k_2^2-k_1^2 \text{sin}^2 \theta_i)^{1/2}}
     {\mu_2 k_1 \text{cos} \theta_i + \mu_1(k_2^2-k_1^2 \text{sin}^2 \theta_i)^{1/2}} \mathbf{E}_i
     :label: TE_EiandEr
 
-and
+e
 
 .. math::
     \mathbf{E}_t = \frac{2\mu_2 k_1 \text{cos} \theta_i}
     {\mu_2 k_1 \text{cos} \theta_i + \mu_1(k_2^2-k_1^2 \text{sin}^2 \theta_i)^{1/2}} \mathbf{E}_t
     :label: TE_EiandEt
 
-where
+onde
 
 .. math::
     \text{cos}^2 \theta_t  = 1 - \text{sin}^2 \theta_t = 1-\Big(\frac{k_1}{k_2}\Big) \text{sin}^2 \theta_i
 
-The reflection and transmission coefficients for the TE mode can be written as:
+Os coeficientes de reflexão e transmissão o modo  TE pode ser escrito como:
 
 .. math::
     r_{TE} = \frac{\mathbf{E}_r}{\mathbf{E}_i}
@@ -128,7 +136,7 @@ The reflection and transmission coefficients for the TE mode can be written as:
     {\mu_2 k_1 \text{cos} \theta_i + \mu_1(k_2^2-k_1^2 \text{sin}^2 \theta_i)^{1/2}}
     :label: tTE_theta
 
-Substituting the following:
+Substituindo o seguinte:
 
 .. math::
     u_1 = k_1 \text{cos} \theta_i
@@ -138,7 +146,7 @@ Substituting the following:
     u_2 = (k_2^2-k_1^2 \text{sin}^2 \theta_i)^{1/2}
     :label: u2
 
-:math:`r_{TE}` and :math:`t_{TE}` can ultimately be written as:
+:math:`r_{TE}` e :math:`t_{TE}` pode ser escrito como:
 
 .. math::
     r_{TE} = \frac{\mu_2 u_1 - \mu_1 u_2}
@@ -152,21 +160,21 @@ Substituting the following:
 
 .. note::
 
-    In the final form of :math:`r_{TE}` and :math:`t_{TE}` shown in Eqs :eq:`rTE_u` and :eq:`tTE_u`, angular information is merged into :math:`u_1` and :math:`u_2`, which are scalar wavenumbers in :math:`z`-direction. Namely, horizontal component of the wavenumber do not make any impact to determine :math:`r_{TE}` and :math:`t_{TE}`, and this is driven by transverse electic field to :math:`z`-direction.
+    Na forma final de :math:`r_{TE}` e :math:`t_{TE}` mostrados nas Equações :eq:`rTE_u` e :eq:`tTE_u`, a informação angular é fundida em :math:`u_1` e :math:`u_2`, que são números de onda escalares na direção :math:`z`. Ou seja, a componente horizontal do número de onda não causa nenhum impacto para determinar :math:`r_{TE}` e :math:`t_{TE}`, e isso é conduzido pelo campo elétrico transversal para direção :math:`z`.
 
 .. _Fresnel_equations_TM:
 
-Fresnel Equation for TM Mode
-----------------------------
+Equação de Fresnel para o Modo TM
+---------------------------------
 
-The geometry, as it relates to the TM mode, is shown in :numref:`fresnel_setup_TM`. For the TM mode, the reflection and transmission coefficients are given by:
+A geometria, no que se refere ao modo TM, é mostrada em :numref:`fresnel_setup_TM`. Para o modo TM, os coeficientes de reflexão e transmissão são dados por:
 
 .. figure:: images/fresnel_setup_TM.png
    :align: right
    :figwidth: 55%
    :name: fresnel_setup_TM
 
-   the relative orientations of the :math:`\mathbf{E}`, :math:`\mathbf{H}`, and :math:`\mathbf{k}` vectors for reflection at a plane interface when :math:`\mathbf{H}_i` is parallel to the surface.
+   As orientações relativas dos vetores :math:`\mathbf{E}`, :math:`\mathbf{H}` e :math:`\mathbf{k}` para reflexão em uma interface plana quando :math:`\mathbf{H}_i` é paralela à superfície.
 
 .. math::
     r_{TM} = \frac{\mu_2 u_2 k_1^2 - \mu_1 u_1 k_2^2}
@@ -176,19 +184,19 @@ The geometry, as it relates to the TM mode, is shown in :numref:`fresnel_setup_T
     t_{TM} = \frac{2\mu_1 u_1 k_2^2}
     {\mu_2 u_2 k_1^2 + \mu_1 u_1 k_2^2}
 
-where
+onde
 
 .. math::
     u_1 = k_1 \text{cos} \theta_i
 
-and
+e
 
 .. math::
     u_2 = (k_2^2-k_1^2 \text{sin}^2 \theta_i)^{1/2}
 
-**Derivation**
+**Derivação**
 
-In order to relate the amplitude of the reflected and transmitted waves to that of the incident wave, we required reflection and transmission coefficients for the TM mode, where:
+A fim de relacionar a amplitude das ondas refletidas e transmitidas com a da onda incidente, exigimos coeficientes de reflexão e transmissão para o modo TM, onde:
 
 .. math::
     r_{TM} = \frac{\mathbf{H_r}}{\mathbf{H_i}} = \frac{\hat{\mathbf{n}}\times \mathbf{E}_r}{\hat{\mathbf{n}}\times \mathbf{E}_i}
@@ -198,32 +206,33 @@ In order to relate the amplitude of the reflected and transmitted waves to that 
     t_{TM} = \frac{\mathbf{H_t}}{\mathbf{H_i}} = \frac{\hat{\mathbf{n}}\times \mathbf{E}_t}{\hat{\mathbf{n}}\times \mathbf{E}_i}
     :label: tTM
 
-According to the geometry illustrated in :numref:`fresnel_setup_TM`, there are no components of :math:`\mathbf{H}` along :math:`\mathbf{k}` and no components of :math:`\mathbf{H}` along :math:`\mathbf{\hat n}`. Thus:
+De acordo com a geometria ilustrada em :numref:`fresnel_setup_TM`, não há componentes de :math:`\mathbf{H}` junto com :math:`\mathbf{k}` e nenhuma componente de 
+:math:`\mathbf{H}` junto com :math:`\mathbf{\hat n}`. Desse modo:
 
 .. math::
     \hat{\mathbf{n}} \cdot \mathbf{H}_i = \mathbf{k}_i \cdot \mathbf{H}_i = 0
     :label: eq_1_TM
 
-and
+e
 
 .. math::
     \hat{\mathbf{n}} \cdot \mathbf{H}_t = \hat{\mathbf{n}} \cdot \mathbf{H}_r = 0
     :label: eq_2_TM
 
-According to the :ref:`interface conditions<maxwell1_fundamentals_interface_conditions_index>` stated in constitutive relationships, components of the magnetic field parallel to surface :math:`S` are continuous across the interface. Thus:
+De acordo com as :ref:`condições da interface<maxwell1_fundamentals_interface_conditions_index>` declaradas em relações constitutivas, as componentes do campo magnético paralelo à superfície :math:`S` são contínuas na interface. Desse modo:
 
 .. math::
-    \mathbf{H}_i + \mathbf{H}_r = \mathbf{H}_t
+    \mathbf{H}_i + \mathbf{H}_r = \mathbf{H}_t.
     :label: TM_fresnel1
 
-And by applying :ref:`Snell's law<Snells_law>` to Eqs. :eq:`eq_1_TM` and :eq:`eq_2_TM`, we obtain:
+E aplicando :ref:`a lei de Snell<Snells_law>` as Equações :eq:`eq_1_TM` e :eq:`eq_2_TM`, obtemos:
 
 .. math::
     \text{cos} \theta_i \mathbf{H}_i - \text{cos} \theta_r \mathbf{H}_r
     = \frac{\mu_1 k_2}{\mu_2 k_1} \text{cos} \theta_t \mathbf{H}_t
     :label: TM_fresnel2
 
-Rearranging Eqs. :eq:`TM_fresnel1` and :eq:`TM_fresnel2`, we obtain:
+Rearranjando as Equações :eq:`TM_fresnel1` e :eq:`TM_fresnel2`, obtemos:
 
 .. math::
     \mathbf{H}_r = -\frac{\mu_2 k_1(k_2^2-k_1^2 \text{sin}^2 \theta_i)^{1/2}  - \mu_1k_2^2 \text{cos} \theta_i}
@@ -235,12 +244,12 @@ Rearranging Eqs. :eq:`TM_fresnel1` and :eq:`TM_fresnel2`, we obtain:
     {\mu_2 k_1(k_2^2-k_1^2 \text{sin}^2 \theta_i)^{1/2}  + \mu_1k_2^2 \text{cos} \theta_i} \mathbf{H}_i
     :label: TM_HiandHt
 
-where
+em que 
 
 .. math::
     \text{cos}^2 \theta_t  = 1 - \text{sin}^2 \theta_t = 1-\Big(\frac{k_1}{k_2}\Big) \text{sin}^2 \theta_i
 
-Thus the reflection and transmission coefficients for TM mode can be written as:
+Assim, os coeficientes de reflexão e transmissão para o modo TM podem ser escritos como:
 
 .. math::
     r_{TM} = \frac{\hat{\mathbf{n}}\times \mathbf{E}_t}{\hat{\mathbf{n}}\times \mathbf{E}_i}
@@ -254,7 +263,7 @@ Thus the reflection and transmission coefficients for TM mode can be written as:
            = \frac{2 \mu_1k_2^2 \text{cos} \theta_i}{\mu_2 k_1(k_2^2-k_1^2 \text{sin}^2 \theta_i)^{1/2}  + \mu_1k_2^2 \text{cos} \theta_i}
     :label: tTM_theta
 
-Substituting these with Eqs. :eq:`u1` and :eq:`u2` yields:
+Substitutindo estas com as Equações :eq:`u1` e :eq:`u2` teremos:
 
 .. math::
     r_{TM} = \frac{\mu_2 u_2 k_1^2 - \mu_1 u_1 k_2^2}
@@ -268,12 +277,13 @@ Substituting these with Eqs. :eq:`u1` and :eq:`u2` yields:
 
 .. question::
 
-   -  We defined reflection coefficient of TM mode :math:`r_{TM}` as ratio between tangential electric field of incidence and reflection as shown in Eq. :eq:`rTM`. However, we derived ratio of :math:`\mathbf{H}_i` and :math:`\mathbf{H}_r` then multipy -1 to obtain :math:`r_{TM}`, why is that? (Hint: See direction of :math:`\mathbf{E}` and :math:`\mathbf{H}` in :numref:`fresnel_setup_TM`)
+    - Definimos o coeficiente de reflexão do modo TM :math:`r_{TM}` como a razão entre o campo elétrico tangencial de incidência e a reflexão como mostrado na Equação :eq:`rTM`.  No entanto, derivamos a proporção de :math:`\mathbf{H}_i` e :math:`\mathbf{H}_r` então multiplicamos por -1 para obter :math:`r_{TM}`, por que isso?  (Dica: veja a direção de :math:`\mathbf{E}` e :math:`\mathbf{H}` em :numref:`fresnel_setup_TM`).
 
-Fresnel Equations for Normal Incidence
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-When incidence is normal (:math:`\theta_i` =0), Eqs. :eq:`rTE_u` and :eq:`rTM_u` can be reduced to:
+Equações de Fresnel Equations para Incidência Normal
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+uando a incidência é normal (:math:`\theta_i` =0), as Equações :eq:`rTE_u` e :eq:`rTM_u` podem ser reduzidas para:
 
 .. math::
 

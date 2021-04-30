@@ -127,7 +127,7 @@ def setup(app):
 # number figures
 numfig = True
 
-numfig_format = {'figure': 'Fígura %s', 'table': 'Tabela %s',
+numfig_format = {'figure': 'Figura %s', 'table': 'Tabela %s',
                  'code-block': 'Listing %s', 'section': 'Seção %s'}
 
 

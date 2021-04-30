@@ -1,116 +1,118 @@
 .. _Snells_law:
 
-Reflection and Snell's Law
-==========================
+Reflexão e Lei de Snell
+=======================
 
 .. purpose::
 
-    Here, we derive the propagation angles of reflected and refracted waves at a horizontal interface. Snell's law is then used to characterize the refraction angle in terms of the complex wavenumber for both media.
+    Aqui, derivamos os ângulos de propagação das ondas refletidas e refratadas em uma interface horizontal. A lei de Snell é então usada para caracterizar o ângulo de refração em termos do número de onda complexo para ambos os meios.
 
 Setup
 -----
 
-Here, we will consider the reflection and refraction of a uniform, linearly polarized, homogeneous plane wave at a horizontal interface (:numref:`snells_law_setup`). The incident wave is confined to the xz-plane. The interface is denoted by :math:`S`, has a normal vector :math:`\mathbf{\hat n}` and separates two homogeneous media with physical properties :math:`\sigma_1`, :math:`\mu _1`, :math:`\epsilon_1` and :math:`\sigma_2`, :math:`\mu _2`, :math:`\epsilon_2`.
+Aqui, consideraremos a reflexão e a refração de uma onda plana uniforme, linearmente polarizada e homogênea em uma interface horizontal 
+(:numref:`snells_law_setup`). A onda incidente está confinada ao plano xz. A interface é denotada por :math:`S`, tem um vetor normal 
+:math:`\mathbf{\hat n}` e separa dois meios homogêneas com propriedades físicas :math:`\sigma_1`, :math:`\mu_1`, :math:`\epsilon_1` e :math:`\sigma_2`, 
+:math:`\mu_2`, :math:`\epsilon_2`.
 
-For the setup in :numref:`snells_law_setup`, the incident wave (:math:`k_i`) arrives at angle :math:`\theta_i`. Once this wave reaches the interface, it breaks into two parts, a reflected wave (:math:`k_r`) and a transmitted wave (:math:`k_t`). The transmitted was experiences a change in propagation direction, thus it is a refracted wave. The reflected and refracted waves travel in directions characterized by angles :math:`\theta_r` and :math:`\theta_t`, respectively.
+Para a configuração em :numref:`snells_law_setup`, a onda incidente (:math:`k_i`) chega no ângulo :math:`\theta_i`. Uma vez que esta onda atinge a interface, ela se divide em duas partes, uma onda refletida (:math:`k_r`) e uma onda transmitida (:math:`k_t`). A onda transmitida experimenta uma mudança na direção de propagação, portanto é uma onda refratada. As ondas refletidas e refratadas viajam em direções caracterizadas por ângulos :math:`\theta_r` e 
+:math:`\theta_t`, respectivamente.    
 
 .. figure:: images/snellslaw_setup.png
    :align: center
    :figwidth: 70%
    :name: snells_law_setup
 
-   Geometry for Snell's law. Modified from :cite:`ward1988` Figure 3.1.
+   Geometria para lei de Snell. Modificada de :cite:`ward1988` Figure 3.1.
 
 
 .. _Snells_law_derive:
 
-Snell's Law, Reflection and Refraction
---------------------------------------
+Lei de Snell, Reflexão e Refração
+-----------------------------------
 
-The reflection and refraction angles (:math:`\theta_r` and :math:`\theta_t`) can be derived by considering either the electric field or the magnetic field carried by the incident EM wave. Here, we will derive these angle by considering an electric field. The respective incident, reflected and refracted waves are given by:
+Os ângulos de reflexão e refração (:math:`\theta_r` e :math:`\theta_t`) podem ser derivados considerando o campo elétrico ou o campo magnético transportado pela onda EM incidente. Aqui, derivaremos esses ângulos considerando um campo elétrico. As respectivas ondas incidentes, refletidas e refratadas são dadas por:
 
 .. math::
-	\mathbf{E_i} = \mathbf{E_{i,0}} \, e^{-i \mathbf{k_i \cdot r}}, \;\;\; \mathbf{E_r} = \mathbf{E_{r,0}} \, e^{-i \mathbf{k_r \cdot r}}, \;\;\; \textrm{and} \;\;\; \mathbf{E_t} = \mathbf{E_{t,0}} \, e^{-i \mathbf{k_t \cdot r}}
+	\mathbf{E_i} = \mathbf{E_{i,0}} \, e^{-i \mathbf{k_i \cdot r}}, \;\;\; \mathbf{E_r} = \mathbf{E_{r,0}} \, e^{-i \mathbf{k_r \cdot r}}, \;\;\; \textrm{e} \;\;\; \mathbf{E_t} = \mathbf{E_{t,0}} \, e^{-i \mathbf{k_t \cdot r}}
 	:label:
 
-where :math:`\mathbf{k}` is the wave vector (Poynting vector) for each wave and:
+onde :math:`\mathbf{k}` é o vetor da onda (vetor de Poynting) para cada onda e:
 
 .. math::
 	\mathbf{E \times H} = \mathbf{k}
 	:label:
 
-Within formative laws, we discussed the :ref:`interface conditions<maxwell1_fundamentals_interface_conditions_index>` required for electric and magnetic fields. They state that components of the electric field parallel to surface :math:`S` must be equal across the interface. As a result:
+Dentro das leis formativas, discutimos as :ref:`condições de interface<maxwell1_fundamentals_interface_conditions_index>` necessárias para campos elétricos e magnéticos. Elas afirmam que os componentes do campo elétrico paralelo à superfície :math:`S` devem ser iguais em toda a interface. Como resultado:
 
 .. math::
 	\mathbf{\hat n} \times \big ( \mathbf{E_i} + \mathbf{E_r} \big ) = \mathbf{\hat n} \times \mathbf{E_t}
 	:label:
 
-Using the previous three expressions, we find that:
+Usando as três expressões anteriores, encontramos:
 
 .. math::
 	\theta_i = \theta_r
 	:label: eq_reflected
 
-and
+e
 
 .. math::
 	k_i \, \textrm{sin}\theta_i = k_t \, \textrm{sin}\theta_t
 	:label: eq_Snells_law
 
-According to Eq. :eq:`eq_reflected`, the reflected angle and the incident angle relative to :math:`\mathbf{\hat n}` are the same. Eq. :eq:`eq_Snells_law` is known as **Snell's Law**. Snell's law defines the refraction angle corresponding to the transmitted wave. Thus depending on the physical properties of each medium, the transmitted wave can be refracted either towards the vertical or towards the horizontal.
+De acordo com a Equação :eq:`eq_reflected`, o ângulo refletido e o ângulo incidente em relação a :math:`\mathbf{\hat n}` são os mesmos. A Equação 
+:eq:`eq_Snells_law` é conhecido como **Lei de Snell **. A lei de Snell define o ângulo de refração correspondente à onda transmitida. Assim, dependendo das propriedades físicas de cada meio, a onda transmitida pode ser refratada tanto na vertical quanto na horizontal.
 
 .. _Snells_law_Snells_law:
 
-Snell's Law Approximations
---------------------------
+Aproximações para a Lei de Snell
+--------------------------------
 
-The most common definition of Snell's law is given by:
+A definição mais comum da lei de Snell é dada por:
 
 .. math::
 	k_1 \, \textrm{sin}\theta_1 = k_2 \, \textrm{sin}\theta_2
 	:label: eq_Snells_law_2
 
-where :math:`k_1` is the wavenumber for the incident wave with angle :math:`\theta_1` and :math:`k_1` is the wavenumber of the refracted wave with angle :math:`\theta_2`. Here, we discuss a few properties of Snell's law.
+em que :math:`k_1` é o número de onda para a onda incidente com ângulo :math:`\theta_1` e :math:`k_1` é o número de onda da onda refratada com ângulo
+:math:`\theta_2`. Aqui, discutimos algumas prpriedades da lei de Snell..
 
-**Quasi-Static Regime**
+**Regime Quase Estático**
 
-In the quasi-static regime (:math:`\sigma \gg \omega \varepsilon`), the wavenumber becomes:
+No regime quase estático (:math:`\sigma \gg \omega \varepsilon`), o número de onda torna-se:
 
 .. math::
 	k \approx \sqrt{-i \omega \mu \sigma}
 	:label:
 
-In this case, Snell's law reduces to:
+Neste caso a lei de Snell se reduz para:
 
 .. math::
 	\sqrt{\mu_1 \sigma_1} \, \textrm{sin}\theta_1 = \sqrt{\mu_2 \sigma_2} \, \textrm{sin} \theta_2
 
 
-**Wave Regime**
+**Regime de Onda**
 
-In the wave regime (:math:`\sigma \ll \omega \varepsilon`), the wavenumber becomes:
+No regime de onda (:math:`\sigma \ll \omega \varepsilon`), o número de onda se torna:
 
 .. math::
 	k \approx w \sqrt{\mu \varepsilon}
 	:label:
 
-where the velocity of the wave is given by:
+onde a velocidade da onda é dada por:
 
 .. math::
 	V = \frac{1}{\sqrt{\mu \varepsilon}}
 	:label:
 
-Using the two previous expressions, Snell's law in the wave regime becomes:
+Usando as duas expressões anteriores, a lei de Snell no regime de ondas torna-se:
 
 .. math::
 	\frac{V_1}{V_2} = \frac{sin \theta_1}{sin \theta_2}
 	:label: eq_Snells_law_3
 
-In this case, the angle of incidence and refraction are directly related to the propagation velocity of EM waves within each media. This relationship is especially important when considering :ref:`ground penetrating radar<gpr_index>`.
-
-
-
-
+Nesse caso, o ângulo de incidência e refração estão diretamente relacionados à velocidade de propagação das ondas EM em cada meio. Esta relação é especialmente importante quando se considera :ref:`radar de penetração no solo<gpr_index>`.
 
 
 

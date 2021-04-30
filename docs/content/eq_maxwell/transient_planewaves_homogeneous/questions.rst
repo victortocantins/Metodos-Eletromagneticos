@@ -21,7 +21,7 @@ Tempo de Pico
 O tempo de pico é o momento em que a amplitude máxima do sinal é observada em um determinado local. Comece configurando o tempo e a condutividade para :math:`t`= 0,01 se :math:`\sigma` = 1 S/m, respectivamente.
 
     - Aumente gradualmente o tempo até que a amplitude do pico esteja a uma profundidade de 400 m. Usando 
-    :math:`z`= 400 m e :math:`\sigma` = 1 S/m, calcule o tempo de pico com 
+    :math:`\mathrm{z}= 400~\mathrm{m}` e :math:`\sigma` = 1 S/m, calcule o tempo de pico com 
     :ref:`esta fórmula<transient_planewaves_homogeneous_peaktime>`. Como os resultados se comparam.
     - Agora aumente a condutividade para :math:`\sigma` = 4 S/m. Ajuste o tempo até que a amplitude do pico esteja a uma profundidade de 400 m. Portanto, na mesma profundidade, o tempo de pico é anterior/posterior em meios mais condutores?
 

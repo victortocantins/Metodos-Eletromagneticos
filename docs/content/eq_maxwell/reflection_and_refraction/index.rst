@@ -1,11 +1,11 @@
 .. _reflection_and_refraction_index:
 
-Plane Waves at Interfaces
-=========================
+Ondas Planas nas Interfaces
+===========================
 
 .. purpose::
 
-    Here, we provide theory for describing the behaviour of plane waves as they reach physical property interfaces. Reflection, refraction and transmission are discussed.
+    Aqui, fornecemos teoria para descrever o comportamento das ondas planas à medida que atingem interfaces de propriedades físicas. Reflexão, refração e transmissão são discutidas.
 
 
 .. figure:: images/LayeredEarth.gif
@@ -13,21 +13,21 @@ Plane Waves at Interfaces
    :figwidth: 35%
    :name: reflections_example_index
 
-   Reflection, refraction and transmission of a ground penetrating radar signal.
+   Reflexão, refração e transmissão de um sinal de radar de penetração de solo (GPR).
 
-**Introduction**
+**Introdução**
 
-When EM waves reach an interface characterized by an abrupt change in physical properties, portions of the signal undergo reflection, refraction and transmission. In :numref:`reflections_example_index`, we show these behaviours for a :ref:`ground penetrating radar<gpr_index>` signal. A fundamental understanding of reflection, refraction and transmission can be obtained by considering plane waves. Here, we provide theory which describes the behaviour of plane waves as they interact with physical property interfaces. Numerical modeling apps are provided to simulate these behaviours.
+Quando as ondas EM atingem uma interface caracterizada por uma mudança abrupta nas propriedades físicas, partes do sinal sofrem reflexão, refração e transmissão. Em :numref:`reflections_example_index`, mostramos esses comportamentos para um sinal de :ref:`radar de penetração no solo<gpr_index>`. Uma compreensão fundamental de reflexão, refração e transmissão pode ser obtida considerando ondas planas. Aqui, fornecemos uma teoria que descreve o comportamento das ondas planas conforme elas interagem com interfaces de propriedades físicas. Aplicativos de modelagem numérica são fornecidos para simular esses comportamentos.
 
-**Organization**
+**Organização**
 
-The content within this portion is organized into 3 parts:
+O conteúdo desta parte é organizado em 3 partes:
 
-	- :ref:`Reflection and Snell's Law<Snells_law>`: Defines the relationship between the propagation directions of incident, reflected and refracted EM waves.
-	- :ref:`Fresnel Equations<Fresnel_equations>`: Defines the relationships between the propagation directions and amplitudes of incident, reflected, refracted and transmitted EM waves.
-	- :ref:`N-Layer Earth<impedance_layeredearth>`: After characterizing the behaviours of plane waves at a single interface, we extend the theory to a layered Earth model.
+	- :ref:`Reflexão e lei de Snell<Snells_law>`: Define a relação entre as direções de propagação das ondas EM incidentes, refletidas e refratadas.
+	- :ref:`Equações de Fresnel<Fresnel_equations>`: Define as relações entre as direções de propagação e amplitudes das ondas EM incidentes, refletidas, refratadas e transmitidas.
+	- :ref:`Terra N-camadas<impedance_layeredearth>`: Depois de caracterizar o comportamento das ondas planas em uma única interface, estendemos a teoria para um modelo terrestre em camadas.
 
-**Contents**
+**Conteúdo**
 
 .. toctree::
     :maxdepth: 2
