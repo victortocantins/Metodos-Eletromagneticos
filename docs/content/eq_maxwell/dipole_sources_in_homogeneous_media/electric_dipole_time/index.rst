@@ -1,16 +1,16 @@
 .. _time_domain_electric_dipole_index:
 
-Transient Electric Dipole
-=========================
+Dipolo Elétrico Transiente
+==========================
 
 .. Purpose::
 
-    Here, we provide a physical description of the time-dependent electrical current dipole.
-    This is used to develop a mathematical expression which can be used to replace the electrical source term in Maxwell's equations. 
-    We then consider a transient electrical current dipole; which represents a more commonly used geophysical source.
+    Aqui, fornecemos uma descrição física do dipolo de corrente elétrica dependente do tempo.
+    Isso é usado para desenvolver uma expressão matemática que pode ser usada para substituir o termo de fonte elétrica nas equações de Maxwell.
+    Em seguida, consideramos um dipolo de corrente elétrica transiente; que representa uma fonte geofísica mais comumente usada.
+ 
 
-
-**General Definition**
+**Definição Geral**
 
 
 .. figure:: images/E_source_current_dipole.png
@@ -18,27 +18,26 @@ Transient Electric Dipole
 		:figwidth: 50%
 		:name: ElecDipoleTime
 
-        	Physical representation of the time-dependent electrical current dipole source.
+        	Represntação física da fonte dipolo de corrente elétrica dependente do tempo.
 
 
-The time-dependent electrical current dipole can be thought of as an infinitesimally short length of wire which carries a time-dependent current.
-The strength of the source is therefore defined by a time-dependent dipole moment :math:`\mathbf{p}(t)`.
-For a time-dependent current dipole defined by length :math:`ds` and current vector :math:`\mathbf{I} (t)`, the dipole moment is given by:
+O dipolo de corrente elétrica dependente do tempo pode ser pensado como um comprimento infinitesimal de fio que carrega uma corrente dependente do tempo. A força da fonte é, portanto, definida por um momento de dipolo dependente do tempo :math:`\mathbf{p}(t)`.
+Para um dipolo de corrente dependente do tempo definido por comprimento :math:`ds` e vetor de corrente :math:`\mathbf{I}(t)`, o momento de dipolo é dado por:
 
 
 .. math::
 	\mathbf{p}(t) = \mathbf{I}(t) ds
 
 
-As a result, the source term for the time-depedent electrical current dipole is given by:
+Como um resultado, o termo fonte para o dipolo de corrente elétrica dependente do tempo é dado por:
 
 
 .. math::
 	\mathbf{j_e^s} = \mathbf{I}(t) ds \, \delta (x) \delta (y) \delta (z)
 
 
-where :math:`\delta (x)` is the Dirac delta function.
-By including the source term, Maxwell's equations in the time domain are given by:
+onde :math:`\delta (x)` é a função delta de Dirac.
+Incluindo o termo fonte, as equações de Maxwel no domínio do tempo são dadas por:
 
 
 .. math::
@@ -48,35 +47,35 @@ By including the source term, Maxwell's equations in the time domain are given b
 	\end{split}
 
 
-where subscripts :math:`_e` remind us that we are considering an electric source.
-The source current is responsible for generating a primary current density (and thus an electric field) in the surrounding region (:numref:`ElecDipoleTime`).
-The :ref:`Ampere-Maxwell equation<ampere_maxwell_differential_time>` states that time-varying electric fields and the movement of free current generates magnetic fields.
-In addition, the time-dependent nature of these magnetic fields should produce secondary electric fields according to :ref:`Faraday's law<faraday_differential_time>`.
+onde o subescrito :math:`_e` lembra-nos que estamos considerando uma fonte elétrica.
+A fonte de corrente é responsável por gerar uma densidade de corrente primária (e, portanto, um campo elétrico) na região circundante
+(:numref:`ElecDipoleTime`).
+A :ref:`equação de Ampere-Maxwell<ampere_maxwell_differential_time>` afirma que os campos elétricos variáveis no tempo e o movimento da corrente livre geram campos magnéticos.
+Além disso, a natureza dependente do tempo desses campos magnéticos deve produzir campos elétricos secundários de acordo com :ref:`lei de Faraday<faraday_differential_time>`.
 
 
-**Transient Electrical Current Dipole**
+**Transiente do dipolo de corrente elétrica**
 
-
-The transient response represents the response of a system to step-off excitation.
-For a transient electrical current dipole with infinitessimal length :math:`ds`, the electromagnetic response results from a step-off current of the form :math:`\mathbf{I} (t) = \mathbf{I} u(-t)`.
-Thus the dipole moment is given by:
+A resposta transitória representa a resposta de um sistema à excitação ao desligamento da função degrau.
+Para o transiente do dipolo de corrente elétrica com comprimento infinitesimal :math:`ds`, a resposta eletromagnética resulta do desligamento de uma corrente da forma :math:`\mathbf{I}(t) = \mathbf{I}u(-t)`.
+Assim, o momento de dipolo é dado por:
 
 
 .. math::
 	\mathbf{p}(t) = \mathbf{I}u(-t) ds
 
 
-where :math:`u(t)` is the unit step function.
-The source term for the corresponding electrical current dipole is given by:
+onde :math:`u(t)` é a função degrau unitária.
 
+O termo fonte para o dipolo de corrente elétrica correspondente é dado por:
 
 .. math::
 	\mathbf{j_e^s} = \mathbf{I}u(-t) ds \, \delta (x) \delta (y) \delta (z)
 
 
-where :math:`\delta (x)` is the Dirac delta function.
-By including the source term, Maxwell's equations in the time domain are given by:
+onde :math:`\delta (x)` é a função delta de Dirac.
 
+Ao incluir o termo fonte, as equações de Maxwell no domínio do tempo são dadas por:
 
 .. math::
 	\begin{split}
@@ -84,17 +83,15 @@ By including the source term, Maxwell's equations in the time domain are given b
 	\nabla \times \mathbf{h_e} - \sigma \mathbf{e_e} & - \varepsilon \dfrac{\partial  \mathbf{e_e} }{\partial t} = \mathbf{I}u(-t)ds \, \delta(x) \delta(y) \delta(z)
 	\end{split}
 
-
-It is possible to solve this system to obtain analytic solutions for the transient electric and magnetic fields.
-However, we will apply a different approach using the inverse Laplace transform.
-
+É possível resolver este sistema para obter soluções analíticas para os campos elétricos e magnéticos transitórios.
+No entanto, vamos aplicar uma abordagem diferente usando a transformada de Laplace inversa.
 
 
-**Organization**
+**Organização**
 
-In the following section, we solve Maxwell's equations for a transient electrical current dipole source and provide analytic expressions for the electric and magnetic fields within a homogeneous medium.
-Asymptotic expressions are then provided for several cases.
-Numerical modeling tools are made available for investigating the dependency of the electric and magnetic fields on various parameters.
+Na seção seguinte, resolvemos as equações de Maxwell para uma fonte dipolo de corrente elétrica transitória e fornecemos expressões analíticas para os campos elétrico e magnético em um meio homogêneo.
+Expressões assintóticas são então fornecidas para vários casos.
+Ferramentas de modelagem numérica são disponibilizadas para investigar a dependência dos campos elétricos e magnéticos em vários parâmetros.
 
 
 .. toctree::

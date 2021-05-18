@@ -1,20 +1,20 @@
 .. _frequency_domain_magnetic_dipole_index:
 
-Harmonic Magnetic Dipole
-========================
+Dipolo Magnético Harmônico
+==========================
 
 .. Purpose::
 
-    In the frequency domain, we consider harmonic electric and magnetic fields.
-    Here, we provide a physical description of the harmonic magnetic dipole.
-    This is used to develop a mathematical expression which can be used to replace the magnetic source term in Maxwell's equations.
+    No domínio da frequência, consideramos os campos elétricos e magnéticos harmônicos.
+    Aqui, fornecemos uma descrição física do dipolo magnético harmônico.
+    Isso é usado para desenvolver uma expressão matemática que pode ser usada para substituir o termo da fonte magnética nas equações de Maxwell.
 
 
-**General Definition**
+**Definição Geral**
 
-The harmonic magnetic dipole can be thought of as an infinitessimally small loop which carries a harmonic current.
-The strength of the source is therefore defined by a harmonic dipole moment :math:`\mathbf{m}(\omega)`.
-For a harmonic magnetic dipole defined by vector surface area :math:`\mathbf{S}` and harmonic current :math:`I(\omega) = I e^{i\omega t}`, the dipole moment is given by:
+O dipolo magnético harmônico pode ser pensado como um loop infinitamente pequeno que carrega uma corrente harmônica.
+A força da fonte é, portanto, definida por um momento de dipolo harmônico :math:`\mathbf{m}(\omega)`.
+Para um dipolo magnético harmônico definido pela área de superfície vetorial :math:`\mathbf{S}` e corrente harmônica :math:`I(\omega)=I e^{i\omega t}`, o momento de dipolo é dado por:
 
 
 .. figure:: images/H_source_magnetic_dipole.png
@@ -29,18 +29,17 @@ For a harmonic magnetic dipole defined by vector surface area :math:`\mathbf{S}`
 	\mathbf{m} (\omega) = \mathbf{m} \, e^{i\omega t} = I \mathbf{S} \, e^{i\omega t}
 	:label: m_harmonic_def
 
-where :math:`\mathbf{m} = I \mathbf{S}` is the vector amplitude of the dipole moment.
-When formulating Maxwell's equations in the frequency domain, :math:`e^{i\omega t}` is generally suppressed.
-As a result, the source term for the harmonic magnetic dipole is given by:
+onde :math:`\mathbf{m} = I \mathbf{S}` é a amplitude do vetor do momento de dipolo.
+Ao formular as equações de Maxwell no domínio da frequência, :math:`e^{i \omega t}` é geralmente suprimido.
+Como resultado, o termo fonte para o dipolo magnético harmônico é dado por:
 
 
 .. math::
 	\mathbf{J_m^s} = -i\omega \mu I\mathbf{S} \, \delta (x) \delta (y) \delta (z)
 	:label: Jm_harmonic_def
 
-where :math:`\delta (x)` is the Dirac delta function.
-By including the source term, Maxwell's equations in the frequency domain are given by:
-
+onde :math:`\delta (x)` é a função delta de Dirac.
+Ao incluir o termo fonte, as equações de Maxwell no domínio da frequência são dadas por:
 
 .. math::
 	\begin{split}
@@ -50,18 +49,17 @@ By including the source term, Maxwell's equations in the frequency domain are gi
 	:label: Maxwells_harmonic_Jm
 
 
-where subscripts :math:`_m` remind us that we are considering a magnetic source.
-The source is responsible for generating a primary magnetic field in the surrounding region (:numref:`MagDipole_freq`).
-According to :ref:`Faraday's law<faraday_differential_frequency>`, the harmonic nature of the primary magnetic field generates rotational electric fields.
-In matter, this leads to an induced current density which produces secondary magnetic fields according to the :ref:`Ampere-Maxwell equation<ampere_maxwell_differential_frequency>`.
+onde subscritos :math:`_m` nos lembram que estamos considerando uma fonte magnética.
+A fonte é responsável por gerar um campo magnético primário na região circundante (:numref:`MagDipole_freq`).
+De acordo com :ref:`Lei de Faraday<faraday_differential_frequency>`, a natureza harmônica do campo magnético primário gera campos elétricos rotacionais.
+Na matéria, isso leva a uma densidade de corrente induzida que produz campos magnéticos secundários de acordo com a :ref:`Equação Ampere-Maxwell<ampere_maxwell_differential_frequency>`.
 
-.. _notebook: https://github.com/geoscixyz/em_apps/blob/master/notebooks/maxwell1_fundamentals/HarmonicDipoleWidget_MD.ipynb
 
-**Organization**
+**Organização**
 
-In the following section, we solve Maxwell's equations for a harmonic magnetic dipole source and provide analytic expressions for the electric and magnetic fields within a homogeneous medium.
-Asymptotic expressions are then provided for several cases.
-Numerical modeling tools are made available for investigating the dependency of the electric and magnetic fields on various parameters.
+Na seção seguinte, resolvemos as equações de Maxwell para uma fonte dipolo magnética harmônica e fornecemos expressões analíticas para os campos elétricos e magnéticos em um meio homogêneo.
+Expressões assintóticas são então fornecidas para vários casos.
+Ferramentas de modelagem numérica são disponibilizadas para investigar a dependência dos campos elétricos e magnéticos em vários parâmetros.
 
 
 .. toctree::

@@ -1,90 +1,86 @@
 .. _time_domain_electric_dipole_asymptotics:
 
-Asymptotic Approximations
+Aproximações Assintóticas
 =========================
 
 .. topic:: Purpose
 
-    Here, simplified expressions for the electric and magnetic fields are presented for several cases.
-    By examining simplified expressions, we can more easily see how the fields depend on certain parameters. 
-    As the full analytic solution for the vector potential is rather simple, asymptotic approximations are not presented here.
-    
+    Aqui, expressões simplificadas para os campos elétricos e magnéticos são apresentadas para vários casos.
+    Examinando expressões simplificadas, podemos ver mais facilmente como os campos dependem de certos parâmetros.
+    Como a solução analítica completa para o potencial do vetor é bastante simples, aproximações assintóticas não são apresentadas aqui.
 
-Near-Field/Late-Times
----------------------
 
-For fields which are very close to the electric dipole source, or at sufficiently late times:
+Campo Próximo/ Tempos tardios
+-----------------------------
+
+Para campos que estão muito próximos da fonte de dipolo elétrico, ou em tempos suficientemente tardios:
 
 .. math::
 	\theta r = \Bigg ( \frac{\mu \sigma}{4t} \Bigg )^{1/2} r \ll 1
 	:label: theta_nearfield_latetime
 
-
-In this case, the exponential and error functions can be approximated using Taylor expansion. Thus:
+Nesse caso, as funções exponencial e de erro podem ser aproximadas usando a expansão de Taylor. Desse modo:
 
 .. math::
 	e^{-\theta^2 r^2} = 1 - \theta^2 r^2 + \frac{1}{2}\theta^4 r^4 + \; ...
 	:label: Taylor_expansion_exp
 	
-and
+e
 
 .. math::
 	\textrm{erf}(\theta r) =  \frac{2}{\sqrt{\pi}} \theta r - \frac{2}{3 \sqrt{\pi}}\theta^3 r^3 + \frac{1}{5\sqrt{\pi}} \theta^5 r^5 + \;...
 	:label: erfc_approximation
 
-
-By substituting the above Taylor expansions into the :ref:`full analytic solutions<time_domain_electric_dipole_analytic_solution>` for :math:`{\bf e_e}` and :math:`{\bf h_e}`, we can obtain near-field/late-time approximations.
-In the case of the electric field:
+Ao substituir as expansões de Taylor acima nas :ref:`soluções analíticas completas<time_domain_electric_dipole_analytic_solution>` para 
+:math:`{\bf e_e}` e :math:`{\bf h_e}`, podemos obter a aproximações para tempos tardios de campo próximo. No caso do campo elétrico:
+	
 
 .. math::
 	{\bf e_e}(t) \approx \frac{ Ids}{15 \pi^{3/2} \sigma r^3} \Bigg [ 6 \,\theta^5 r^5 \Bigg ( \frac{x^2}{r^2}\mathbf{\hat x} + \frac{xy}{r^2}\mathbf{\hat y} + \frac{xz}{r^2}\mathbf{\hat z} \Bigg )   + \Big ( 10 \,\theta^3 r^3 + 3 \,\theta^5 r^5 \Big ) \mathbf{\hat x} \Bigg ]
 	:label: e_nearfield_latetime
 
-According to Eq. :eq:`e_nearfield_latetime`, :math:`\mathbf{\hat y}` and :math:`\mathbf{\hat z}` components of the near-field/late-time electric field decay proportional to :math:`t^{-5/2}`.
-However, :math:`\theta^3 r^3` terms for the :math:`\mathbf{\hat x}` component do not cancel.
-Therefore, the :math:`\mathbf{\hat x}` component of the electric field decays proportional to :math:`t^{-3/2}` at sufficiently late times.
-For the magnetic field, the near-field/late-time approximation is given by:
+De acordo com as Equações :eq:`e_nearfield_latetime`, :math:`\mathbf {\hat y}` e :math:`\mathbf{\hat z}` componentes do campo elétrico próximo/tardio decaem proporcional a :math:`t^{-5/2}`.
+No entanto, os termos :math:`\theta^3 r^3` para a componente :math:`\mathbf{\hat x}` não são cancelados.
+Portanto, a componente :math:`\mathbf{\hat x}` do campo elétrico decai proporcionalmente a :math:`t^{-3/2}` em tempos suficientemente atrasados.
+Para o campo magnético, a aproximação de campo próximo/tempo tardio é dada por:
 
 .. math::
 	{\bf h_e}(t) \approx \frac{\theta^3 Ids}{3\pi^{3/2}} \big (-z \, \mathbf{\hat y} + y \, \mathbf{\hat z} \big ) 
 	:label: h_nearfield_latetime
 
-According to Eq. :eq:`h_nearfield_latetime`, the near-field/late-time electric field decays proportional to :math:`t^{-3/2}`.
-Taking the derivative of Eq. :eq:`h_nearfield_latetime`, near-field/late-time approximation for the time-derivative of the magnetic field is given by:
+De acordo com a Equação :eq:`h_nearfield_latetime`, o campo elétrico de campo próximo/tempo tardio decai proporcionalmente a :math:`t^{-3/2} `.
+Tomando a derivada da Equação :eq:`h_nearfield_latetime`, aproximação de campo próximo/tempo tardio para a derivada de tempo do campo magnético é dada por:
+
 
 .. math::
 	\frac{\partial {\bf h_e}}{\partial t} \approx \frac{2 \theta^5 Ids}{\mu \sigma \pi^{3/2}} \big ( z \, \mathbf{\hat y} - y \, \hat  z \big )
 	:label: dhdt_nearfield_latetime
 
-According to Eq. :eq:`dhdt_nearfield_latetime`, the time-derivative of the magnetic field decays proportional to :math:`t^{-5/2}`.
+De acordo com a Equação :eq:`dhdt_nearfield_latetime`, a derivada do tempo do campo magnético decai proporcionalmente a :math:`t^{-5/2}`.
+
+Campo Distante
+--------------
 
 
-Far-Field
----------
-
-
-For fields which are far from the electrical current dipole source, or at sufficiently early times:
+Para campos que estão longe da fonte de dipolo de corrente elétrica, ou em tempos suficientemente grandes:
 
 .. math::
 	\theta r = \Bigg ( \frac{\mu \sigma}{4t} \Bigg )^{1/2} r \gg 1
 	:label: theta_farfield
 
-In this case, the exponential and complimentary error function can be approximated as follows:
+Neste caso, a exponencial e a função erro complementar pode ser aproximada como segue:
 
 .. math::
 	e^{-\theta^2 r^2} \approx 0
 	:label: exp_approximation
 	
-and
+e
 
 .. math::
 	\textrm{erfc}(\theta r) \approx 0
 	:label: erfc_approximation_2
 
-
-As a result, there are no interesting asymptotic approximations for the far-field.
-
-
+Como resultado, não há aproximações assintóticas interessantes para o campo distante.
 
 
 

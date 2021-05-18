@@ -1,61 +1,63 @@
 .. _frequency_domain_magnetic_dipole_fields:
 
-Visualization of the Electromagnetic Fields
-===========================================
+Visualização dos Campos Eletromagnéticos
+========================================
 
 .. Purpose::
 
-    Here, we provide numerical modeling tools for visualizing the electric field, magnetic field and current density caused by a magnetic dipole source.
-    A set of questions about the fields and their dependency on various parameters are then presented as a learning exercise.
-    By completing this exercise, you will become comfortable with the numerical modeling tools provided and gain a fundamental understanding of the fields which are caused by a harmonic magnetic dipole.
+     Aqui, fornecemos ferramentas de modelagem numérica para visualizar o campo elétrico, campo magnético e densidade de corrente causados por uma fonte de dipolo magnético. Um conjunto de perguntas sobre os campos e sua dependência de vários parâmetros é apresentado como um exercício de aprendizagem.
+     Ao completar este exercício, você se sentirá confortável com as ferramentas de modelagem numérica fornecidas e obterá uma compreensão fundamental dos campos que são causados por um dipolo magnético harmônico.
 
 
-**Link to the app**
+**Link para o App**
 
-Research Questions
-------------------
+Questões de Pesquisa
+--------------------
 
-Here, a set of questions about the fields and their dependency on various parameters are presented as a learning exercise.
-The user is encouraged to answer these questions in order, as we begin with simple cases and move to cases with more challenging physics.
-The user is also encouraged to use analytic and asymptotic expressions as a reference when completing the exercise.
- 
+Aqui, um conjunto de perguntas sobre os campos e sua dependência de vários parâmetros é apresentado como um exercício de aprendizagem.
+O usuário é encorajado a responder a essas perguntas em ordem, à medida que começamos com casos simples e passamos para casos com física mais desafiadora.
+O usuário também é encorajado a usar expressões analíticas e assintóticas como referência ao completar o exercício.
 
-**DC (Static) Case:**
 
-For the DC case, ensure that the frequency is set to 0 Hz. When answering the following questions, examine the x, y and z components of the electric field, magnetic field and current density. The vector plot is recommended.
 
-	- In this case, is there a non-zero electric field and/or current density?
-	- Does the magnetic field have any radial components?
-	- Does the magnetic field have any quadrature (imaginary) components?
-	- Do any aspects of the magnetic field change when you alter the physical properties of the medium?
-	- Do your observations make sense when considering the :ref:`DC approximation<frequency_domain_magnetic_dipole_asymptotics_DC>`?
+**Caso DC (Estático):**
 
-**Near-Field Approximation:**
+Para o caso DC, certifique-se de que a frequência esteja definida para 0 Hz. Ao responder às perguntas a seguir, examine os componentes x, y e z do campo elétrico, campo magnético e densidade de corrente. O gráfico vetorial é recomendado.
 
-Now set the conductivity of the background to 1 S/m and set the frequency to 1 Hz. According to our asymptotic approximations, the :ref:`near-field<frequency_domain_magnetic_dipole_asymptotics_near>` (:math:`| kr | \ll 1`) the magnetic field should behave like the DC case and the electric field should have only quadrature (imaginary) components.
+    - Neste caso, existe um campo elétrico e/ou densidade de corrente diferente de zero?
+    - O campo magnético tem algum componente radial?
+    - O campo magnético tem algum componente de quadratura (imaginário)?
+    - Algum aspecto do campo magnético muda quando você altera as propriedades físicas do meio?
+    - Suas observações fazem sentido ao considerar a :ref:`aproximação DC<frequency_domain_magnetic_dipole_asymptotics_DC>`?
 
-	- Examine the electric and magnetic fields. Do your observations compare well to what your would expect?
-	- Increase the frequency by a factor of 10. Does the strength of the magnetic field change? Does the strength of the electric field change? Does this make sense when considering the near-field approximations?
-	- Are the induced electric fields rotational about the dipole?
+**Aproximação de campo próximo:**
 
-Now slowly increase the frequency by factors of 10. When you reach 1000 Hz, notice that at sufficient distance from the dipole, the near-field approximation is no longer valid. However near the dipole source, the fields more or less behave like DC fields.
+Agora defina a condutividade do fundo para 1 S/m e defina a frequência para 1 Hz. De acordo com nossas aproximações assintóticas, o 
+:ref:`campo próximo<frequency_domain_magnetic_dipole_asymptotics_near>` ( :math:`|kr| \ll 1`) o campo magnético deve se comportar como o caso DC e o campo elétrico deve ter apenas quadratura (imaginária ) componentes.
 
-	- At what distance is the near-field approximation no longer valid at 1000 Hz? Use this value to confirm that :math:`| kr | \ll 1`.
+    - Examine os campos elétricos e magnéticos. Suas observações se comparam bem com o que você esperaria?
+    - Aumente a frequência por um fator de 10. A intensidade do campo magnético muda? A intensidade do campo elétrico muda? Isso faz sentido ao considerar as aproximações de campo próximo?
+    - Os campos elétricos induzidos são rotacionais em relação ao dipolo?
 
-**The Inductive Response:**
+Agora, aumente lentamente a frequência por fatores de 10. Quando você atingir 1000 Hz, observe que a uma distância suficiente do dipolo, a aproximação de campo próximo não é mais válida. No entanto, perto da fonte dipolo, os campos mais ou menos se comportam como campos DC.
 
-According to :ref:`Faraday's law<faraday>`, the effects of EM induction increase as frequency increases. Set the conductivity to 0.1 S/m and choose a point (x,y,z) = (40m, 0m, 0m). Examine the x,y and z components of the electric and magnetic fields.
+    - A que distância a aproximação de campo próximo não é mais válida em 1000 Hz? Use este valor para confirmar que :math:`|kr| \ll 1`.
 
-	- At what frequency do the effects of EM induction become significant?
-	- Now increase the background conductivity to 1 S/m and examine the same location. At what frequency do the effects of EM induction become significant?
-	- Now choose a location closer to the dipole source (x,y,z) = (10m, 0m, 0m). At what frequency do the effects of EM induction become significant compared to the primary field?
 
-**Magnetic Permeability and Dielectric Permittivity**
+**A resposta Indutiva:**
 
-Set the log-conductivity to 0.01 S/m.
+De acordo com :ref:`Lei de Faraday<faraday>`, os efeitos da indução EM aumentam à medida que a frequência aumenta. Defina a condutividade para 0,1 S/m e escolha um ponto (x, y, z) = (40m, 0m, 0m). Examine os componentes x, y e z dos campos elétricos e magnéticos.
 
-	- Try increasing the relative permeability (:math:`\mu_r`). Do you notice any significant changes in the shape and amplitude of the electric and magnetic fields?
-	- Now try increasing the relative permittivity (:math:`\varepsilon_r`). When you do this at low frequencies, do you notice any significant changes in the shape and amplitude of the electric and magnetic fields? How about when you do this at high frequencies?
+    - Com que frequência os efeitos da indução EM se tornam significativos?
+    - Agora aumente a condutividade de fundo para 1 S / me examine o mesmo local. Com que frequência os efeitos da indução EM se tornam significativos?
+    - Agora escolha um local mais próximo da fonte dipolo (x, y, z) = (10m, 0m, 0m). Com que frequência os efeitos da indução EM se tornam significativos em comparação com o campo primário?
+
+**Permeabilidade Magnética e Permissividade Dielétrica:**
+
+Defina a condutividade logarítmica para 0,01 S/m.
+
+    - Tente aumentar a permeabilidade relativa (:math:`\mu_r`). Você percebe alguma mudança significativa na forma e amplitude dos campos elétricos e magnéticos?
+    - Agora tente aumentar a permissividade relativa (:math:`\varepsilon_r`). Quando você faz isso em baixas frequências, você percebe alguma mudança significativa na forma e na amplitude dos campos elétricos e magnéticos? E quando você faz isso em altas frequências?
 
 
 

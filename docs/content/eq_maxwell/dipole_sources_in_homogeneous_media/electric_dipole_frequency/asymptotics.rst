@@ -1,53 +1,55 @@
 .. _frequency_domain_electric_dipole_asymptotics:
 
-Asymptotic Approximations
+Aproximações Assintóticas
 =========================
 
 .. purpose::
 
-    Here, simplified expressions for the electric and magnetic fields are presented for several cases.
-    By examining simplified expressions, we can more easily see how the fields depend on certain parameters. 
+    Aqui, expressões simplificadas para os campos elétricos e magnéticos são apresentadas para vários casos.
+    Examinando expressões simplificadas, podemos ver mais facilmente como os campos dependem de certos parâmetros.
 
 
 .. _frequency_domain_electric_dipole_asymptotics_DC:
 
-DC-Field Approximation
-----------------------
+Aproximação para o Campo DC
+---------------------------
 
-The DC electric and magnetic fields from an electric dipole source can be obtained from the full analytic solutions by taking the limit as :math:`\omega \rightarrow 0`.
-In this case, the wave-number :math:`k \rightarrow 0`.
-For an electric dipole source :math:`\mathbf{\hat x} I ds`, the DC electric field within a homogenous medium is given by:
+Os campos elétricos e magnéticos DC de uma fonte de dipolo elétrico podem ser obtidos a partir de soluções analíticas completas, tomando o limite como 
+:math:`\omega \rightarrow 0`.
+Neste caso, o número da onda :math:`k \rightarrow 0`.
+Para uma fonte de dipolo elétrico :math:`\mathbf{\hat x} I ds`, o campo elétrico DC dentro de um meio homogêneo é dado por:
 
 .. math::
 	\lim_{\omega \rightarrow 0} \mathbf{E_e} = \frac{I ds}{4 \pi \sigma  r^3} \left[ \left(\frac{3x^2}{r^2} - 1 \right) \mathbf{\hat x} + \frac{3xy}{r^2} \mathbf{\hat y} + \frac{3xz}{r^2} \mathbf{\hat z} \right]
 	:label: eq_Edip_Edc
 
-According to Eq. :eq:`eq_Edip_Edc`, the DC electric field depends solely on the observation location and the conductivity of the medium.
-The source and the electric field are also completely in-phase.
-Similarly, the corresponding DC magnetic field within the medium is given by:
+De acordo com a Equação :eq:`eq_Edip_Edc`, o campo elétrico DC depende unicamente da localização de observação e da condutividade do meio.
+A fonte e o campo elétrico também estão completamente em fase.
+Da mesma forma, o campo magnético DC correspondente dentro do meio é dado por:
 
 .. math::
 	\lim_{\omega \rightarrow 0} \mathbf{H_e} = \frac{I ds}{4 \pi r^2} \left( -\frac{z}{r} \mathbf{\hat y} + \frac{y}{r} \mathbf{\hat z} \right)
 	:label: eq_Edip_Hdc
 
-According to Eq. :eq:`eq_Edip_Hdc`, the DC magnetic field is independent of any physical properties.
-In addition, the DC electric and magnetic fields are in-phase with one another.
+De acordo com a Equação :eq:`eq_Edip_Hdc`, o campo magnético DC é independente de quaisquer propriedades físicas.
+Além disso, os campos elétrico e magnético DC estão em fase um com o outro.
 
 
 .. _frequency_domain_electric_dipole_asymptotics_near:
 
-Near-Field Approximation
-------------------------
-x
-For fields which are sufficiently close to the electric dipole source, we may assume that :math:`| kr | \ll 1`.
-In this case, the exponential term in :math:`\mathbf{E}_e` and :math:`\mathbf{H}_e` can be approximated using Taylor expansion:
+Aproximação Campo Próximo
+-------------------------
+
+Para campos que estão suficientemente próximos da fonte de dipolo elétrico, podemos assumir que :math:`|kr| \ll 1`.
+Neste caso, o termo exponencial em :math:`\mathbf{E}_e` e :math:`\mathbf{H}_e` pode ser aproximado usando a expansão de Taylor:
 
 .. math::
 	e^{-ikr} \approx 1 - ikr + O \left ( k^2 r^2 \right )
 	:label: eq_exp_TaylorO2
 
-The near-field approximation for :math:`\mathbf{E}_e` can be obtained by replacing the exponential term in the full analytic solution with the Taylor series approximation from Eq. :eq:`eq_exp_TaylorO2`.
-Thus:
+A aproximação de campo próximo para :math:`\mathbf{E}_e` pode ser obtida substituindo o termo exponencial na solução analítica completa pela aproximação da série de Taylor da Equação :eq:`eq_exp_TaylorO2`.
+Desse modo:
+
 
 .. math::
 	\begin{split}
@@ -55,47 +57,51 @@ Thus:
 	&\big ( -k^2 r^2 + 3ikr +3 \big ) + \big ( k^2 r^2 - ikr -1 \big ) \mathbf{\hat x} \Bigg ]
 	\end{split}
 	:label: eq_Edip_Enear1
-
-Eq. :eq:`eq_Edip_Enear1` can be simplified by neglecting polynomial terms which are :math:`O(k^2 r^2)` or higher.
-Assuming we are in the quasi-static regime (:math:`| \omega\varepsilon | \ll \sigma`), the electric field in close proximity to an electric dipole moment :math:`\mathbf{\hat x} I ds` is given by:
+	
+A Equação :eq:`eq_Edip_Enear1` pode ser simplificado negligenciando os termos polinomiais que são :math:`O(k^2 r^2)` ou superior.
+Supondo que estejamos no regime quase estático (:math:`| \omega\varepsilon | \ll \sigma`), o campo elétrico próximo a um momento de dipolo elétrico 
+:math:`\mathbf{\hat x} I ds` é dado por:
 
 .. math::
 	\mathbf{E_e} \approx \frac{I ds}{4 \pi \sigma r^3} \left[ \left(\frac{3x^2}{r^2} - 1 \right) \mathbf{\hat x} + \frac{3xy}{r^2} \mathbf{\hat y} + \frac{3xz}{r^2} \mathbf{\hat z} \right] + O(k^2 r^2 )
 	:label: eq_Edip_Enear2
 
-According to Eq. :eq:`eq_Edip_Enear2`, the near electric field depends only on the observation location and the conductivity of the medium.
-Additionally, the source and the electric field are completely in-phase.
+De acordo com a Equação :eq:`eq_Edip_Enear2`, o campo elétrico próximo depende apenas do local de observação e da condutividade do meio.
+Além disso, a fonte e o campo elétrico estão completamente em fase.
 
-The near-field approximation for :math:`\mathbf{H}_e` can be obtained by replacing the exponential term in the full analytic solution with the Taylor series approximation from Eq. :eq:`eq_exp_TaylorO2`.
-Thus:
+A aproximação de campo próximo para :math:`\mathbf{H}_e` pode ser obtida substituindo o termo exponencial na solução analítica completa pela aproximação da série de Taylor da Equação :eq:`eq_exp_TaylorO2`.
+Desse modo:
 
 .. math::
 	\mathbf{H_e} \approx \frac{I ds}{4 \pi r^2} \left( ikr + 1 \right ) \bigg ( 1 - ikr + O \big ( k^2 r^2 \big ) \bigg ) \left( -\frac{z}{r} \mathbf{\hat y} + \frac{y}{r} \mathbf{\hat z} \right)
 	:label: eq_Edip_Hnear1
 
-Eq. :eq:`eq_Edip_Hnear1` can be further simplified by neglecting polynomial terms which are :math:`O(k^2 r^2)` or higher.
-Therefore, the magnetic field in close proximity to electric dipole moment :math:`\mathbf{\hat x} I ds` is approximately equal to:
+A Equação :eq:`eq_Edip_Hnear1` pode ser ainda mais simplificado negligenciando os termos polinomiais que são :math:`O k^2 r^2)` ou superior.
+Portanto, o campo magnético próximo ao momento de dipolo elétrico :math:`\mathbf{\hat x} I ds` é aproximadamente igual a:
 
 .. math::
 	\mathbf{H_e} \approx \frac{I ds}{4 \pi r^2} \left( -\frac{z}{r} \mathbf{\hat y} + \frac{y}{r} \mathbf{\hat z} \right) + O(k^2 r^2 )
 	:label: eq_Edip_Hnear2
 
-According to Eq. :eq:`eq_Edip_Hnear2`, :math:`\mathbf{H}_e` does not depend on the physical properties of the background medium.
-Furthermore, Eq. :eq:`eq_Edip_Hnear2` indicates that :math:`\mathbf{E}_e` and :math:`\mathbf{H}_e` are in-phase.
+De acordo com a Equação :eq:`eq_Edip_Hnear2`, :math:`\mathbf{H}_e` não depende das propriedades físicas do meio de background.
+Além disso, a Equação :eq:`eq_Edip_Hnear2` indica que :math:`\mathbf{E}_e` e :math:`\mathbf{H} _e` estão em fase.
 
 
 .. _frequency_domain_electric_dipole_asymptotics_far:
 
-Far-Field Approximation
------------------------
+Aproximação de Campo Distante
+-----------------------------
 
-For fields which are sufficient far away from the electric dipole source, we may assume that :math:`1 \ll | kr |`.
-In this case, Taylor expansion may not be used to simplify exponential terms in full analytic solutions for the fields.
-Expressions may still be simplified, however, by considering the largest order terms in each equation.
+Para campos suficientemente distantes da fonte de dipolo elétrico, podemos assumir que :math:`1 \ll | kr |`.
+Nesse caso, a expansão de Taylor não pode ser usada para simplificar os termos exponenciais em soluções analíticas completas para os campos.
+As expressões ainda podem ser simplificadas, no entanto, considerando os termos de maior ordem em cada equação.
 
-Let us first consider the far-field approximation of :math:`\mathbf{E}_e` within a uniform medium.
-For off-axis locations (:math:`y,z \not \ll x`), only :math:`O (k^2r^2)` terms are needed to accurately approximate the electric field from an electric dipole source.
-However, in the case where (:math:`y,z \ll x`), second order terms in the :math:`\mathbf{\hat x}` direction cancel, and both the :math:`\mathbf{\hat y}` and :math:`\mathbf{\hat z}` are insignificant due to geometry. Assuming we are in the quasi-static regime (:math:`|\omega\varepsilon | \ll \sigma`), and given that :math:`k^2 = - i \omega \mu \sigma`, the far field approximation of :math:`\mathbf{E}_e` is represented by the following two cases:
+Vamos primeiro considerar a aproximação de campo distante de :math:`\mathbf{E}_e` dentro de um meio uniforme.
+Para localizações fora do eixo (:math:`y, z \not \ll x`), apenas termos :math:`O (k^2r^2)` são necessários para aproximar com precisão o campo elétrico de uma fonte de dipolo elétrico.
+No entanto, no caso em que (:math:`y, z \ll x`), os termos de segunda ordem na direção :math:`\mathbf{\hat x}` cancelam, e ambos os 
+:math:`\mathbf{ \hat y}` e :math:`\mathbf{\hat z}` são insignificantes devido à geometria. Supondo que estejamos no regime quase estático 
+(:math:`| \omega \varepsilon| \ll \sigma`), e dado que :math:`k^2 = - i \omega \mu \sigma`, o distante a aproximação de campo de :math:`\mathbf{E}_e` é representada pelos dois casos a seguir:
+
 
 .. math::
 	\mathbf{E_e} \approx
@@ -105,8 +111,8 @@ However, in the case where (:math:`y,z \ll x`), second order terms in the :math:
 	\dfrac{ik Ids}{2\pi \sigma x^2} e^{-ikx} \mathbf{\hat x} &\textrm{for} \; \; y,z \ll x
 	\end{cases}
 
-Let us now consider the far-field approximation of :math:`\mathbf{H}_e` within a uniform medium.
-Since :math:`1 \ll | kr |`, we can simplify the full analytic expression in the same manner and show that:
+Vamos agora considerar a aproximação de campo distante de :math:`\mathbf{H}_e` dentro de um meio uniforme.
+Desde que :math:`1 \ll | kr |`, podemos simplificar a expressão analítica completa da mesma maneira e mostrar que:
 
 .. math::
 	\mathbf{H_e} \approx \frac{ik I ds}{4\pi r} e^{-ikr} \left ( -\frac{z}{r} \mathbf{\hat y} + \frac{y}{r}\mathbf{\hat z} \right )

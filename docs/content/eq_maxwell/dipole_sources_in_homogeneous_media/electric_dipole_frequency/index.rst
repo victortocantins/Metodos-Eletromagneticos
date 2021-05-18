@@ -1,18 +1,17 @@
 .. _frequency_domain_electric_dipole_index:
 
-Harmonic Electrical Current Dipole
-==================================
+Dipolo de Corrente Elétrica Harmônico
+=====================================
 
 
 .. Purpose::
 
-    In the frequency domain, we consider harmonic electric and magnetic fields.
-    Here, we provide a physical description of the harmonic electrical current dipole.
-    This is used to develop a mathematical expression which can be used to replace the electrical source term in Maxwell's equations.
+    No domínio da frequência, consideramos os campos elétricos e magnéticos harmônicos.
+    Aqui, fornecemos uma descrição física do dipolo de corrente elétrica harmônico.
+    Isso é usado para desenvolver uma expressão matemática que pode ser usada para substituir o termo de fonte elétrica nas equações de Maxwell.
 
 
-
-**General Definition**
+**Deifinição Geral**
 
 
 .. figure:: images/E_source_current_dipole.png
@@ -20,24 +19,21 @@ Harmonic Electrical Current Dipole
 		:figwidth: 50%
 		:name: CurrentWire
 
-        	Physical representation of the harmonic electrical current dipole source where :math:`\mathbf{p}` = 1 Am.
+        	Representação física da fonte dipolo de corrente elétrica harmônica onde :math:`\mathbf{p}` = 1 Am.
 
 
-
-The harmonic electrical current dipole can be thought of as an infinitesimally short length of wire which carries a harmonic current.
-The strength of the source is therefore defined by a harmonic dipole moment :math:`\mathbf{p}(\omega)`.
-For a harmonic current dipole defined by length :math:`ds` and harmonic current :math:`\mathbf{I} (\omega) = \mathbf{I}e^{i\omega t}`, the dipole moment is given by:
-
+O dipolo de corrente elétrica harmônica pode ser pensado como um comprimento infinitesimal de fio que carrega uma corrente harmônica.
+A força da fonte é, portanto, definida por um momento de dipolo harmônico :math:`\mathbf{p}(\omega)`.
+Para um dipolo de corrente harmônica definido por comprimento :math:`ds` e corrente harmônica :math:`\mathbf{I} (\omega)=\mathbf{I}e^{i\omega t}`, o momento de dipolo é dado por:
 
 
 .. math::
 	\mathbf{p}(\omega) = \mathbf{p} \, e^{i\omega t} = \mathbf{I} ds \, e^{i\omega t}
 	:label: p_harmonic_def
 
-
-where :math:`\mathbf{p} = \mathbf{I}ds` is the vector amplitude of the dipole moment.
-When formulating Maxwell's equations in the frequency domain, :math:`e^{i\omega t}` is generally suppressed.
-As a result, the source term for the harmonic electrical current dipole is given by:
+onde :math:`\mathbf{p} = \mathbf{I}ds` é a amplitude do vetor do momento de dipolo.
+Ao formular as equações de Maxwell no domínio da frequência, :math:`e^{i\omega t}` é geralmente suprimido.
+Como resultado, o termo fonte para o dipolo de corrente elétrica harmônica é dado por:
 
 
 .. math::
@@ -45,9 +41,8 @@ As a result, the source term for the harmonic electrical current dipole is given
 	:label: Je_harmonic_def
 
 
-where :math:`\delta (x)` is the Dirac delta function.
-By including the source term, Maxwell's equations in the frequency domain are given by:
-
+onde :math:`\delta (x)` é a função delta de Dirac.
+Ao incluir o termo fonte, as equações de Maxwell no domínio da frequência são dadas por:
 
 .. math::
 	\begin{split}
@@ -57,18 +52,14 @@ By including the source term, Maxwell's equations in the frequency domain are gi
 	:label: p_Maxwells_harmonic
 
 
-
-where subscripts :math:`_e` remind us that we are considering an electric source.
-The source current is responsible for generating a primary current density (and thus an electric field) in the surrounding region (:numref:`ElecDipole`).
-However, the :ref:`Ampere-Maxwell equation<ampere_maxwell_differential_frequency>` states that harmonic electric fields as well as free currents generate magnetic fields.
-In addition, the harmonic nature of the magnetic fields should produce secondary electric fields according to :ref:`Faraday's law<faraday_differential_frequency>`.
+onde subscritos :math:`_e` nos lembra que estamos considerando uma fonte elétrica.
+A fonte de corrente é responsável por gerar uma densidade de corrente primária (e, portanto, um campo elétrico) na região circundante (:numref:`ElecDipole`). No entanto, a :ref:`equação Ampere-Maxwell<ampere_maxwell_differential_frequency>` afirma que os campos elétricos harmônicos, bem como as correntes livres, geram campos magnéticos. Além disso, a natureza harmônica dos campos magnéticos deve produzir campos elétricos secundários de acordo com :ref:`Lei de Faraday<faraday_differential_frequency>`.
 
 
-**Organization**
+**Organização**
 
-In the following section, we solve Maxwell's equations for a harmonic electrical current dipole source and provide analytic expressions for the electric and magnetic fields within a homogeneous medium.
-Asymptotic expressions are then provided for several cases.
-Numerical modeling tools are made available for investigating the dependency of the electric and magnetic fields on various parameters.
+Na seção a seguir, resolvemos as equações de Maxwell para uma fonte dipolo de corrente elétrica harmônica e fornecemos expressões analíticas para os campos elétrico e magnético em um meio homogêneo. Expressões assintóticas são então fornecidas para vários casos.
+Ferramentas de modelagem numérica são disponibilizadas para investigar a dependência dos campos elétricos e magnéticos em vários parâmetros.
 
 
 .. toctree::

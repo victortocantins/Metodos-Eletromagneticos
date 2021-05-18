@@ -1,7 +1,7 @@
 .. _time_domain_magnetic_dipole_fields:
 
-Visualization of the Electromagnetic Fields
-===========================================
+Visualização dos Campos Eletromagnéticos
+========================================
 
 .. raw:: html
     :file: ../../../../underconstruction.html

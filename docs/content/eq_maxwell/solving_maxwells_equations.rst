@@ -1,27 +1,27 @@
 .. _solving_maxwells_equations:
 
-Solving Maxwell's Equations
-===========================
+Solucionando as Equações de Maxwell
+===================================
 
 .. purpose::
 
-    Here, we provide a general overview on how to solve Maxwell's equations in practice. The approaches used to solve specific problems are covered later in EM GeoSci.
+    Aqui, fornecemos uma visão geral sobre como resolver as equações de Maxwell na prática. As abordagens usadas para resolver problemas específicos são abordadas posteriormente
 
+    
+A prática de resolver as equações de Maxwell para um problema aplicado pode ser dividida em três partes:
 
-The practice of solving Maxwell's equations for an applied problem can be broken into three parts:
-
-    1) **Defining the problem:** here, Maxwell's equations are modified, reformulated or approximated to suite a particular physical problem.
-    2) **Setting boundary and initial conditions:** these are invoked so that solutions to Maxwell's equations are uniquely solved for a particular application.
-    3) **Solving with analytic or numerical approaches:** once the problem, boundary conditions and initial conditions have been defined, the final solution is obtained through analytic or numerical approaches.
+     1) **Definindo o problema:** aqui, as equações de Maxwell são modificadas, reformuladas ou aproximadas para se adequar a um problema físico particular.
+     2) **Definindo o limite e as condições iniciais:** são invocados para que as soluções das equações de Maxwell sejam resolvidas exclusivamente para uma aplicação particular.
+     3) **Resolução com abordagens analíticas ou numéricas:** uma vez que o problema, as condições de contorno e as condições iniciais tenham sido definidas, a solução final é obtida através de abordagens analíticas ou numéricas.
 
 .. _solving_maxwells_equations_problem:
 
-Defining the Problem
+Definindo o Problema
 --------------------
 
-In ":ref:`quick_guide_maxwell`", we presented general formulations for Maxwell's equations. In most cases however, Maxwell's equations can be modified, reformulated or approximated to simplify an applied problem. Failure to choose an appropriate formulation may result in the problem being difficult or impossible to solve using current means. 
+Em ":ref:`quick_guide_maxwell`", apresentamos formulações gerais para as equações de Maxwell. Na maioria dos casos, entretanto, as equações de Maxwell podem ser modificadas, reformuladas ou aproximadas para simplificar um problema aplicado. A falha em escolher uma formulação apropriada pode resultar na dificuldade ou impossibilidade de resolver o problema usando os meios atuais.
 
-**Examples (to be discussed in more detail throughout EM GeoSci):**
+**Examplos:**
 
 - :ref:`DC Resistivity:<dcr_index>`
 
@@ -31,7 +31,7 @@ In ":ref:`quick_guide_maxwell`", we presented general formulations for Maxwell's
 	\mathbf{E} =& - \nabla \phi
 	\end{align}
 
-where :math:`\mathbf{J_s}` is an electrical current source and :math:`\phi` is a scalar potential.
+onde :math:`\mathbf{J_s}` é uma fonte de corrente elétrica e :math:`\phi` é um potencial escalar.
 
 - :ref:`Frequency Domain Electromagnetics:<airborne_fdem_index>`
 
@@ -41,9 +41,12 @@ where :math:`\mathbf{J_s}` is an electrical current source and :math:`\phi` is a
 	\nabla\times\mathbf{E} + i\omega \mathbf{B} &= 0
 	\end{align}
 
-where :math:`\mathbf{J_s}` is an electrical current source. For some problems, we may be able to work in the quasi-static (:math:`\sigma \gg \omega \varepsilon`) or wave (:math:`\sigma \ll \omega \varepsilon`) regimes; allowing us to neglect terms involving :math:`\varepsilon`. In many geological environments, the impact of the Earth's magnetic properties is negligible (i.e. :math:`\mu\approx \mu_0`). In this case, we can take :math:`\mu` out of the curl-curl system. In the case of a magnetic source, we would need to solve a different system.
+onde :math:`\mathbf{J_s}` é uma fonte de corrente elétrica. Para alguns problemas, podemos ser capazes de trabalhar nos regimes quase estáticos 
+(:math:`\sigma \gg \omega \varepsilon`) ou onda (:math:`\sigma \ll \omega \varepsilon`); permitindo-nos negligenciar os termos envolvendo 
+:math:`\varepsilon`. Em muitos ambientes geológicos, o impacto das propriedades magnéticas da Terra é insignificante (ou seja :math:`\mu \approx \mu_0`). Neste caso, podemos tirar :math:`\mu` do sistema curl-curl. No caso de uma fonte magnética, precisaríamos resolver um sistema diferente.
 
-- :ref:`Time Domain Electromagnetics:<airborne_tdem_index>`
+
+- :ref:`Métodos Eletromagnéticos no Domínio do Tempo:<airborne_tdem_index>`
 
 .. math::
 	\begin{align}
@@ -51,128 +54,142 @@ where :math:`\mathbf{J_s}` is an electrical current source. For some problems, w
 	\nabla\times\mathbf{e} + \frac{\partial \mathbf{b}}{\partial t} &= 0
 	\end{align}
 
-where :math:`\mathbf{j_s}` is an electrical current source. This equation is the time-dependent equivalent to the one used in frequency domain electromagnetics. For some problems, we may be able to work in the quasi-static or wave regimes; allowing us to neglect terms involving :math:`\varepsilon`. If the impact of the Earth's magnetic properties is negligible (i.e. :math:`\mu\approx \mu_0`), we can take :math:`\mu` out of the curl-curl system. In the case of a magnetic source, we would need to solve a different system.
+onde :math:`\mathbf{j_s}` é uma fonte de corrente elétrica. Esta equação é o equivalente dependente do tempo àquela usada em métodos eletromagnéticos no domínio da frequência. Para alguns problemas, podemos ser capazes de trabalhar nos regimes quase estáticos ou de onda; permitindo-nos negligenciar os termos envolvendo 
+:math:`\varepsilon`. Se o impacto das propriedades magnéticas da Terra for insignificante (ou seja :math:`\mu \approx \mu_0`), podemos tirar 
+:math:`\mu` do sistema curl-curl. No caso de uma fonte magnética, precisaríamos resolver um sistema diferente.
 
 
-Boundary and Initial Conditions
--------------------------------
 
-Boundary Conditions
-^^^^^^^^^^^^^^^^^^^
+Condições Iniciais e de Contornos
+---------------------------------
+
+Condições de Fronteiras
+^^^^^^^^^^^^^^^^^^^^^^^
 
 .. figure:: images/domain.png
 		:align: right
 		:figwidth: 35%
 		:name: fig_solving_maxwells_domain
 
-		Illustration of domain and boundary.
+		Ilustração de um domínio e contorno.
 
-Boundary conditions ensure that a the problem is well-posed; that is, it has a unique solution. This is necessary when using Maxwell's equations to solve applied problems in electromagnetic geosciences. Differential equations corresponding to a physical problem are defined within a region, or "domain" (denoted by :math:`\Omega`). To make the problem well-posed, boundary conditions are applied to the edges of this domain (denoted by :math:`\partial \Omega`). There are three types of boundary conditions, which are listed below:
+As condições de contornos garantem que o problema seja bem posto; ou seja, tem uma solução única. Isso é necessário ao usar as equações de Maxwell para resolver problemas aplicados em geociências eletromagnéticas. Equações diferenciais correspondentes a um problema físico são definidas dentro de uma região, ou "domínio" (denotado por :math:`\Omega`). Para colocar o problema bem colocado, as condições de contorno são aplicadas às arestas deste domínio (denotadas por 
+:math:`\partial \Omega`). Existem três tipos de condições de limite, que estão listados abaixo:
 
-**Dirichlet Boundary Conditions:** Dirichlet boundary conditions are by far the most straightforward and easy to implement. Dirichlet conditions directly define the value of the solution on the boundary, i.e.:
+**Condições de Contornos de Dirichlet:** As condições de contorno de Dirichlet são de longe as mais diretas e fáceis de implementar. As condições de Dirichlet definem diretamente o valor da solução no limite, ou seja:
 
 .. math::
 	 \mathbf{F(r)} \, \Big |_{\partial \Omega} = \mathbf{g(r)}
 
-where :math:`\mathbf{F}` is some vector field/flux defined within the domain, :math:`\mathbf{g}` is a spatially-dependent function and :math:`\mathbf{r} = (x,y,z)`. In many cases, the Dirichlet condition is given as a constant value; such as, all fields go to zero at the boundary.
+onde :math:`\mathbf{F}` é algum vetor campo/fluxo definido dentro do domínio, :math:`\mathbf{g}` é uma função espacialmente dependente e :math:`\mathbf{r} = (x,y,z)`. Em muitos casos, a condição de Dirichlet é fornecida como um valor constante; como, todos os campos vão para zero no limite.
 
-**Neumann Boundary Conditions:** Neumann boundary conditions are imposed by specifying the spatial derivatives of the solution on the boundary. Commonly, Neumann conditions define the directional derivatives normal to the surface of the domain, i.e.:
+**Condições de Contornos de Neumann:** As condições de contorno de Neumann são impostas especificando as derivadas espaciais da solução no contorno. Comumente, as condições de Neumann definem as derivadas direcionais normais à superfície do domínio, ou seja:
 
 .. math::
 	\frac{\partial F_n}{\partial \mathbf{n}} \bigg |_{\partial \Omega} = \mathbf{g(r)}
 
-where :math:`\mathbf{n}` is the unit vector direction perpendicular to the domain boundary :math:`\partial \Omega`, :math:`F_n = \mathbf{F \cdot \hat n}\;` is the component of a vector field/flux :math:`\mathbf{F}` along :math:`\mathbf{n}`, :math:`\mathbf{g}` is a spatially-dependent function and :math:`\mathbf{r} = (x,y,z)`. Physically, Neumann conditions are used to define the rate of flux through the boundary. This is frequently applied to problems which behave according to the heat equation.
+onde :math:`\mathbf{n}` é a direção do vetor unitário perpendicular a fronteira do domínio :math:`\partial \Omega`, :math:`F_n = \mathbf{F \cdot \hat n}\;` é a componente de um campo vetorial/fluxo :math:`\mathbf{F}` ao longo :math:`\mathbf{n}`, :math:`\mathbf{g}` é uma função espacialmente dependente e 
+:math:`\mathbf{r} = (x,y,z)`. Fisicamente, as condições de Neumann são usadas para definir a taxa de fluxo através da fronteira. Isso é frequentemente aplicado a problemas que se comportam de acordo com a equação de calor.
 
-**Robin (Mixed) Boundary Conditions:** Robin boundary conditions are a linear combination of Dirichlet and Neumann conditions, i.e.:
+
+**Condições de Contorno de Robin (Mista):** As condições de contorno de Robin são uma combinação linear das condições de Dirichlet e Neumann, ou seja:
 
 .. math::
 	\bigg [ a\mathbf{F(r)} + b\frac{\partial F_n}{\partial \mathbf{n}} \bigg ] \Bigg |_{\partial \Omega} = \mathbf{g(r)}
 
-where :math:`a` and :math:`b` are constants, :math:`\mathbf{n}` is the unit vector direction perpendicular to the domain boundary :math:`\partial \Omega`, :math:`F_n = \mathbf{F \cdot \hat n}\;` is the component of a vector field/flux :math:`\mathbf{F}` along :math:`\mathbf{n}`, :math:`\mathbf{g}` is a spatially-dependent function and :math:`\mathbf{r} = (x,y,z)`. Robin conditions are used when the rate of flux leaving the domain is dependent on the value of the field at the boundary.
+onde :math:`a` e :math:`b` são constantes, :math:`\mathbf{n}` é a direção do vetor unitário perpendicular a fronteira do domínio :math:`\partial \Omega`, 
+:math:`F_n = \mathbf{F \cdot \hat n}\;` é a componente de um campo/fluxo vetorial :math:`\mathbf{F}` junto com :math:`\mathbf{n}`, :math:`\mathbf{g}` é uma função espacialmente dependente e :math:`\mathbf{r} = (x, y, z)`. As condições de Robin são usadas quando a taxa de fluxo que sai do domínio depende do valor do campo na fronteira.
 
-Initial Conditions
+
+Condições Iniciais
 ^^^^^^^^^^^^^^^^^^
 
-Initial conditions, in addition to boundary conditions, are required to solve time-dependent problems. Because the solutions to problems in the physical sciences are causal, the fields and fluxes at a particular time depend on the fields and fluxes at earlier times. Generally, we set initial conditions to define the solution at :math:`t=0` and we are interested in the bahaviour of the fields and fluxes at :math:`t\geq 0`. If the differential equation being solved has only first order derivatives in time, initial conditions may be given by:
+As condições iniciais, além das condições de contorno, são necessárias para resolver problemas dependentes do tempo. Como as soluções para problemas nas ciências físicas são causais, os campos e fluxos em um determinado momento dependem dos campos e fluxos em momentos anteriores. Geralmente, definimos as condições iniciais para definir a solução em :math:`t=0` e estamos interessados no comportamento dos campos e fluxos em :math:`t \geq 0`. Se a equação diferencial sendo resolvida tem apenas derivadas de primeira ordem no tempo, as condições iniciais podem ser dadas por:
 
 .. math::
 	\mathbf{F}(\mathbf{r},t) \big |_{t=0} = \mathbf{F_0}(\mathbf{r})
 
-where :math:`\mathbf{F}` is a vector field/flux and :math:`\mathbf{F_0}` is the vector field/flux at :math:`t=0`. This type of condition would be needed to solve the time-domain electromagnetic equation presented in ":ref:`solving_maxwells_equations_problem`".
+onde :math:`\mathbf{F}` é o vetor campo/fluxo e :math:`\mathbf{F_0}` é o vetor campo/fluxo em :math:`t=0`. Este tipo de condição seria necessário para resolver a equação eletromagnética no domínio do tempo apresentada em ":ref:`solving_maxwells_equations_problem` ".
 
-**Multiple Variables and Higher Order Time-Derivatives** 
 
-If the differential equation contains multiple variables and higher order time-derivatives, we cannot solve the problem by simply setting initial conditions on the fields/fluxes at :math:`t=0`. Where :math:`k` is the highest order time-derivative found in the problem and :math:`n` is the number of time-dependent variables, we would require :math:`nk` total initial conditions to solve the problem. These initial conditions would take the form:
+**Variáveis ​​múltiplas e derivadas no tempo de ordem superior**
+
+Se a equação diferencial contém múltiplas variáveis ​​e derivadas no tempo de ordem superior, não podemos resolver o problema simplesmente definindo as condições iniciais nos campos/fluxos em :math:`t = 0`. Onde :math:`k` é a derivada no tempo de ordem mais alta encontrada no problema e :math:`n` é o número de variáveis ​​dependentes do tempo, exigiríamos :math:`nk` condições iniciais totais para resolver o problema. Essas condições iniciais assumiriam a forma:
 
 .. math::
 	\frac{\partial^k \mathbf{F}}{\partial t^k} \bigg |_{t=0} = \mathbf{g^k(r)}
 
-where :math:`\mathbf{F}` is the vector field/flux associated with variable :math:`n`, and :math:`\mathbf{g^k}` is a time-dependent function defined throughout the entire domain for the :math:`k^{th}` derivative. An example of this is the time-dependent wave equation presented in ":ref:`solving_maxwells_equations_problem`", which requires initial conditions on both :math:`\mathbf{e}` and its first-order time-derivative :math:`\partial \mathbf{e}/\partial t`.
+onde :math:`\mathbf{F}` é o campo vetorial/fluxo associado à variável :math:`n`, e :math:`\mathbf{g^k}` é uma função dependente do tempo definida em todo o domínio para a derivada :math:`k^{j}`. Um exemplo disso é a equação de onda dependente do tempo apresentada em ":ref:`solving_maxwells_equations_problem`", 
+que requer condições iniciais em :math:`\mathbf{e}` e sua derivada de tempo de primeira ordem :math:`\partial \mathbf{e}/ \partial t`.
 
 
-Analytic and Numeric Solutions
-------------------------------
+Soluções Numéricas e Analíticas
+-------------------------------
 
-Having formulated Maxwell's equations appropriately, as well as implementing boundary conditions and initial conditions, we can now solve the problem. There are two ways in which meaningful solutions can be obtained: analytically and numerically.
+Tendo formulado as equações de Maxwell apropriadamente, bem como implementado as condições de contorno e as condições iniciais, podemos agora resolver o problema. Existem duas maneiras de obter soluções significativas: analiticamente e numericamente.
 
-Analytic Solutions
-^^^^^^^^^^^^^^^^^^
-
-Ideally, one would derive an analytic solution. The problem becomes even more tractable if the solution is a closed-form expression; can be evaluated using a finite number of simple operations. Analytic solutions are generally only possible if the problem is simplified or exhibits a sufficient degree of geometric symmetry. We prefer analytic solutions because they are rapid to compute and explicitly show how the solution depends on its input variables.
-
-Some solutions may be called **semi-analytic**. Semi-analytic solutions generally require the numerical evaluation of one or more integral functions, infinite series and/or limits. In this case, the solution is not a closed form expression. However, semi-analytic solutions can be very useful in practice.
-
-Numerical Solutions
+Soluções Analíticas
 ^^^^^^^^^^^^^^^^^^^
 
-Numerical solutions are used to approximate the fields and fluxes to a desired level of accuracy. Numerical approaches are able to solve problems without relying on geometric symmetries. The process of obtaining a numerical solution can be broken down into three parts:
+Idealmente, alguém derivaria uma solução analítica. O problema se torna ainda mais tratável se a solução for uma expressão de forma fechada; pode ser avaliada usando um número finito de operações simples. Geralmente, as soluções analíticas só são possíveis se o problema for simplificado ou exibir um grau suficiente de simetria geométrica. Preferimos soluções analíticas porque são rápidas de calcular e mostram explicitamente como a solução depende de suas variáveis de entrada.
 
-1) **Discretizing the Domain**
-2) **Defining Fields and Fluxes**
-3) **Applying Computer Algorithms**
+Algumas soluções podem ser chamadas de **semi-analíticas**. Soluções semi-analíticas geralmente requerem a avaliação numérica de uma ou mais funções integrais, séries infinitas e/ou limites. Nesse caso, a solução não é uma expressão de forma fechada. No entanto, as soluções semi-analíticas podem ser muito úteis na prática.
 
-A conceptual understanding of the aforementioned steps will be provided here. However, we will not present all the required background for solving these problems in practice; as it is extensive.
 
-**Discretizing the Domain:**
+Soluções Numéricas
+^^^^^^^^^^^^^^^^^^
 
-In order to obtain a numerical solution, the domain is first discretized; i.e. subdivided into a collection of small volumes/regions. The collection of these volumes is called a 'mesh'. The physical properties within each volume are considered constant. The size and shape of each volume depends on the geometry of the problem, the size of the domain and the quantity of available computer memory. In :numref:`fig_solving_maxwells_discretization` a, we see a 1D discretization. The 1D discretization works well when, locally, the Earth displays a layered structure. For problems with irregular geometries, we may choose to use a 2D or 3D discretization (:numref:`fig_solving_maxwells_discretization` b). As a rule, the finer the discretization (as the dimensions of the cells decrease), the better our numerical solution will approximate the true solution to our problem.
+Soluções numéricas são usadas para aproximar os campos e fluxos a um nível desejado de precisão. As abordagens numéricas são capazes de resolver problemas sem depender de simetrias geométricas. O processo de obtenção de uma solução numérica pode ser dividido em três partes:
+
+1) **Discretizando o Domínio**
+2) **Definindo Campos e Fluxos**
+3) **Aplicação de algoritmos de computador**
+
+Uma compreensão conceitual das etapas acima mencionadas será fornecida aqui. No entanto, não apresentaremos todos os antecedentes necessários para resolver esses problemas na prática; como é extenso.
+
+
+
+**Discretização do Domínio:**
+
+Para obter uma solução numérica, o domínio é primeiro discretizado; ou seja, subdividido em uma coleção de pequenos volumes/regiões. A coleção desses volumes é chamada de 'malha'. As propriedades físicas dentro de cada volume são consideradas constantes. O tamanho e a forma de cada volume dependem da geometria do problema, do tamanho do domínio e da quantidade de memória disponível no computador. Em :numref:`fig_solving_maxwells_discretization` a, vemos uma discretização 1D. A discretização 1D funciona bem quando, localmente, a Terra exibe uma estrutura em camadas. Para problemas com geometrias irregulares, podemos escolher usar uma discretização 2D ou 3D (:numref:`fig_solving_maxwells_discretization` b). Via de regra, quanto mais fina a discretização (conforme as dimensões das células diminuem), melhor nossa solução numérica se aproximará da verdadeira solução do nosso problema.
 
 .. figure:: images/discretization.png
 		:align: center
 		:figwidth: 100%
 		:name: fig_solving_maxwells_discretization
 
-		Discretization of Earth's structure. (a) 1D discretization. (b) 3D discretization.
+		Discretizaçõa da estrutura da Terra. (a) Discretização 1D. (b) Discretização 3D.
 
-**Defining Fields, Fluxes and Potentials**
+**Definindo Campos, Fluxos e Potenciais**
 
 .. figure:: images/Yee-cube-w-b.png
 	:align: right
 	:figwidth: 50%
 	:name: fig_solving_maxwells_cube
 	
-	Definition of fields (:math:`\mathbf{E}`), fluxes (:math:`\mathbf{B}`) and potentials :math:`\phi` on a cubic cell.
+	Definição de campos (:math:`\mathbf{E}`), fluxos (:math:`\mathbf{B}`) e potenciais :math:`\phi` sobre uma célula cúbica.
 
-The fields, fluxes and/or potentials pertaining to a particular problem are defined throughout the entire domain. Once the domain has been discretized however, evaluation of these quantities is only possible at a finite number of locations. The fields, fluxes and/or potentials being computed depend on the formulation of Maxwell's equations. The locations of these quantities for each cell depend both on the problem and the corresponding interface conditions. 
+Os campos, fluxos e/ou potenciais pertencentes a um problema particular são definidos em todo o domínio. Uma vez que o domínio foi discretizado, entretanto, a avaliação dessas quantidades só é possível em um número finito de locais. Os campos, fluxos e/ou potenciais sendo calculados dependem da formulação das equações de Maxwell. As localizações dessas quantidades para cada célula dependem do problema e das condições de interface correspondentes.
 
-As an example, consider :numref:`fig_solving_maxwells_cube` where:
+Como exemplo, considere :numref:`fig_solving_maxwells_cube` onde:
 
-- the potential :math:`\phi` is defined on the cell nodes.
-- cartesian components of the electric field :math:`\mathbf{E}` are defined on the cell edges.
-- cartesian components of the magnetic flux density :math:`\mathbf{B}` are defined on the cell faces.
-- physical properties :math:`\sigma` and :math:`\mu` are defined at the cell centers.
+- o potencial :math:`\phi` é definido nos nós da célula.
+- componentes cartesianas do campo elétrico :math:`\mathbf{E}` são definidas nas bordas da célula.
+- componentes cartesianas da densidade do fluxo magnético :math:`\mathbf{B}` são definidas nas faces das células.
+- propriedades físicas :math:`\sigma` e :math:`\mu` são definidas nos centros das células.
 
-For problems involving :math:`\mathbf{E}` and :math:`\mathbf{B}`, this approach is ideal because it naturally respects the interface conditions for electromagnetic fields. Recall from ":ref:`maxwell1_fundamentals_interface_conditions_index`" that tangential components of the electric field and normal components of the magnetic flux are continuous are continuous across interfaces.
+Em problemas envolvendo :math:`\mathbf{E}` e :math:`\mathbf{B}`, temos como técnica de abordagem ideal porque respeita naturalmente as condições de interface para campos eletromagnéticos. Lembre-se de ":ref:`maxwell1_fundamentals_interface_conditions_index`" que as componentes tangenciais do campo elétrico e as componentes normais do fluxo magnético são contínuas, assim como, elas são contínuas através das interfaces.
 
-**Applying Computer Algorithms:**
 
-As a final step, the numerical problem is commonly written as a linear system and solved using computer algorithms. The system can be formed using finite difference, finite volume or finite element methods. It generally takes the form:
+**Aplicação de Algoritmos Computacionais: **
+
+Como etapa final, o problema numérico é comumente escrito como um sistema linear e resolvido usando algoritmos de computador. O sistema pode ser formado usando métodos de diferenças finitas, volumes finitos ou elementos finitos. Geralmente assumindo a forma:
 
 .. math::
 	\mathbf{A(m)u=q_s}
 
-where :math:`\mathbf{u}` contains the fields and/or fluxes at discrete locations throughout the domain, :math:`\mathbf{q_s}` is a vector corresponding to the source term and :math:`\mathbf{A(m)}` is a linear operator that depends on the physical properties (:math:`\sigma,\mu,\varepsilon`). Collectively, the physical properties defining each cell make up a physical property model :math:`\mathbf{m}`. In electromagnetic geosciences, we are frequently interested in the "inverse problem". That is, can we recover the physical property model :math:`\mathbf{m}` if :math:`\mathbf{u}` and :math:`\mathbf{q_s}` are known?
-
+onde :math:`\mathbf{u}` contém os campos e/ou fluxos em locais discretos em todo o domínio, :math:`\mathbf{q_s}` é um vetor correspondente ao termo de origem e 
+:math:`\mathbf{A(m)} `é um operador linear que depende das propriedades físicas (:math:`\sigma, \mu, \varepsilon`). Coletivamente, as propriedades físicas que definem cada célula formam um modelo de propriedade física :math:`\mathbf{m}`. Em geociências eletromagnéticas, estamos frequentemente interessados no "problema inverso". Ou seja, podemos recuperar o modelo de propriedade física :math:`\mathbf{m}` se :math:`\mathbf{u}` e :math:`\mathbf{q_s}` são conhecidos?
 
 
 

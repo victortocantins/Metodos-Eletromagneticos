@@ -1,18 +1,18 @@
 .. _frequency_domain_electric_dipole_analytic_solution:
 
-Analytic Solution
+Solução Analítica
 =================
 
 .. Purpose::
 
-    Here, Maxwell's equations are solved for a harmonic electrical current dipole source.
-    This is accomplished by using the method of Schelkunoff potentials, as shown in Ward and Hohmann (:cite:`ward1988`).
-    Analytic expressions for the electric field, the magnetic field and the corresponding vector potential are provided.
-    :ref:`Numerical modeling tools<frequency_domain_electric_dipole_fields>` for visualizing the fields are provided after the :ref:`asymptotics<frequency_domain_electric_dipole_asymptotics>` section.
+    Aqui, as equações de Maxwell são resolvidas para uma fonte dipolo de corrente elétrica harmônica.
+    Isso é realizado usando o método dos potenciais de Schelkunoff, conforme mostrado em Ward e Hohmann (:cite:`ward1988`).
+    Expressões analíticas para o campo elétrico, o campo magnético e o potencial vetorial correspondente são fornecidas.
+    :ref:`Ferramentas de modelagem numérica<frequency_domain_electric_dipole_fields>` para visualizar os campos são fornecidas após a seção 
+    :ref:`asymptotics <frequency_domain_electric_dipole_asymptotics>`.
 
 
-
-For an electrical current source (:math:`\mathbf{J_e^s}`), Maxwell's equations in the frequency domain are given by:
+Para uma fonte de corrente elétrica (:math:`\mathbf{J_e^s}`), As equações de Maxwell no domínio da frequência são dadas por:
 
 .. math::
 	\nabla \times \mathbf{E_e} + i\omega \mu \mathbf{H_e} = 0 
@@ -21,67 +21,71 @@ For an electrical current source (:math:`\mathbf{J_e^s}`), Maxwell's equations i
 	\nabla \times \mathbf{H_e} - (\sigma + i\omega \varepsilon) \mathbf{E_e} = \mathbf{J}_e^s 
 	:label: Ampere_e
 
-where subscripts :math:`_e` remind us that we are considering an electric source. 
-For an electrical current source (:math:`\mathbf{J_e^s}`), the electric and magnetic fields can be expressed in terms of the Schelkunoff vector potential (:math:`\mathbf{A}`), where:
+onde subscritos :math:`_e` nos lembra que estamos considerando uma fonte elétrica.
+Para uma fonte de corrente elétrica (:math:`\mathbf{J_e^s}`), os campos elétricos e magnéticos podem ser expressos em termos do potencial do vetor Schelkunoff (:math:`\mathbf{A}`), onde:
 	
 .. math::
 	\mathbf{H_e} \equiv \nabla \times \mathbf{A} 
 	:label: H_A_potential
 
-and
+e
 
 .. math::
 	\mathbf{E}_e = -i\omega\mu\mathbf{A} + \frac{1}{(\sigma + i\omega\varepsilon)} \nabla (\nabla \cdot \mathbf{A})
 	:label: E_A_potential
 
 
-Eq. :eq:`H_A_potential` can be obtained simply by taking the divergence of Eq. :eq:`Faraday_e`.
-Eq. :eq:`E_A_potential` is obtained by manipulating Eqs. :eq:`Faraday_e`, :eq:`Ampere_e` and :eq:`H_A_potential`, and choosing an appropriate Gauge.
-We can see from Eqs. :eq:`H_A_potential` and :eq:`E_A_potential` that :math:`\mathbf{A}` contains all the information corresponding to the electric and magnetic fields.
-Therefore, Maxwell's equations will be manipulated to solve for :math:`\mathbf{A}`; which can then be used to obtain :math:`\mathbf{E_e}` and :math:`\mathbf{H_e}`. 
+A Equação :eq:`H_A_potential` pode ser obtida simplesmente tomando a divergência da Equação :eq:`Faraday_e`.
+A Equação :eq:`E_A_potential` é obtida pela manipulação das Equações :eq:`Faraday_e`, :eq:`Ampere_e` e :eq:`H_A_potential`, e
+e escolher um medidor apropriado
+Podemos ver das Equações :eq:`H_A_potential` e :eq:`E_A_potential` que :math:`\mathbf{A}` contém todas as informações correspondentes aos campos elétricos e magnéticos.
+Portanto, as equações de Maxwell serão manipuladas para resolver para :math:`\mathbf{A}`; que pode então ser usado para obter :math:`\mathbf{E_e}` e
+:math:`\mathbf{H_e}`.
 
-By manipulating Eqs. :eq:`Faraday_e`, :eq:`Ampere_e` and :eq:`H_A_potential` and choosing an appropriate Gauge, we find that :math:`\mathbf{A}` can be expressed using the Helmholtz equation:
+Ao manipular as Equações :eq:`Faraday_e`, :eq:`Ampere_e` e :eq:`H_A_potential` e escolhendo um medidor apropriado, descobrimos que 
+:math:`\mathbf{A}` pode ser expresso usando a equação de Helmholtz:
+
 
 .. math::
 	\nabla^2 \mathbf{A} + k^2 \mathbf{A} = - \mathbf{J}_e^s, \  \  \  \  \text{where} \  \  k^2 = \omega^2\mu\epsilon -i\omega\mu\sigma
 	:label: Helmholtz_A 
 
-The Helmholtz equation with boundary conditions can be solved to generate :math:`\mathbf{A}`. 
-For infinite media, the boundary condition is such that :math:`\mathbf{A} \rightarrow 0` as :math:`r \rightarrow \infty`.
-From the Helmholtz equation, we can see that :math:`\mathbf{A}` will only have a component along the direction of :math:`\mathbf{J_e^s}`.
-The scalar Green's function for the Helmholtz equation is:
+A equação de Helmholtz com condições de contorno pode ser resolvida para gerar :math:`\mathbf{A}`.
+Para o meio infinito, a condição de limite é tal que :math:`\mathbf{A} \rightarrow 0` quando :math:`r \rightarrow \infty`.
+A partir da equação de Helmholtz, podemos ver que :math:`\mathbf{A}` terá apenas um componente ao longo da direção de :math:`\mathbf{J_e^s}`.
+A função escalar de Green para a equação de Helmholtz é:
 
 .. math::
 	G(r) = \frac{e^{-ikr}}{4\pi r}.
 	:label: GreensFncFullSpace
 
-and hence the vector potential for an arbitrary electric current source is:
+e, portanto, o potencial vetorial para uma fonte de corrente elétrica arbitrária é:
 
 .. math::
 	\mathbf{A}(\mathbf{r}) = \int_{V^\prime} \frac{e^{-ik|\mathbf{r}-\mathbf{r}'|}}{4\pi |\mathbf{r}-\mathbf{r}'|} \mathbf{J_e^s}(\mathbf{r}') dV^\prime
 	:label: A_Potential
 
-where :math:`\mathbf{r}` is the observation location, :math:`\mathbf{r^\prime}` refers to locations within the source region and :math:`V^\prime` is the volume of the source region.
-For an electric current dipole oriented in the :math:`\mathbf{\hat{x}}` direction, the source term is given by:
+onde :math:`\mathbf{r}` é o local de observação, :math:`\mathbf{r^\prime}` refere-se a locais dentro da região de origem e :math:`V^\ prime` é o volume de a região de origem.
+Para um dipolo de corrente elétrica orientado na direção :math:`\mathbf{\hat{x}}`, o termo fonte é dado por:
 
 .. math::
 	\mathbf{J_e^s} = \mathbf{\hat{x}} I ds \delta(x) \delta(y) \delta(z)
 	:label: Je_x
 
-and the solution to Eq. :eq:`A_Potential` is:
+e a solução para a Equação :eq:`A_Potential` é:
 
 .. math::
 	\mathbf{A} = \frac{I ds}{4\pi r} e^{-ikr} \mathbf{\hat{x}}
 	:label: A_Potential_for_Je_x
 
-
-Recall the :math:`\mathbf{A}` can be used to obtain the electric and magnetic field according to Eqs. :eq:`H_A_potential` and :eq:`E_A_potential`.
-Thus the electric field for an electrical current dipole in the :math:`\mathbf{\hat x}` direction is:
+Lembre-se de que :math:`\mathbf{A}` pode ser usado para obter o campo elétrico e magnético de acordo com as Equações :eq:`H_A_potential` e 
+:eq:`E_A_potential`.
+Assim, o campo elétrico para um dipolo de corrente elétrica na direção :math:`\mathbf{\hat x}` é:
 
 .. math::
 	\mathbf{E_e} = \frac{I ds}{4 \pi (\sigma + i \omega \varepsilon)} \left[ \left( k^2 + \frac{\partial^2}{\partial x^2} \right) \mathbf{\hat{x}} + \frac{\partial^2}{\partial x \partial y} \mathbf{\hat{y}} + \frac{\partial^2}{\partial x \partial z} \mathbf{\hat{z}} \right] \frac{e^{-ikr}}{r}
 
-which is equal to:
+que é igual a:
 
 .. math::
 	\begin{split}
@@ -90,18 +94,17 @@ which is equal to:
 	\end{split}
 	:label: E_Cartesian
 
-The magnetic field is:
+O campo magnético é:
 
 .. math::
 	\mathbf{H_e} = \frac{I ds}{4 \pi} \left[ \frac{\partial}{\partial z} \mathbf{\hat{y}} - \frac{\partial}{\partial y} \mathbf{\hat{z}} \right] \frac{e^{-ikr}}{r}
 
-which is equal to:
+que é igual a:
 
 .. math::
 	\mathbf{H_e} = \frac{I ds}{4 \pi r^2} \left( ikr + 1 \right) e^{-ikr} \left( -\frac{z}{r} \mathbf{\hat{y}} + \frac{y}{r} \mathbf{\hat{z}} \right) .
 	:label: H_Cartesian
 
 
-On the following page, we show how Eqs. :eq:`E_Cartesian` and :eq:`H_Cartesian` can be simplified for various cases.
-
+A seguir, mostramos como as Equações :eq:`E_Cartesian` e :eq:`H_Cartesian` pode ser simplificados para vários casos.
 
