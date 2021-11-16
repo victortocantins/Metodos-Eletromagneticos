@@ -15,6 +15,7 @@ import sys
 # sys.path.insert(0, os.path.abspath('.'))
 #from flask import request
 sys.path.append(os.path.abspath("./_ext"))
+sys.path.append(os.path.abspath('sphinxext'))
 #from sphinx_gallery.sorting import ExplicitOrder, FileNameSortKey
 
 
@@ -45,7 +46,9 @@ extensions = [
     'purpose',
     'geosciapp',
     'question',
-    'sphinxcontrib.bibtex', 
+    'sphinxcontrib.bibtex',
+    'matplotlib.sphinxext.plot_directive',
+    'edit_on_github',
 #    'sphinx_gallery.gen_gallery',
     'sphinx_automodapi.automodapi',
 ]
