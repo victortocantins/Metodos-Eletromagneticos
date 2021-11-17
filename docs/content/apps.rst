@@ -50,7 +50,7 @@ Binder
     
 3. :ref:`Run the Jupyter notebook<jupyter_notebooks>`
     
-.. image:: images/binder-steps.png
+.. image:: images/binder-steps2.png
     :alt: binder-steps
     :width: 80%
     :align: center

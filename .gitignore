@@ -2,6 +2,7 @@
 __pycache__/
 artigos/
 mapa-mental/
+temp/
 
 # Sphinx
 docs/_build/

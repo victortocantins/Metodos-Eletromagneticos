@@ -42,7 +42,7 @@ Existem inúmeras propriedades que podem ser usadas para entender a propagação
 
 .. geosciapp::
     Ao navegar pelas ondas planas em meios materiais e homogêneos, sugere-se que você abra o
-    https://mybinder.org/v2/gh/victortocantins/em-notebooks/e2520ea4ed8ebca2aa501152878b465e45b29f11?filepath=notebooks%2Fem%2FFDEM_Planewave_Wholespace.ipynb 
+    https://notebooks.gesis.org/binder/v2/gh/victortocantins/em-notebooks/dd4d0584d101c18ee2665e0388cda2011d25ccc7?urlpath=lab%2Ftree%2Fnotebooks%2Fem%2FFDEM_Planewave_Wholespace.ipynb
     Uma compreensão fundamental da propagação das ondas planas no domínio da frequência pode ser obtida usando o 
     (:numref:`FDEM_planewaves_wholespace_app`); que permite ao usuário simular os campos elétricos e magnéticos suportados por uma 
     onda plana de propagando-se para baixo. O aplicativo permite que o usuário explore os efeitos de diferentes parâmetros 

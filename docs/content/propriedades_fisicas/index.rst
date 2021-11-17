@@ -5,12 +5,10 @@ Propriedades Físicas
 
 .. purpose::
     
-    Para gerar um recurso que tem uma compilação de valores para físicos
-    propriedades em função do tipo de rocha, composição mineral e saturação
-    fluidos. Histórico sobre como as medições de laboratório são feitas e as
-    conexão com as relações constitutivas são apresentadas. Cada seção
-    começará com exemplos de onde a propriedade física particular tem
-    sido diagnosticada.
+    Gerar uma compilação de valores para propriedades físicas em função do tipo de rocha, composição mineral e fluidos saturantes.
+    com medições e métodos de laboratório feitas em termos das relações constitutivas eletromagnéticas. Cada seção começará com exemplos de onde a 
+    propriedade física específica tem sido diagnosticada.
+    
     
 Uma propriedade física quantifica como uma rocha responde a um determinado fenômeno físico, como ondas sonoras por exemplo. Em geofísica eletromagnética, as propriedades físicas relevantes são:
 

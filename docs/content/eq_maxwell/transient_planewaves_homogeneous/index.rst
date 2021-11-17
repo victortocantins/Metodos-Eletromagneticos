@@ -36,13 +36,13 @@ Existem inúmeras propriedades que podem ser usadas para entender a propagação
 
 .. _transient_planewaves_homogeneous_index_app:
 
-Uma compreensão fundamental da propagação das ondas planas no domínio do tempo pode ser obtida usando o `TDEM Planewave Wholespace App <https://mybinder.org/v2/gh/victortocantins/em-notebooks/e2520ea4ed8ebca2aa501152878b465e45b29f11?filepath=notebooks%2Fem%2FTDEM_Planewave_Wholespace.ipynb>`__  
+Uma compreensão fundamental da propagação das ondas planas no domínio do tempo pode ser obtida usando o `TDEM Planewave Wholespace App <https://notebooks.gesis.org/binder/v2/gh/victortocantins/em-notebooks/dd4d0584d101c18ee2665e0388cda2011d25ccc7?urlpath=lab%2Ftree%2Fnotebooks%2Fem%2FTDEM_Planewave_Wholespace.ipynb>`__
 (:numref:`FDEM_planewaves_wholespace_app`); que permite ao usuário simular os campos elétricos e magnéticos suportados por uma onda plana de propagação para baixo. O aplicativo permite que o usuário explore os efeitos de diferentes parâmetros (por exemplo, condutividade, localização do observador, tempo) e responda a um conjunto de questões fundamentais. Por exemplo, suponha que uma excitação por impulso envie um sinal de onda plana EM para a Terra e que o solo tenha uma condutividade de 1 S / m.
 
     - Qual é o pico da amplitude (amplitude máxima) em :math:`t` = 0.01 s?
     - Em qual tempo o pico de amplitude da onda atravessa 600 m de profundidade?
     
-Uma série de perguntas adicionais que podem ser respondidas usando o aplicativo são encontradas :ref:`here<transient_planewaves_homogeneous_questions>`.
+Uma série de perguntas adicionais que podem ser respondidas usando o aplicativo são encontradas :ref:`aqui<transient_planewaves_homogeneous_questions>`.
 
 .. figure:: images/widget_screenshot.png
    :align: center
